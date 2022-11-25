@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <object data="{% if result %}{{ result }}{% endif %}" type="application/pdf">
+        alt :
+        <a href="{% if result %}{{ result }}{% endif %}">
+            {% if result %}{{ result }}
+            {% endif %}</a>
+    </object>
+</div>
+</body>
+</html>

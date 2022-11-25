@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    SE Tools
+{% endblock %}
+
+{% block body %}
+     Result {{ result|length }}
+    {% if result|length != 0 %}
+        {% include "data_view_from_csv.html" %}
+    {% else %}
+        {% include "csv_reader.html" %}
+    {% endif %}
+{% endblock %}

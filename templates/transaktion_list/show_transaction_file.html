@@ -1,0 +1,48 @@
+{% block show_tr_file %}
+    <!-- pdf.js CDN -->
+    <tr>
+        <td class="w-auto" colspan="9">
+            <div class="collapse mt-2 mb-3" id="collapse_show_file_for_tr_{{ tr.id }}">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Underlag för transaktion <span>&#8470;</span> {{ tr.id }}
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col text-end"><h5 class="card-title">Bokförings konto:</h5></div>
+                            <div class="col text-start"><h5 class="card-title">{{ tr.account }}</h5></div>
+                        </div>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col text-end">
+                                <strong>Reference:</strong><br>
+                                <strong>Belopp ink.moms:</strong><br>
+                                <strong>Moms belopp:</strong><br>
+                                <strong>Belopp ex.moms:</strong><br>
+                            </div>
+                            <div class="col text-start">
+                                {{ tr.reference }}<br>
+                                {{ format_price(tr.amount) }}<br>
+                                {{ format_price(get_vat_amount(tr.amount, tr.vat)) }} ({{ tr.vat }}%) <br>
+                                {{ format_price(get_amount_without_vat(amount = tr.amount , vat =tr.vat)) }}<br>
+                            </div>
+                        </div>
+                        </p>
+                        <a  href="/uploads/transactions_files/?file_name={{ tr.file }}"
+                           target="popup"
+                           class="btn btn-primary"
+                           onclick="window.open('/uploads/transactions_files/?file_name={{ tr.file }}','); return false;">Visa underlag</a>
+                        <button class="btn btn-danger" type="submit" name="file_to_remove" value="{{ tr.file }}">Radera
+                            underlag
+                        </button>
+                        {% if tr.file != None or tr.file != ''  %}
+                        <input name="remove_control" type="checkbox" value="1">
+                        <input name="remove_control" type="hidden" value="0">
+                        {% endif %}
+                    </div>
+                    <div class="card-footer text-muted">Bokförings dag: {{ tr.date }}</div>
+                </div>
+            </div>
+        </td>
+    </tr>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% block colapsed_row %}
+    <!-- moms.value = (ink_moms_value - (ink_moms_value / (1 + moms_rate_value))).toFixed(2); -->
+    <!-- ink_moms.value = (moms_value * (1 / moms_rate_value) + moms_value).toFixed(2) -->
+    <tr class="collapse multi-collapse" id="collapse_tr_row_{{ tr.id }}">
+        <td colspan="9">
+            <section class="" style="background-color: #eee;">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col mt-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-start align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold text-primary mb-1"> {{ current_user.login_name }} </h6>
+                                        </div>
+                                        <div class="m-5">
+                                            <p class="card-text">{{ tr.comment }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
+                                        <div class="d-flex flex-start w-100">
+                                            <div class="form-outline w-100">
+                                                <textarea name="comment" class="form-control" id="textAreaExample"
+                                                          rows="4" style="background: #fff;"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="submit" class="btn btn-primary btn-sm">Spara anteckning
+                                </button>
+                                <button type="button"
+                                        class="btn btn-info"
+                                        data-toggle="collapse"
+                                        data-target="#collapse_tr_row_{{ tr.id }}"
+                                        aria-expanded="false"
+                                        aria-controls="collapse_tr_row_{{ tr.id }}">Stäng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </td>
+    </tr>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% block csv_reader %}
+    <div class="mx-auto" style="width: 650px;">
+        <form method="post" class="needs-validation" enctype="multipart/form-data">
+            <div class="form-group mb-3">
+                <label for="bank">Välj bank som har utfärdat cvs fil</label>
+                <select class="form-select"
+                        aria-label="Default select example"
+                        id="bank" required>
+                    <option selected value="">Välj BANK</option>
+                    <option value="1">SEB</option>
+                    <option value="2">SWEDBANK</option>
+                    <option value="3">SVEA Bank</option>
+                    <option value="4">Nordea</option>
+                    <option value="5">Marginal</option>
+                </select>
+            </div>
+            <div class="form-group mb-3 custom-file">
+                <input type="file"
+                       class="custom-file-input"
+                       id="csv_file"
+                       name="csv_file"
+                       buttonText="Your label here."required>
+            </div>
+            <button type="submit"
+                    class="btn btn-primary">Granska
+            </button>
+        </form>
+    </div>
+{% endblock %}

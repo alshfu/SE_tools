@@ -1,0 +1,25 @@
+{% block navbar %}
+    <div class="container text-end">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% for menu_elem in menu %}
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link
+                        {% if request.path == menu_elem[1] %}
+                        active
+                        {% endif %}"
+                               href="{{ menu_elem[1] }}">{{ menu_elem[0] }}
+                                <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </nav>
+    </div>
+{% endblock %}
