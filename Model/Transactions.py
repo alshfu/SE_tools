@@ -71,7 +71,7 @@ class Transaction:
                                         period=period)
         if self.check_if_transaction_exist_in_db(id_from_file, date, amount, period) is True:
             pass
-            # print("Transactions is not new")
+            # # print("Transactions is not new")
         else:
             db.session.add(transaction)
             db.session.commit()
@@ -81,18 +81,19 @@ class Transaction:
 
         references_and_accounts = []
         for i in range(self.count_of_transactions):
-            if self.form_data.getlist('account')[i][0] != '0':
+            if self.form_data.getlist('account')[i] != '0':
+                print(self.form_data.getlist('account')[i])
                 references_and_accounts.append(
-                    (self.form_data.getlist('account')[i], self.form_data.getlist('reference')[i])
-                )
+                    (self.form_data.getlist('account')[i], self.form_data.getlist('reference')[i]))
+                # Reference(account=self.form_data.getlist('account')[i],
+                #          reference_str=self.form_data.getlist('reference')[i]).update_reference()
 
         clean_list = count(references_and_accounts)
 
         for elem in clean_list:
-            # print(f"""a/r: {elem[0]} count: {elem[1]}""")
-            # print(f"""account: {elem[0][0]} reference: {elem[0][1]} count: {elem[1]}""")
-            if elem[1] == 1:
-                Reference(account=elem[0][0], reference_str=elem[0][1]).update_reference()
+            print(f"""a/r: {elem[0]} count: {elem[1]}""")
+            print(f"""account: {elem[0][0]} reference: {elem[0][1]} count: {elem[1]}""")
+            if elem[1] == 1: Reference(account=elem[0][0], reference_str=elem[0][1]).update_reference()
 
     def verification_file_update(self, transaction):
 
@@ -101,9 +102,9 @@ class Transaction:
             transaction.file = save_transaction_file(file)
 
     def remove_verification_file(self, transaction):
-        print(f"""{len(self.form_data.getlist('id'))}""")
-        print(f"""{len(self.form_data.getlist('file_to_remove'))}""")
-        print(f"""{len(self.form_data.getlist('remove_control'))}""")
+        # print(f"""{len(self.form_data.getlist('id'))}""")
+        # print(f"""{len(self.form_data.getlist('file_to_remove'))}""")
+        # print(f"""{len(self.form_data.getlist('remove_control'))}""")
         try:
             if self.form_data.getlist('remove_control')[self.index] == '1':
                 remove_transaction_file(self.form_data['file_to_remove'])
@@ -218,10 +219,11 @@ def count(listOfTuple):
     import collections
     val = collections.Counter(listOfTuple)
     uniqueList = list(set(listOfTuple))
-
+    print(val)
+    print(uniqueList)
     for i in uniqueList:
-        if val[i] == 2:
-            result.append((i, val[i]))
+        result.append((i, val[i]))
+    print(result)
     return result
 
 
@@ -229,6 +231,3 @@ def save_transaction_file(file) -> str:
     new_file_name = create_uniq_file_name(secure_filename(file.filename))
     file.save(os.path.join(UPLOAD_FOLDER_FOR_TRANSACTIONS_FILES, new_file_name))
     return new_file_name
-
-
-

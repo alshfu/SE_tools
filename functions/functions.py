@@ -1,6 +1,5 @@
 import os
 
-
 from flask_login import current_user
 from werkzeug.utils import secure_filename
 
@@ -47,39 +46,21 @@ def read_csv_to_byte_return_utf(csv_file):
                 elif byte == b'\x96':
                     byte = b''
                 byte_array.append(byte)
+
             # Do stuff with byte.
     except IOError:
-        print('Error While Opening the file!')
+        pass
 
     utf_string = ""
+
     for i in range(len(byte_array)):
-        utf_string += byte_array[i].decode("utf-8")
-    # print(f"""{i}:{byte_array[i]}:{byte_array[i].hex()}:{byte_array[i].decode("utf-8")}""")
+        try:
+            utf_string += byte_array[i].decode("utf-8")
+            # print(utf_string)
+        except UnicodeDecodeError:
+            pass
+
     return utf_string
-
-
-def get_data_from_swedbank(data_string):
-    transaktion_data_array = []
-    line_array = data_string.splitlines()
-    for i in range(len(line_array)):
-        if i > 1:
-            transaction = line_array[i].split(",")
-
-            if len(transaction) != 12:
-                correct_value = transaction[8:-3]
-                first_array = transaction[:8]
-                last_array = transaction[-3:]
-                correct_string = ' '.join([str(elem) for elem in correct_value])
-                first_array.append(correct_string)
-                for elem in last_array: first_array.append(elem)
-                transaction = first_array
-            # print(transaction)
-            transaktion_data_array.append({"id": transaction[0],
-                                           "date": transaction[7],
-                                           "reference": transaction[8].replace('"', ''),
-                                           "amount": transaction[10],
-                                           "amount_in_account": transaction[11]})
-    return transaktion_data_array[::-1]
 
 
 def amount_counter(transaktions_array):
@@ -101,14 +82,8 @@ def remove_transaction_file(file_name):
         if os.path.exists(full_file_path):
             os.remove(full_file_path)
         else:
-            print("Nothing to remove !!")
+            pass
     return ""
-
-
-
-
-
-
 
 
 def create_uniq_file_name(file_name='') -> str:
@@ -129,18 +104,11 @@ def create_uniq_file_name(file_name='') -> str:
     return f"""{str(file_name_to_save.hexdigest())}.{file_extension}"""
 
 
-
-
-
-
-
 def remove_transaction_file(file_name):
-    print("remove_transaction_file for file: ", file_name)
     if file_name != '':
         full_file_path = f"""{UPLOAD_FOLDER_FOR_TRANSACTIONS_FILES}/{file_name}"""
-        print(full_file_path)
+        # print(full_file_path)
         if os.path.exists(full_file_path):
             os.remove(full_file_path)
-        else:
-            print("Nothing to remove !!")
+
     return ""
