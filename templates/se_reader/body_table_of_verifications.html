@@ -1,0 +1,38 @@
+{%- macro input_group(type, value, name, width, class) -%}
+    <td style="min-width:{{ width }}px;max-width:{{ width }}px;">
+        <div class="input-group input-group-sm" style="min-width:{{ width }}px;max-width:{{ width }}px;">
+            {% if type == 'text' %}
+
+                <input  value="{{ value }}"
+                        name="{{ name }}"
+                        type="{{ type }}"
+                        class="form-control {{ class }}"
+                        aria-label="Small"
+                        aria-describedby="inputGroup-sizing-sm">
+            {% elif type == 'collapse_button' %}
+                <button type="button"
+                        class="btn btn-info custom-btn"
+                        data-toggle="collapse"
+                        data-target="#collapse_tr_row_{{ value }}"
+                        aria-expanded="false"
+                        aria-controls="collapse_tr_row_{{ value }}">
+                    Transaktions
+                </button>
+            {% elif type == 'submit' %}
+                <button type="submit" name="{{ name }}" class="btn btn-info custom-btn">
+                <div class="input-group input-group-sm" style="min-width:{{ width }}px;max-width:{{ width }}px;">Spara</div>
+                </button>
+            {% endif %}
+        </div>
+    </td>
+{%- endmacro -%}
+
+<tbody>
+
+{% for ver in result[2] %}
+    {% include "se_reader/verification_row.html" %}
+    {% for tr in ver.transactions %}
+        {% include "se_reader/collapsed_rows_of_transactions_with_main_account.html" %}
+    {% endfor %}
+{% endfor %}
+</tbody>

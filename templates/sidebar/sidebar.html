@@ -1,0 +1,45 @@
+<aside class="d-flex position-fixed mt-lg-5 flex-column flex-shrink-0 bg-light">
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+            <a class="btn btn-primary nav-link py-3 border-bottom rounded-0"
+               data-bs-toggle="collapse"
+               href="#collapseMoms"
+               role="button"
+               aria-expanded="false"
+               aria-controls="collapseMoms">
+                <i class="fa-solid fa-percent"></i>
+            </a>
+        </li>
+        <li>
+            {% include 'sidebar/moms.html' %}
+        </li>
+        <li>
+            <a class="btn btn-primary nav-link py-3 border-bottom rounded-0"
+               data-bs-toggle="collapse"
+               href="#collapseCalculator"
+               role="button"
+               aria-expanded="false"
+               aria-controls="collapseCalculator">
+                <i class="fa-solid fa-calculator"></i>
+            </a>
+        </li>
+        <li>
+            {% include 'sidebar/calculator.html' %}
+        </li>
+        <li>
+            <a class="btn btn-primary nav-link py-3 border-bottom rounded-0"
+               data-bs-toggle="collapse"
+               href="#collapseAccounting"
+               role="button"
+               aria-expanded="false"
+               aria-controls="collapseAccounting">
+                <i class="fa-solid fa-building-columns"></i>
+            </a>
+        </li>
+        <li>
+            {% include 'sidebar/accouting_tip.html' %}
+        </li>
+    </ul>
+
+
+</aside>

@@ -15,27 +15,25 @@
                 <th>Action</th>
             </tr>
             {% for company in result %}
+
                 <tr>
                     <td>{{ company.id }}</td>
-                    <td style="min-width: 200px;max-width: 200px">778877-8778</td>
+                    <td style="min-width: 200px;max-width: 200px">{{ company.bic }}</td>
                     <td>{{ company.name }}</td>
                     <td>{{ company.period }}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <form method="get" action="/se_tools/transaktions_list">
+                            <form method="get" action="/verifications">
                                 <input style="display: none" type="text" name="company_name" value="{{ company.name }}">
                                 <input style="display: none" type="text" name="company_bic" value="{{ company.bic }}">
                                 <input style="display: none" type="text" name="period" value="{{ company.period }}">
-                                <button name="transaktions_list" value="true" type="submit" class="btn btn-primary">
+                                <button name="verifications_list" value="true" type="submit" class="btn btn-primary">
                                     Hantera
                                 </button>
                             </form>
-                            <form action="#">
-                                <button type="submit" class="btn btn-success" disabled>Uppdatera</button>
-                            </form>
-                            <form method="get" action="/se_tools">
-                                <input style="display: none" type="text" name="company_name" value="{{ company.name }}">
-                                <input style="display: none" type="text" name="company_bic" value="{{ company.bic }}">
+                            <form method="get" class="btn-group">
+                                <input style="display: none" type="text" name="name" value="{{ company.name }}">
+                                <input style="display: none" type="text" name="bic" value="{{ company.bic }}">
                                 <input style="display: none" type="text" name="period" value="{{ company.period }}">
                                 <button name="remove_company_period" value="true" type="submit" class="btn btn-danger">
                                     Radera
@@ -44,6 +42,8 @@
                         </div>
                     </td>
                 </tr>
+
+
             {% endfor %}
             </thead>
         </table>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ company_name }} {{ period }}
+{% endblock %}
+{% block body %}
+    {% if result %}
+        <div class="mt-lg-5">
+            {% include "/verifications_list/company_information.html" %}
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+            {% include "/verifications_list/button_group_top.html" %}
+            {% include "/verifications_list/table/table_with_verifications.html" %}
+        </form>
+        <script src="/static/js/create_new_transaction_row.js"></script>
+    {% endif %}
+{% endblock %}

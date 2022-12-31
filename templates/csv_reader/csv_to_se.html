@@ -7,8 +7,8 @@
 {% block body %}
      Result {{ result|length }}
     {% if result|length != 0 %}
-        {% include "data_view_from_csv.html" %}
+        {% include "csv_reader/data_view_from_csv.html" %}
     {% else %}
-        {% include "csv_reader.html" %}
+        {% include "csv_reader/csv_reader.html" %}
     {% endif %}
 {% endblock %}

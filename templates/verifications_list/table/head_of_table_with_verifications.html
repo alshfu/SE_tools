@@ -1,0 +1,6 @@
+<tr>
+    {% set array_of_table_head = ['Id', 'Typ', 'Date', 'Reference', 'Belopp', 'Konto', 'Moms %','Verktyg'] %}
+    {% for head_data in array_of_table_head %}
+        <th> {{ head_data }} </th>
+    {% endfor %}
+</tr>

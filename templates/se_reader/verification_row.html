@@ -1,0 +1,10 @@
+<tr>
+    {{ input_group(name = 'ver_id',         type = 'text', value = ver.verification_id, width = 50, class = 'text-end') }}
+    {{ input_group(name = 'ver_type',       type = 'text', value = ver.verification_type, width = 55) }}
+    {{ input_group(name = 'ver_date',       type = 'text', value = ver.verification_date, width = 115) }}
+    {{ input_group(name = 'ver_reference',  type = 'text', value = ver.verification_reference, width = 505, class = 'text-end') }}
+    {{ input_group(name = 'tr_amount',      type = 'text', value = amount_format(ver.transactions[0].transaction_amount), width = 115, class = 'text-end') }}
+    {{ input_group(name = 'ver_account',    type = 'text', value = ver.transactions[1].transaction_account, width = 115, class = 'text-end') }}
+    {{ input_group(name = '',               type = 'collapse_button', value = ver.verification_id, width = '') }}
+    {{ input_group(type = 'submit', name='verification_list') }}
+</tr>

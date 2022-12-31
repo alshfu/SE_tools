@@ -1,0 +1,36 @@
+<!-- Transactions -->
+<a class="btn btn-primary "
+   data-bs-toggle="collapse"
+   href="#collapseTransactionOfVerification_{{ verification.id_from_file }}"
+   role="button"
+   aria-expanded="false"
+   aria-controls="collapseTransactionOfVerification_{{ verification.id_from_file }}">
+    <i class="fa-sharp fa-solid fa-money-bill-transfer"></i>
+</a>
+<!-- File of Verifikation -->
+{% if verification.file == None or verification.file == '' %}
+    <label class="custom-file-upload btn custom-btn" style="background-color: #7f3737">
+        <input name="file_of_verification" type="file"/><i class="fa-sharp fa-solid fa-file-arrow-up"></i>
+    </label>
+    {% else %}{% include "verifications_list/table/rows/modal_of_verification.html" %}
+    <button type="button"
+            class="btn custom-btn"
+            style="background-color: #63b817"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_of_verification_{{ verification.id_from_file }}">
+        <i class="fa-solid fa-file"></i>
+    </button>
+{% endif %}
+
+<!-- Comment -->
+<a class="btn btn-primary "
+   data-bs-toggle="collapse"
+   href="#collapseCommentOfVerification_{{ verification.id_from_file }}"
+   role="button"
+   aria-expanded="false"
+   aria-controls="collapseCommentOfVerification_{{ verification.id_from_file }}">
+    <i class="fa-sharp fa-solid fa-comment"></i>
+</a>
+<div class="btn btn-outline-primary">
+    <input class="form-check-input" type="checkbox" name="selected" value="true" id="defaultCheck1">
+</div>

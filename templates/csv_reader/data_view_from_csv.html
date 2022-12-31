@@ -17,11 +17,11 @@
                 <div class="col justify-content-end">
                     <div class="input-group mb-1 justify-content-end">
                         <span class="input-group-text">Belopp som fanns på konto den {{ result[0]['date'] }}:</span>
-                        <div class="input-group-text">{{ format_price(start_amount) }}</div>
+                        <div class="input-group-text">{{ amount_format(start_amount) }}</div>
                     </div>
                     <div class="input-group mb-1 justify-content-end">
                         <span class="input-group-text">Belopp är kvar på konto den {{ (result|last)['date'] }}:</span>
-                        <div class="input-group-text text-end">{{ format_price(end_amount) }}</div>
+                        <div class="input-group-text text-end">{{ amount_format(end_amount) }}</div>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@
                     <span class="input-group-text">Reference:</span>
                     <input name="reference" value="{{ tr['reference'] }}" type="text" class="form-control"/>
                     <span class="input-group-text">Belopp:</span>
-                    <input name="amount" value="{{ format_price(tr['amount']) }}" type="text"
+                    <input name="amount" value="{{ amount_format(tr['amount']) }}" type="text"
                            class="form-control text-end"
                            style="max-width: 115px;
                                    min-width: 115px;

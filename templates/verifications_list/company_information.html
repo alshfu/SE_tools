@@ -1,0 +1,95 @@
+{%- macro vat_in_for_period(result, search_box) -%}
+    {%- set vat = namespace(count=0) -%}
+    {%- for verification in result.verifications -%}
+        {%- if verification.transactions[2] is defined -%}
+            {%- if search_box -%}
+                {%- if verification.transactions[0].amount > 0 and verification.transactions[1].account.account == search_box | int -%}
+                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
+                {%- endif -%}
+            {%- else -%}
+                {%- if verification.transactions[0].amount > 0 -%}
+                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {{ vat.count }}
+{%- endmacro -%}
+
+{%- macro vat_out_for_period(result, search_box = 0) -%}
+    {%- set vat = namespace(count=0) -%}
+    {%- for verification in result.verifications -%}
+        {%- if verification.transactions[2] is defined -%}
+            {%- if search_box -%}
+                {%- if verification.transactions[0].amount < 0 and verification.transactions[1].account.account == search_box | int-%}
+                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
+                {%- endif -%}
+            {%- else -%}
+                {%- if verification.transactions[0].amount < 0 -%}
+                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {{ vat.count }}
+{%- endmacro -%}
+
+{%- macro vat_rest_amount(result, search_box) -%}
+    {%- set vat = namespace(count=0) -%}
+    {%- for verification in result.verifications -%}
+        {%- if verification.transactions[2] is defined and verification.transactions[1].account.account == search_box -%}
+            {%- set vat.count = vat.count + verification.transactions[2].amount -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {{ vat.count }}
+{%- endmacro -%}
+
+<div class="card text-center">
+    <div class="card-header text-end">
+        {{ result.period }} | <strong>{{ result.name }}</strong> | {{ result.bic }}
+    </div>
+    <div class="card-body text-end">
+        <h5 class="card-title"></h5>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col text-center">Ingående moms</div>
+                <div class="col text-center">Utgående moms</div>
+                <div class="col text-center">Resterande moms</div>
+            </div>
+            <div class="row">
+                <div class="col text-center">{{ amount_format(vat_in_for_period(result, search_box)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_out_for_period(result, search_box)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
+            </div>
+            <div class="row">
+                <div class="col text-center">{{ amount_format(vat_in_for_period(result)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_out_for_period(result)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
+            </div>
+            <div class="row">
+                <div class="col text-center">{{ amount_format(vat_in_for_period(result)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_out_for_period(result)) }}</div>
+                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-end">
+
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted text-end">
+        <form method="post">
+            <input type="hidden" name="period" value="{{ result.period }}">
+            <input type="hidden" name="name" value="{{ result.name }}">
+            <input type="hidden" name="bic" value="{{ result.bic }}">
+            <div class="form">
+                <input name="search_box"
+                       value=""
+                       type="text"
+                       class="form-control form-input text-end"
+                       placeholder="Sök bland verifikation, ange konto nummer, belopp eller referens...">
+            </div>
+        </form>
+    </div>
+</div>

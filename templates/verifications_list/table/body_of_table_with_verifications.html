@@ -1,0 +1,30 @@
+<style>
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+
+    .custom-btn {
+        min-width: 45px;
+        max-width: 45px;
+    }
+</style>
+
+{% if search_box %}
+    {% for verification in result.verifications %}
+        {% if verification.transactions[1].account.account == search_box | int %}
+            {% include "verifications_list/table/rows/row_of_table_with_verification_data.html" %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% for verification in result.verifications %}
+        {% include "verifications_list/table/rows/row_of_table_with_verification_data.html" %}
+    {% endfor %}
+{% endif %}
+
+

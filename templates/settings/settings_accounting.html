@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    SE Tools
+{% endblock %}
+
+{% block body %}
+
+    <div class="form-outline text-center mt-5">
+        <input autofocus
+               type="search"
+               id="settings_search"
+               onkeyup="settings_searching()"
+               placeholder="Sök för konto inställningar..."
+               class="form-control text-center"/>
+    </div>
+
+    <form method="post">
+        <table class="table table-striped" id="settings_table">
+            <thead>
+            <tr>
+                <th>Beskrivning</th>
+                <th>Konto</th>
+                <th>Moms</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for account in result %}
+                {% include 'settings/row_for_account_settings.html' %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </form>
+    <script src="/static/js/add_new_reference.js"></script>
+    <script>
+        function settings_searching() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("settings_search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("settings_table").getElementsByTagName('tbody')[0];
+            tr = table.getElementsByClassName("row_of_accounting");
+            for (i = 0; i < tr.length; i++) {
+
+                td_name = tr[i].getElementsByTagName("td")[0].getElementsByTagName('input')[0];
+                td_konto = tr[i].getElementsByTagName("td")[1].getElementsByTagName('input')[0];
+
+                if (td_name || td_konto) {
+                //if (td_name) {
+                    txtValue_name = td_name.value;
+                    txtValue_konto = td_konto.value;
+
+                    if (txtValue_name.toUpperCase().indexOf(filter) > -1 || txtValue_konto.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+{% endblock %}

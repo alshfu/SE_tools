@@ -8,11 +8,62 @@ from Model.DB import db
 from Model.DataBase.Accounting_account import References, Accounting_account
 from Model.DataBase.TransactionsTable import TransactionsTable
 from config import UPLOAD_FOLDER_FOR_TRANSACTIONS_FILES
-from functions.functions import create_uniq_file_name, remove_transaction_file
+from functions.functions import create_uniq_file_name, remove_transaction_file, string_cleaner
+
+
+class Transaction_from_se_file:
+
+    def get_transaction(self) -> object:
+        if self.get_check_if_transaction_exists():
+            #print(self.transaction)
+            return self.save_transaction()
+        else:
+            #print(self.transaction)
+            return self.transaction
+
+    def get_check_if_transaction_exists(self):
+        if self.transaction is None:
+            return True
+        else:
+            return False
+
+    def save_transaction(self):
+        if self.get_check_if_transaction_exists() is True:
+            transaction = TransactionsTable(verification_id=self.verification_id[0],
+                                                                 amount=self.amount[0],
+                                                                 id_from_file=self.id_from_file[0],
+                                                                 account_id=self.account_id)
+            db.session.add(transaction)
+            db.session.commit()
+            db.session.flush(self.transaction)
+            self.transaction = TransactionsTable.query.filter_by(verification_id=self.verification_id,
+                                                                 amount=self.amount,
+                                                                 id_from_file=self.id_from_file,
+                                                                 account_id=self.account_id)
+            return self.transaction
+
+    def __init__(self,
+                 verification_id,
+                 id_from_file,
+                 amount,
+                 account_value,
+                 vat,
+                 reference_str=None, ):
+
+        self.verification_id = int(verification_id),
+        self.id_from_file = id_from_file,
+        self.amount = amount,
+        self.account_id = Accounting(account=account_value).if_account_new_save_it_in_db().id
+        self.reference_str = Reference(reference_str=reference_str,account_id = self.account_id )
+        self.vat = vat
+        self.transaction = TransactionsTable.query.filter_by(verification_id=self.verification_id[0],
+                                                             amount=self.amount[0],
+                                                             id_from_file=self.id_from_file[0],
+                                                             account_id=self.account_id).first()
 
 
 class Transaction:
-    def __init__(self, form_data, index=0, files=None):
+    def __init__(self, form_data=None, index=0, files=None):
         self.files = files
         self.form_data = form_data
         self.index = int(index)
@@ -82,18 +133,18 @@ class Transaction:
         references_and_accounts = []
         for i in range(self.count_of_transactions):
             if self.form_data.getlist('account')[i] != '0':
-                print(self.form_data.getlist('account')[i])
                 references_and_accounts.append(
-                    (self.form_data.getlist('account')[i], self.form_data.getlist('reference')[i]))
-                # Reference(account=self.form_data.getlist('account')[i],
-                #          reference_str=self.form_data.getlist('reference')[i]).update_reference()
+                    (self.form_data.getlist('account')[i], self.form_data.getlist('reference')[i],
+                     self.form_data.getlist('vat')[i]))
 
         clean_list = count(references_and_accounts)
+        # print(f"""len of clean list: {len(clean_list)}""")
 
         for elem in clean_list:
-            print(f"""a/r: {elem[0]} count: {elem[1]}""")
-            print(f"""account: {elem[0][0]} reference: {elem[0][1]} count: {elem[1]}""")
-            if elem[1] == 1: Reference(account=elem[0][0], reference_str=elem[0][1]).update_reference()
+            # print(elem)
+            # print(f"""vat: {elem[0][2]} account: {elem[0][0]} reference: {elem[0][1]} count: {elem[1]}""")
+            if elem[1] == 1:
+                Reference(vat=elem[0][2], account=elem[0][0], reference_str=elem[0][1]).update_reference()
 
     def verification_file_update(self, transaction):
 
@@ -102,9 +153,6 @@ class Transaction:
             transaction.file = save_transaction_file(file)
 
     def remove_verification_file(self, transaction):
-        # print(f"""{len(self.form_data.getlist('id'))}""")
-        # print(f"""{len(self.form_data.getlist('file_to_remove'))}""")
-        # print(f"""{len(self.form_data.getlist('remove_control'))}""")
         try:
             if self.form_data.getlist('remove_control')[self.index] == '1':
                 remove_transaction_file(self.form_data['file_to_remove'])
@@ -132,29 +180,31 @@ class Transaction:
 
 
 class Reference:
-    def __init__(self, reference_str=None, account=0):
-        self.reference_str = reference_str
-        self.account = Accounting(account).if_account_new_save_it_in_db()
+    def __init__(self, reference_str='', description='', account_id=0, vat=0, ):
+        reference_str = reference_str.replace("-", " ")
+        reference_str = reference_str.replace(",", " ")
+        reference_str = reference_str.replace(".", " ")
+        self.reference_str = string_cleaner(reference_str.strip().upper())
+        self.description = description
+        # print(f"""{account} => {description}""")
+        self.account_id = account_id
 
-    def check_if_reference_exist_in_db(self):
-        reference = References.query.filter_by(reference_str=self.reference_str).first()
-        if reference is not None:
-            return True
-        else:
-            return False
 
     def update_reference(self):
         reference = References.query.filter_by(reference_str=self.reference_str).first()
-        reference.account_id = self.account.id
+        print(f"""reference: {reference.reference_str}""")
+        reference.account_id = self.account_id
         db.session.commit()
 
     def if_reference_new_save_it_in_db(self):
-        if self.check_if_reference_exist_in_db() is False:
-            reference = References(reference_str=self.reference_str, account_id=self.account.id)
+        print(self.reference_str)
+        if References.query.filter_by(reference_str=self.reference_str.upper()).first() is None:
+            reference = References(reference_str=self.reference_str, account_id=self.account_id)
             db.session.add(reference)
-            db.session.flush()
+            db.session.commit()
             return reference
         else:
+            self.update_reference()
             reference = References.query.filter_by(reference_str=self.reference_str).first()
             return reference
 
@@ -164,19 +214,23 @@ class Reference:
 
 
 class Accounting:
-    def __init__(self, account):
+    def __init__(self, account, vat=0, description=''):
         self.account = int(account)
+        self.vat = float(vat)
+        self.description = description
 
     def check_if_account_exist_in_db(self):
-        account = Accounting_account.query.filter_by(account=self.account).first()
-        if account is not None:
-            return True
-        else:
+        account = Accounting_account.query.filter_by(account=self.account, vat=self.vat).first()
+        if account is None:
+            print(f"""account {account} in 'False'""")
             return False
+        else:
+            print(f"""account {account} in True""")
+            return True
 
     def if_account_new_save_it_in_db(self):
         if self.check_if_account_exist_in_db() is False:
-            account = Accounting_account(account=self.account)
+            account = Accounting_account(account=self.account, vat=self.vat, description=self.description)
             db.session.add(account)
             db.session.flush()
             return account
@@ -205,7 +259,7 @@ class Transactions(Transaction):
 
 def get_transactions_by_company_and_period(self, company_name: str, company_bic: int, period: str):
     result = [self.index]
-    company = Companies(name=company_name, bic=company_bic, period=period).get_company()
+    company = Companies(name=company_name, bic=company_bic).get_company()
     if company.user == current_user.id:
         transactions = company.transactions
         for transaction in transactions:
@@ -219,11 +273,9 @@ def count(listOfTuple):
     import collections
     val = collections.Counter(listOfTuple)
     uniqueList = list(set(listOfTuple))
-    print(val)
     print(uniqueList)
     for i in uniqueList:
         result.append((i, val[i]))
-    print(result)
     return result
 
 

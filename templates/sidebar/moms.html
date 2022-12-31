@@ -1,0 +1,88 @@
+<div class="collapse collapsed_sidebar mb-5" id="collapseMoms">
+    <form>
+        <div class="mt-1 text-end">
+            <div class="mt-2 mb-2">
+                <h3>Momskalkylator</h3>
+                <div style="width: auto" class="mt-1 ms-2 me-2 text-end input-group">
+                    <input type="text" class="form-control text-end" id="custom_vat_rate">
+                    <span class="input-group-text">%</span>
+                    <select id="vat_rate" class="form-control text-end">
+                        <option value="0.25">25%</option>
+                        <option value="0.12">12%</option>
+                        <option value="0.06">6%</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="mt-1 ms-2 me-2 text-end">
+            Belopp ex.Moms:
+            <input type="text" class="form-control text-end" id="exclusive_vat" onchange="exclusive_vat()">
+            <div id="error2"></div>
+        </div>
+        <div class="mt-1 ms-2 me-2 text-end">
+            Moms belopp:
+            <input type="text" class="form-control text-end" id="vat" onchange="vat()">
+        </div>
+        <div class="mt-1 ms-2 me-2 text-end">
+            Belopp ink.moms:
+            <input type="text" class="form-control text-end" id="inclusive_vat" onchange="inclusive_vat()">
+        </div>
+
+    </form>
+
+    <p class="small  mt-2 ms-2 me-2">
+        Du kan välja att fylla i vilket fält som helst så räknas de andra ut.<br>
+        Du kan välja momssatsen i rullistan. Där finns alternativen 6 %, 12 % och 25 %<br>
+        OBS! Notera att ingen avrundning sker i räknaren, vid prissättning och fakturering bör det göras.
+    </p>
+
+</div>
+
+<script>
+
+
+    let ink_moms = document.getElementById("inclusive_vat")
+    let ex_moms = document.getElementById("exclusive_vat")
+    let vat_value = document.getElementById("vat")
+    let moms_rate = document.getElementById("vat_rate")
+    let vat_custom_rate = document.getElementById("custom_vat_rate")
+
+    ex_moms.addEventListener('input', exclusive_vat)
+    vat_value.addEventListener("input", vat)
+    ink_moms.addEventListener('input', inclusive_vat)
+
+    let vat_rate, ex_moms_value, moms_value, ink_moms_value
+
+    function get_value() {
+        vat_rate = parseFloat(vat_custom_rate.value)/100
+        console.log(vat_rate)
+        if (isNaN(vat_rate)) {
+            vat_rate = parseFloat(moms_rate.value)
+        }
+
+
+        ex_moms_value = parseFloat(ex_moms.value)
+        moms_value = parseFloat(vat_value.value)
+        ink_moms_value = parseFloat(ink_moms.value)
+        console.table([vat_rate.toFixed(2), ex_moms_value.toFixed(2), moms_value.toFixed(2), ink_moms_value.toFixed(2)])
+    }
+
+
+    function exclusive_vat() {
+        get_value()
+        vat_value.value = (ex_moms_value * vat_rate).toFixed(2);
+        ink_moms.value = (ex_moms_value * (1 + vat_rate)).toFixed(2);
+    }
+
+    function vat() {
+        get_value()
+        ex_moms.value = (moms_value * (1 / vat_rate)).toFixed(2);
+        ink_moms.value = (moms_value * (1 / vat_rate) + moms_value).toFixed(2);
+    }
+
+    function inclusive_vat() {
+        get_value()
+        ex_moms.value = (ink_moms_value / (1 + vat_rate)).toFixed(2);
+        vat_value.value = (ink_moms_value - (ink_moms_value / (1 + vat_rate))).toFixed(2);
+    }
+</script>

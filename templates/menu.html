@@ -1,25 +1,48 @@
 {% block navbar %}
     <div class="container text-end">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                {% for menu_elem in menu %}
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link
-                        {% if request.path == menu_elem[1] %}
-                        active
-                        {% endif %}"
-                               href="{{ menu_elem[1] }}">{{ menu_elem[0] }}
-                                <span class="sr-only"></span></a>
-                        </li>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        {% for menu_elem in menu %}
+                            <li class="nav-item{% if menu_elem[0] == "Settings" %} dropdown {% endif %}">
+                                <a class="nav-link{% if menu_elem[0] == "Settings" %} dropdown-toggle{% endif %}{% if request.path == menu_elem[1] %} active{% endif %}"
+                                   href={% if menu_elem[0] == "Settings" %}"#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                   {% else %}
+                                       {{ menu_elem[1] }}
+                                   {% endif %}>
+                                    {{ menu_elem[0] }}
+                                    <span class="sr-only"></span></a>
+                                {% if menu_elem[0] == "Settings" %}
+                                    <ul class="dropdown-menu">
+                                        {% for setting in menu_elem[2] %}
+                                            <li>
+                                                <a class="dropdown-item" href="{{ setting[1] }}">{{ setting[0] }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+
+                        {% endfor %}
                     </ul>
-                {% endfor %}
+                </div>
             </div>
+            {% if current_user.is_authenticated %}
+                <a href="/logout" style="color: #eeeeee">
+                    <i class="fa-solid fa-door-closed"></i>
+                </a>
+            {% else %}
+                <a href="/login" style="color: #eeeeee">
+                    <i class="fa-solid fa-door-open"></i>
+                </a>
+            {% endif %}
+        {% include "components/switcher.html" %}
         </nav>
+
     </div>
 {% endblock %}

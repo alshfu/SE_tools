@@ -1,0 +1,28 @@
+<tr>
+    <td colspan="4" class="collapse collapse-horizontal" id="collapseReferenceRowForAccount_{{ account.id }}">
+        <div class="input-group">
+            {% for reference in account.references %}
+                <div class="col-auto me-2 ref_input mb-2">
+                    <input name="reference_for_account_{{ account.id }}"
+                           class="form-control"
+                           value="{{ reference.reference_str }}">
+                </div>
+            {% endfor %}
+            <div class="col-auto me-2 mb-2 ref_input">
+                <input name="reference_for_account_{{ account.id }}"
+                       class="form-control me-2"
+                       value="">
+            </div>
+            <div class="col-auto me-2">
+                <button class="btn btn-primary"
+                        onclick="addNewReference()"
+                        type="button"
+                        aria-expanded="false">
+                    <i style="font-size: 20px; font-weight: 900;" class="fa-regular fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </td>
+</tr>
+
+

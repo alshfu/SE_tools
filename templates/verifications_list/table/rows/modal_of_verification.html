@@ -1,0 +1,30 @@
+<div class="modal fade" id="modal_of_verification_{{ verification.id_from_file }}"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="modal_of_verification_{{ verification.id_from_file }}"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                    id="modal_of_verification_{{ verification.id_from_file }}"><span>&#8470;</span> {{ verification.id_from_file }} {{ verification.reference
+                    .reference_str }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <embed src="/uploads?file_name={{ verification.file }}" width="1100px" height="1224px"/>
+            </div>
+            <div class="modal-footer">
+                <label class="custom-file-upload btn custom-btn" style="background-color: #7f3737">
+                    <input name="file_of_verification" type="file"/><i class="fa-sharp fa-solid fa-file-arrow-up"></i>
+                </label>
+                <label class="custom-file-upload btn btn-danger">
+                    <input hidden="hidden" value="{{ verification.id }}" name="remove_file" type="submit"><i
+                        class="fa-solid fa-trash"></i>
+                </label>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Vertically centered modal -->

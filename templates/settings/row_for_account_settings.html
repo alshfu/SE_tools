@@ -1,0 +1,51 @@
+{%- macro create_td(align='center',
+                    display='',
+                    readonly='',
+                    data='',
+                    id='',
+                    name = '',
+                    width = '',
+                    colspan =  '',
+                    placeholder = '',
+                    type = 'text',
+                    value= '' ) -%}
+    <td style="width: {{ width }}px; display: {{ display }}" colspan="{{ colspan }}">
+        {% if type == 'select_vat' %}
+            {% if data != 1930 %}
+                <select class="form-select" name="{{ name }}">
+                    <option value=0.00 {% if value == 0.0 %} selected {% endif %} >0 %</option>
+                    <option value=0.25 {% if value == 0.25 %} selected {% endif %} >25 %</option>
+                    <option value=0.12 {% if value == 0.12 %} selected {% endif %} >12 %</option>
+                    <option value=0.06 {% if value == 0.06 %} selected {% endif %} >6 %</option>
+                </select>
+            {% else %}<select class="form-select" name="{{ name }}">
+                <option value=0.00 selected readonly>-----</option>
+            {% endif %}
+        </select>
+        {% elif type == 'text' %}
+            <input type="text"
+                   style="display: {{ display }}"
+                   class="form-control text-{{ align }}"
+                   placeholder="{{ placeholder }}"
+                   name="{{ name }}"
+                   value="{{ value }}"
+                    {{ readonly }}>
+        {% endif %}
+    </td>
+{%- endmacro -%}
+
+<tr class="row_of_accounting">
+    {{ create_td(name = "description",align='end', value = account.description) }}
+    {{ create_td(name = "account",width = 80,align='center', value = account.account) }}
+    {{ create_td(name = "vat",width = 110,align='end', value = account.vat, type = 'select_vat', data = account.account) }}
+    <td>
+        <button class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseReferenceRowForAccount_{{ account.id }}"
+                aria-expanded="false"
+                aria-controls="collapseReferenceRowForAccount_{{ account.id }}">Visa referenser
+        </button>
+        <button type="submit" class="btn btn-primary">Spara ändringar</button></td>
+</tr>
+{% include "settings/row_of_reference.html" %}

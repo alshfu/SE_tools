@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}
+    SE fil läsare
+{% endblock %}
+{% block body %}
+
+    {% if result %}
+        <form method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <span class="input-group-text">Org.nr: </span>
+                <input value="{{ result[0] }}" type="text" aria-label="bic" name="bic" class="form-control">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">Företags Namn: </span>
+                <input value="{{ result[1] }}"
+                       type="text"
+                       aria-label="company_name"
+                       name="company_name"
+                       class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Period: </span>
+                <input value="{{ result[2][0].period_of_verification }}"
+                       type="text"
+                       aria-label="company_name"
+                       name="period"
+                       class="form-control">
+            </div>
+
+            <table class="table table-sm table-dark">
+                {% include "se_reader/head_table_of_verifications.html" %}
+                {% include "se_reader/body_table_of_verifications.html" %}
+            </table>
+        </form>
+
+    {% else %}
+
+        <link rel="stylesheet" href="/static/css/drag_and_drop.css">
+        <form method="post" enctype="multipart/form-data">
+            <div class="drop-zone border border-secondary mb-5">
+                <span class="drop-zone__prompt">Drag & Drop din SE fil</span>
+                <input type="file" id="se_file" name="se_file" class="drop-zone__input">
+                <button id="se_file_submit" type="submit" name="se_file_submit" style="display: none"></button>
+            </div>
+        </form>
+        <script src="/static/js/drag_and_drop.js"></script>
+    {% endif %}
+{% endblock %}

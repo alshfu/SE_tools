@@ -1,0 +1,7 @@
+<tr class="collapse table-info multi-collapse" id="collapse_tr_row_{{ ver.verification_id }}">
+    <td colspan="3"></td>
+        {{ input_group(name = 'tr_reference_of_ver_' + ver.verification_id, type = 'text', value = tr.transaction_reference, class='text-end') }}
+        {{ input_group(name = 'tr_account_of_ver_' + ver.verification_id, type = 'text', value = tr.transaction_account, class='text-end' ) }}
+        {{ input_group(name = 'tr_amount_of_ver_' + ver.verification_id, type = 'text', value = tr.transaction_amount, class='text-end' ) }}
+    <td colspan="2"></td>
+</tr>

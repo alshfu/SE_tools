@@ -1,0 +1,33 @@
+<tr class="collapse" id="collapseCommentOfVerification_{{ verification.id_from_file }}">
+    <td colspan="6">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex flex-start w-100">
+                    <div class="form-outline w-100">
+                            <textarea name="comment"
+                                      class="form-control"
+                                      id="textAreaExample"
+                                      rows="4"
+                                      style="background: #fff;">
+                            </textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </td>
+    <td colspan="2">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-primary btn-sm">Spara anteckning
+            </button>
+            <button type="button"
+                    class="btn btn-info"
+                    data-bs-toggle="collapse"
+                    data-target="#collapseCommentOfVerification_{{ verification.id_from_file }}"
+                    aria-expanded="false"
+                    aria-controls="collapseCommentOfVerification_{{ verification.id_from_file }}">Stäng
+            </button>
+        </div>
+    </td>
+</tr>

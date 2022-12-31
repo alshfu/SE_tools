@@ -1,0 +1,42 @@
+{%- macro create_tr_of_tarnsactions(transactions) -%}
+    {% for tr in transactions %}
+        <tr class="collapse" id="collapseTransactionOfVerification_{{ verification.id_from_file }}" style="background: #17a2b8">
+            {{ create_td(   name = "id_of_transaction_for_verifications_" ~ verification.id_from_file | string ,
+                            id = verification.id_from_file,
+                            align='end',
+                            colspan = '3',
+                            value = tr.id_from_file) }}
+
+            {{ create_td(   name = "reference_of_transaction_for_verifications_" ~ verification.id_from_file | string,
+                            id = verification.id_from_file,
+                            align='center',
+                            value = tr.account.description) }}
+
+            {{ create_td(   name = "amount_of_transaction_for_verifications_" ~ verification.id_from_file | string,
+                            id = verification.id_from_file,
+                            align='end',
+                            value = tr.amount) }}
+
+            {{ create_td(   name = "account_of_transaction_for_verifications_" ~ verification.id_from_file | string,
+                            id = verification.id_from_file,
+                            align='end',
+                            value = tr.account.account) }}
+
+            {{ create_td(   name = "vat_of_transaction_for_verifications_" ~ verification.id_from_file | string,
+                            type = "select_vat",
+                            data = tr.account.vat,
+                            id = verification.id_from_file,
+                            align='end',
+                            value = tr.account.vat) }}
+
+            <td>
+                <a class="btn btn-primary"
+                   onclick="addNewTransaction()"
+                   id="addNewTransactionOfVerification_{{ verification.id }}_tr_{{ tr.id_from_file }}"
+                   name="addTransactionOfVerification_{{ verification.id_from_file }}"><i class="fa-solid fa-square-plus"></i>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{%- endmacro -%}
+{{ create_tr_of_tarnsactions(verification.transactions) }}

@@ -1,0 +1,11 @@
+<tr>
+    {{ create_td(name = "id_from_file", width = "80", align='end',value = verification.id_from_file) }}
+    {{ create_td(name = "id", value = verification.id, display='none', readonly='readonly') }}
+    {{ create_td(name = "type", width = "60", value = verification.type_of_verifications) }}
+    {{ create_td(name = "date", width = "140", value = verification.date) }}
+    {{ create_td(name = "reference_str", width = "420", value = verification.reference.reference_str) }}
+    {{ create_td(name = "base_amount", width = "150", align='end',value = amount_format(verification.transactions[0].amount)) }}
+    {{ create_td(name = "base_account", readonly='' , width = "90", value = verification.transactions[1].account.account) }}
+    {{ create_td(name = "vat", width = "120", type="select_vat" ,value = verification.transactions[1].account.vat) }}
+    <td style="width: 210px">{% include "verifications_list/table/rows/col_of_verification_tools_button_list.html" %}</td>
+</tr>

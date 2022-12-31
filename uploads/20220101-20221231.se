@@ -1,0 +1,8815 @@
+#FLAGGA 1
+
+#PROGRAM Visma eEkonomi 7.5.0.19919
+#FORMAT PC8
+#GEN 20221124 Mahjar Amiri Borna
+#SIETYP 4
+#ORGNR 640122-1335
+#FNAMN Socotra Livs
+#RAR 0 20220101 20221231
+#KPTYP EUBAS97
+#VALUTA SEK
+
+#KONTO 1010 Utvecklingsutgifter
+#KONTO 1011 Balanserade utgifter för utveckling
+#KONTO 1012 Balanserade utgifter för programvaror
+#KONTO 1018 Ackumulerade nedskrivningar på balanserade utgifter
+#KONTO 1019 Ackumulerade avskrivningar på balanserade utgifter
+#KONTO 1020 Koncessioner m.m.
+#KONTO 1028 Ackumulerade nedskrivningar på koncessioner m.m.
+#KONTO 1029 Ackumulerade avskrivningar på koncessioner m.m.
+#KONTO 1030 Patent
+#KONTO 1038 Ackumulerade nedskrivningar på patent
+#KONTO 1039 Ackumulerade avskrivningar på patent
+#KONTO 1040 Licenser
+#KONTO 1048 Ackumulerade nedskrivningar på licenser
+#KONTO 1049 Ackumulerade avskrivningar på licenser
+#KONTO 1050 Varumärken
+#KONTO 1058 Ackumulerade nedskrivningar på varumärken
+#KONTO 1059 Ackumulerade avskrivningar på varumärken
+#KONTO 1060 Hyresrätter, tomträtter och liknande
+#KONTO 1068 Ackumulerade nedskrivningar på hyresrätter, tomträtter och 
+#KONTO 1069 Ackumulerade avskrivningar på hyresrätter, tomträtter och l
+#KONTO 1070 Goodwill
+#KONTO 1078 Ackumulerade nedskrivningar på goodwill
+#KONTO 1079 Ackumulerade avskrivningar på goodwill
+#KONTO 1080 Förskott för immateriella anläggningstillgångar
+#KONTO 1081 Pågående projekt för immateriella anläggningstillgångar
+#KONTO 1088 Förskott för immateriella anläggningstillgångar
+#KONTO 1110 Byggnader
+#KONTO 1111 Byggnader på egen mark
+#KONTO 1112 Byggnader på annans mark
+#KONTO 1118 Ackumulerade nedskrivningar på byggnader
+#KONTO 1119 Ackumulerade avskrivningar på byggnader
+#KONTO 1120 Förbättringsutgifter på annans fastighet
+#KONTO 1129 Ackumulerade avskrivningar på förbättringsutgifter på annan
+#KONTO 1130 Mark
+#KONTO 1140 Tomter och obebyggda markområden
+#KONTO 1150 Markanläggningar
+#KONTO 1158 Ackumulerade nedskrivningar på markanläggningar
+#KONTO 1159 Ackumulerade avskrivningar på markanläggningar
+#KONTO 1180 Pågående nyanläggningar och förskott för byggnader och mark
+#KONTO 1181 Pågående ny-, till- och ombyggnad
+#KONTO 1188 Förskott för byggnader och mark
+#KONTO 1210 Maskiner och andra tekniska anläggningar
+#KONTO 1211 Maskiner
+#KONTO 1213 Andra tekniska anläggningar
+#KONTO 1218 Ackumulerade nedskrivningar på maskiner och andra tekniska 
+#KONTO 1219 Ackumulerade avskrivningar på maskiner och andra tekniska a
+#KONTO 1220 Inventarier och verktyg
+#KONTO 1221 Inventarier
+#KONTO 1222 Byggnadsinventarier
+#KONTO 1223 Markinventarier
+#KONTO 1225 Verktyg
+#KONTO 1228 Ackumulerade nedskrivningar på inventarier och verktyg
+#KONTO 1229 Ackumulerade avskrivningar på inventarier och verktyg
+#KONTO 1230 Installationer
+#KONTO 1231 Installationer på egen fastighet
+#KONTO 1232 Installationer på annans fastighet
+#KONTO 1238 Ackumulerade nedskrivningar på installationer
+#KONTO 1239 Ackumulerade avskrivningar på installationer
+#KONTO 1240 Bilar och andra transportmedel
+#KONTO 1241 Personbilar
+#KONTO 1242 Lastbilar
+#KONTO 1243 Truckar
+#KONTO 1244 Arbetsmaskiner
+#KONTO 1245 Traktorer
+#KONTO 1246 Motorcyklar, mopeder och skotrar
+#KONTO 1247 Båtar, flygplan och helikoptrar
+#KONTO 1248 Ackumulerade nedskrivningar på bilar och andra transportmed
+#KONTO 1249 Ackumulerade avskrivningar på bilar och andra transportmede
+#KONTO 1250 Datorer
+#KONTO 1251 Datorer, företaget
+#KONTO 1257 Datorer, personal
+#KONTO 1258 Ackumulerade nedskrivningar på datorer
+#KONTO 1259 Ackumulerade avskrivningar på datorer
+#KONTO 1260 Leasade tillgångar
+#KONTO 1269 Ackumulerade avskrivningar på leasade tillgångar
+#KONTO 1280 Pågående nyanläggningar och förskott för maskiner och inven
+#KONTO 1281 Pågående nyanläggningar, maskiner och inventarier
+#KONTO 1288 Förskott för maskiner och inventarier
+#KONTO 1290 Övriga materiella anläggningstillgångar
+#KONTO 1291 Konst och liknande tillgångar
+#KONTO 1292 Djur som klassificeras som anläggningstillgång
+#KONTO 1298 Ackumulerade nedskrivningar på övriga materiella anläggning
+#KONTO 1299 Ackumulerade avskrivningar på övriga materiella anläggnings
+#KONTO 1310 Andelar i koncernföretag
+#KONTO 1311 Aktier i noterade svenska koncernföretag
+#KONTO 1312 Aktier i onoterade svenska koncernföretag
+#KONTO 1313 Aktier i noterade utländska koncernföretag
+#KONTO 1314 Aktier i onoterade utländska koncernföretag
+#KONTO 1316 Andra andelar i svenska koncernföretag
+#KONTO 1317 Andra andelar i utländska koncernföretag
+#KONTO 1318 Ackumulerade nedskrivningar av andelar i koncernföretag
+#KONTO 1320 Långfristiga fordringar hos koncernföretag
+#KONTO 1321 Långfristiga fordringar hos moderföretag
+#KONTO 1322 Långfristiga fordringar hos dotterföretag
+#KONTO 1323 Långfristiga fordringar hos andra koncernföretag
+#KONTO 1328 Ackumulerade nedskrivningar av långfristiga fordringar hos 
+#KONTO 1330 Andelar i intresseföretag, gemensamt styrda företag och övr
+#KONTO 1331 Andelar i intresseföretag
+#KONTO 1332 Ackumulerade nedskrivningar av andelar i intresseföretag
+#KONTO 1333 Andelar i gemensamt styrda företag
+#KONTO 1334 Ackumulerade nedskrivningar av andelar i gemensamt styrda f
+#KONTO 1336 Andelar i övriga företag som det finns ett ägarintresse i
+#KONTO 1337 Ackumulerade nedskrivningar av andelar i övriga företag som
+#KONTO 1338 Ackumulerade nedskrivn av andelar i intresseftg, gemen styr
+#KONTO 1340 Långfristiga fordr hos intresseftg, gemen styrda ftg och öv
+#KONTO 1341 Långfristiga fordringar hos intresseföretag
+#KONTO 1342 Ackumulerade nedskrivningar av långfristiga fordringar hos 
+#KONTO 1343 Långfristiga fordringar hos gemensamt styrda företag
+#KONTO 1344 Ackumulerade nedskrivningar av långfristiga fordringar hos 
+#KONTO 1346 Långfristiga fordringar hos övriga företag som det finns et
+#KONTO 1347 Ackumulerade nedskrivningar av långfristiga fordringar hos 
+#KONTO 1348 Ack nedskrivn av långfrist fordr hos intrftg, gemen styrda 
+#KONTO 1350 Andelar och värdepapper i andra företag
+#KONTO 1351 Andelar i noterade företag
+#KONTO 1352 Andra andelar
+#KONTO 1353 Andelar i bostadsrättsföreningar
+#KONTO 1354 Obligationer
+#KONTO 1356 Andelar i ekonomiska föreningar, övriga företag
+#KONTO 1357 Andelar i handelsbolag, andra företag
+#KONTO 1358 Ackumulerade nedskrivningar av andra andelar och värdepappe
+#KONTO 1360 Lån till delägare eller närstående enligt ABL, långfristig 
+#KONTO 1369 Ackumulerade nedskrivningar av lån till delägare eller närs
+#KONTO 1370 Uppskjuten skattefordran
+#KONTO 1380 Andra långfristiga fordringar
+#KONTO 1381 Långfristiga reversfordringar
+#KONTO 1382 Långfristiga fordringar hos anställda
+#KONTO 1383 Lämnade depositioner, långfristiga
+#KONTO 1384 Derivat
+#KONTO 1385 Kapitalförsäkring
+#KONTO 1386 Förutbetalda leasingavgifter, långfristig del
+#KONTO 1387 Långfristiga kontraktsfordringar
+#KONTO 1388 Långfristiga kundfordringar
+#KONTO 1389 Ackumulerade nedskrivningar av andra långfristiga fordringa
+#KONTO 1410 Lager av råvaror
+#KONTO 1419 Förändring av lager av råvaror
+#KONTO 1420 Lager av tillsatsmaterial och förnödenheter
+#KONTO 1429 Förändring av lager av tillsatsmaterial och förnödenheter
+#KONTO 1440 Produkter i arbete
+#KONTO 1449 Förändring av produkter i arbete
+#KONTO 1450 Lager av färdiga varor
+#KONTO 1459 Förändring av lager av färdiga varor
+#KONTO 1460 Lager av handelsvaror
+#KONTO 1465 Lager av varor VMB
+#KONTO 1466 Nedskrivning av varor VMB
+#KONTO 1467 Lager av varor VMB förenklad
+#KONTO 1469 Förändring av lager av handelsvaror
+#KONTO 1470 Pågående arbeten
+#KONTO 1471 Pågående arbeten, nedlagda kostnader
+#KONTO 1478 Pågående arbeten, fakturering
+#KONTO 1479 Förändring av pågående arbeten
+#KONTO 1480 Förskott för varor och tjänster
+#KONTO 1481 Remburser
+#KONTO 1489 Övriga förskott till leverantörer
+#KONTO 1490 Övriga lagertillgångar
+#KONTO 1491 Lager av värdepapper
+#KONTO 1492 Lager av fastigheter
+#KONTO 1493 Djur som klassificeras som omsättningstillgång
+#KONTO 1510 Kundfordringar
+#KONTO 1511 Kundfordringar
+#KONTO 1512 Belånade kundfordringar (factoring)
+#KONTO 1513 Kundfordringar  delad faktura
+#KONTO 1516 Tvistiga kundfordringar
+#KONTO 1518 Ej reskontraförda kundfordringar
+#KONTO 1519 Nedskrivning av kundfordringar
+#KONTO 1520 Växelfordringar
+#KONTO 1525 Osäkra växelfordringar
+#KONTO 1529 Nedskrivning av växelfordringar
+#KONTO 1530 Kontraktsfordringar
+#KONTO 1531 Kontraktsfordringar
+#KONTO 1532 Belånade kontraktsfordringar
+#KONTO 1536 Tvistiga kontraktsfordringar
+#KONTO 1539 Nedskrivning av kontraktsfordringar
+#KONTO 1549 Nedskrivning av ej reskontraförda kundfordringar
+#KONTO 1550 Konsignationsfordringar
+#KONTO 1560 Kundfordringar hos koncernföretag
+#KONTO 1561 Kundfordringar hos moderföretag
+#KONTO 1562 Kundfordringar hos dotterföretag
+#KONTO 1563 Kundfordringar hos andra koncernföretag
+#KONTO 1568 Ej reskontraförda kundfordringar hos koncernföretag
+#KONTO 1569 Nedskrivning av kundfordringar hos koncernföretag
+#KONTO 1570 Kundfordringar hos intresseftg, gemen styrda ftg och övr ft
+#KONTO 1571 Kundfordringar hos intresseföretag
+#KONTO 1572 Kundfordringar hos gemensamt styrda företag
+#KONTO 1573 Kundfordringar hos övriga företag som det finns ett ägarint
+#KONTO 1580 Fordringar för kontokort och kuponger
+#KONTO 1599 Övriga kortfristiga fordringar för kunder
+#KONTO 1610 Kortfristiga fordringar hos anställda
+#KONTO 1611 Reseförskott
+#KONTO 1612 Kassaförskott
+#KONTO 1613 Övriga förskott
+#KONTO 1614 Tillfälliga lån till anställda
+#KONTO 1619 Övriga fordringar hos anställda
+#KONTO 1620 Upparbetad men ej fakturerad intäkt
+#KONTO 1630 Avräkning för skatter och avgifter (skattekonto)
+#KONTO 1640 Skattefordringar
+#KONTO 1650 Momsfordran
+#KONTO 1660 Kortfristiga fordringar hos koncernföretag
+#KONTO 1661 Kortfristiga fordringar hos moderföretag
+#KONTO 1662 Kortfristiga fordringar hos dotterföretag
+#KONTO 1663 Kortfristiga fordringar hos andra koncernföretag
+#KONTO 1670 Kortfristiga fordr hos intresseftg, gemen styrda ftg och öv
+#KONTO 1671 Kortfristiga fordringar hos intresseföretag
+#KONTO 1672 Kortfristiga fordringar hos gemensamt styrda företag
+#KONTO 1673 Kortfristiga fordringar hos övriga företag som det finns et
+#KONTO 1680 Andra kortfristiga fordringar
+#KONTO 1681 Utlägg för kunder
+#KONTO 1682 Kortfristiga lånefordringar
+#KONTO 1683 Derivat
+#KONTO 1684 Kortfristiga fordringar hos leverantörer
+#KONTO 1685 Kortfristiga fordringar hos delägare eller närstående
+#KONTO 1687 Kortfristig del av långfristiga fordringar
+#KONTO 1688 Fordran arbetsmarknadsförsäkringar
+#KONTO 1689 Övriga kortfristiga fordringar
+#KONTO 1690 Fordringar för tecknat men ej inbetalt aktiekapital
+#KONTO 1700 Förutbetalda kostnader/interimsfordringar
+#KONTO 1710 Förutbetalda hyreskostnader
+#KONTO 1720 Förutbetalda leasingavgifter
+#KONTO 1730 Förutbetalda försäkringspremier
+#KONTO 1740 Förutbetalda räntekostnader
+#KONTO 1750 Upplupna hyresintäkter
+#KONTO 1760 Upplupna ränteintäkter
+#KONTO 1770 Tillgångar av kostnadsnatur
+#KONTO 1780 Upplupna avtalsintäkter
+#KONTO 1790 Övriga förutbetalda kostnader och upplupna intäkter
+#KONTO 1799 Utbetalning
+#KONTO 1810 Andelar i börsnoterade företag
+#KONTO 1820 Obligationer
+#KONTO 1830 Konvertibla skuldebrev
+#KONTO 1860 Andelar i koncernföretag, kortfristigt
+#KONTO 1869 Nedskrivning av andelar i koncernföretag
+#KONTO 1880 Andra kortfristiga placeringar
+#KONTO 1886 Derivat
+#KONTO 1889 Andelar i övriga företag
+#KONTO 1890 Nedskrivning av kortfristiga placeringar
+#KONTO 1910 Kassa
+#KONTO 1911 Huvudkassa
+#KONTO 1912 Kassa 2
+#KONTO 1913 Kassa 3
+#KONTO 1920 PlusGiro
+#KONTO 1930 Företagskonto/checkkonto/affärskonto
+#KONTO 1940 Övriga bankkonton
+#KONTO 1950 Bankcertifikat
+#KONTO 1960 Koncernkonto moderföretag
+#KONTO 1970 Särskilda bankkonton
+#KONTO 1972 Upphovsmannakonto
+#KONTO 1973 Skogskonto
+#KONTO 1974 Spärrade bankmedel
+#KONTO 1979 Övriga särskilda bankkonton
+#KONTO 1980 Valutakonton
+#KONTO 1990 Redovisningsmedel
+#KONTO 2010 Eget kapital, delägare 1
+#KONTO 2011 Egna varuuttag
+#KONTO 2012 Avräkning för skatter och avgifter (skattekonto)
+#KONTO 2013 Övriga egna uttag
+#KONTO 2016 Förändring i fond för verkligt värde
+#KONTO 2017 Årets kapitaltillskott
+#KONTO 2018 Övriga egna insättningar
+#KONTO 2019 Årets resultat, delägare 1
+#KONTO 2029 Årets resultat, delägare 2
+#KONTO 2050 Avsättning till expansionsfond
+#KONTO 2060 Eget kapital i ideella föreningar, stiftelser och registrer
+#KONTO 2061 Eget kapital/stiftelsekapital/grundkapital
+#KONTO 2065 Förändring i fond för verkligt värde
+#KONTO 2066 Värdesäkringsfond
+#KONTO 2067 Balanserad vinst eller förlust/balanserat kapital
+#KONTO 2068 Vinst eller förlust från föregående år
+#KONTO 2069 Årets resultat
+#KONTO 2070 Žndamålsbestämda medel
+#KONTO 2071 Žndamål 1
+#KONTO 2072 Žndamål 2
+#KONTO 2080 Bundet eget kapital
+#KONTO 2081 Aktiekapital
+#KONTO 2082 Ej registrerat aktiekapital
+#KONTO 2083 Medlemsinsatser
+#KONTO 2084 Förlagsinsatser
+#KONTO 2085 Uppskrivningsfond
+#KONTO 2086 Reservfond
+#KONTO 2087 Insatsemission
+#KONTO 2088 Fond för yttre underhåll
+#KONTO 2089 Fond för utvecklingsutgifter
+#KONTO 2090 Fritt eget kapital
+#KONTO 2091 Balanserad vinst eller förlust
+#KONTO 2092 Mottagna/lämnade koncernbidrag
+#KONTO 2093 Erhållna aktieägartillskott
+#KONTO 2094 Egna aktier
+#KONTO 2095 Fusionsresultat
+#KONTO 2096 Fond för verkligt värde
+#KONTO 2097 Fri överkursfond
+#KONTO 2098 Vinst eller förlust från föregående år
+#KONTO 2099 Årets resultat
+#KONTO 2110 Periodiseringsfonder
+#KONTO 2113 Periodiseringsfond vid 2013 års taxering
+#KONTO 2120 Periodiseringsfond 2020
+#KONTO 2121 Periodiseringsfond 2021
+#KONTO 2122 Periodiseringsfond 2022
+#KONTO 2123 Periodiseringsfond 2023
+#KONTO 2124 Periodiseringsfond 2014
+#KONTO 2125 Periodiseringsfond 2015
+#KONTO 2126 Periodiseringsfond 2016
+#KONTO 2127 Periodiseringsfond 2017
+#KONTO 2128 Periodiseringsfond 2018
+#KONTO 2129 Periodiseringsfond 2019
+#KONTO 2130 Periodiseringsfond 2020  nr 2
+#KONTO 2131 Periodiseringsfond 2021  nr 2
+#KONTO 2132 Periodiseringsfond 2022  nr 2
+#KONTO 2133 Periodiseringsfond 2023  nr 2
+#KONTO 2134 Periodiseringsfond 2024  nr 2
+#KONTO 2135 Periodiseringsfond 2015  nr 2
+#KONTO 2136 Periodiseringsfond 2016  nr 2
+#KONTO 2137 Periodiseringsfond 2017  nr 2
+#KONTO 2138 Periodiseringsfond 2018  nr 2
+#KONTO 2139 Periodiseringsfond 2019  nr 2
+#KONTO 2150 Ackumulerade överavskrivningar
+#KONTO 2151 Ackumulerade överavskrivningar på immateriella anläggningst
+#KONTO 2152 Ackumulerade överavskrivningar på byggnader och markanläggn
+#KONTO 2153 Ackumulerade överavskrivningar på maskiner och inventarier
+#KONTO 2160 Ersättningsfond
+#KONTO 2161 Ersättningsfond maskiner och inventarier
+#KONTO 2162 Ersättningsfond byggnader och markanläggningar
+#KONTO 2164 Ersättningsfond för djurlager i jordbruk och renskötsel
+#KONTO 2180 Obeskattade intäkter
+#KONTO 2181 Obeskattade upphovsmannaintäkter
+#KONTO 2185 Obeskattade skogsintäkter
+#KONTO 2190 Övriga obeskattade reserver
+#KONTO 2191 Skillnad mellan bokförd och faktisk pensionsskuld
+#KONTO 2196 Lagerreserv
+#KONTO 2199 Övriga obeskattade reserver
+#KONTO 2210 Avsättningar för pensioner enligt tryggandelagen
+#KONTO 2220 Avsättningar för garantier
+#KONTO 2230 Övriga avsättningar för pensioner och liknande förpliktelse
+#KONTO 2240 Avsättningar för uppskjutna skatter
+#KONTO 2250 Övriga avsättningar för skatter
+#KONTO 2252 Avsättningar för tvistiga skatter
+#KONTO 2253 Avsättningar särskild löneskatt, deklarationspost
+#KONTO 2259 Avsättningar för övriga skatter
+#KONTO 2290 Övriga avsättningar
+#KONTO 2310 Obligations- och förlagslån
+#KONTO 2320 Konvertibla lån och liknande
+#KONTO 2321 Konvertibla lån
+#KONTO 2322 Lån förenade med optionsrätt
+#KONTO 2323 Vinstandelslån
+#KONTO 2324 Kapitalandelslån
+#KONTO 2330 Checkräkningskredit
+#KONTO 2331 Checkräkningskredit 1
+#KONTO 2332 Checkräkningskredit 2
+#KONTO 2335 Beviljad checkräkningskredit 1
+#KONTO 2336 Beviljad checkräkningskredit 2
+#KONTO 2340 Byggnadskreditiv
+#KONTO 2350 Andra långfristiga skulder till kreditinstitut
+#KONTO 2351 Fastighetslån, långfristig del
+#KONTO 2355 Långfristiga lån i utländsk valuta från kreditinstitut
+#KONTO 2359 Övriga långfristiga lån från kreditinstitut
+#KONTO 2360 Långfristiga skulder till koncernföretag
+#KONTO 2361 Långfristiga skulder till moderföretag
+#KONTO 2362 Långfristiga skulder till dotterföretag
+#KONTO 2363 Långfristiga skulder till andra koncernföretag
+#KONTO 2370 Långfristiga skulder till intresseftg, gemen styrda ftg och
+#KONTO 2371 Långfristiga skulder till intresseföretag
+#KONTO 2372 Långfristiga skulder till gemensamt styrda företag
+#KONTO 2373 Långfristiga skulder till övriga företag som det finns ett 
+#KONTO 2390 Övriga långfristiga skulder
+#KONTO 2391 Avbetalningskontrakt, långfristig del
+#KONTO 2392 Villkorliga långfristiga skulder
+#KONTO 2393 Lån från närstående personer, långfristig del
+#KONTO 2394 Långfristiga leverantörskrediter
+#KONTO 2395 Andra långfristiga lån i utländsk valuta
+#KONTO 2396 Derivat
+#KONTO 2397 Mottagna depositioner, långfristiga
+#KONTO 2399 Övriga långfristiga skulder
+#KONTO 2410 Andra kortfristiga låneskulder till kreditinstitut
+#KONTO 2411 Kortfristiga lån från kreditinstitut
+#KONTO 2412 Byggnadskreditiv, kortfristig del
+#KONTO 2417 Kortfristig del av långfristiga skulder till kreditinstitut
+#KONTO 2419 Övriga kortfristiga skulder till kreditinstitut
+#KONTO 2420 Förskott från kunder
+#KONTO 2421 Ej inlösta presentkort
+#KONTO 2429 Övriga förskott från kunder
+#KONTO 2430 Pågående arbeten
+#KONTO 2431 Pågående arbeten, fakturering
+#KONTO 2438 Pågående arbeten, nedlagda kostnader
+#KONTO 2439 Beräknad förändring av pågående arbeten
+#KONTO 2440 Leverantörsskulder
+#KONTO 2443 Konsignationsskulder
+#KONTO 2445 Tvistiga leverantörsskulder
+#KONTO 2448 Ej reskontraförda leverantörsskulder
+#KONTO 2450 Fakturerad men ej upparbetad intäkt
+#KONTO 2460 Leverantörsskulder till koncernföretag
+#KONTO 2461 Leverantörsskulder till moderföretag
+#KONTO 2462 Leverantörsskulder till dotterföretag
+#KONTO 2463 Leverantörsskulder till andra koncernföretag
+#KONTO 2470 Leverantörsskulder till intresseftg, gemen styrda ftg och ö
+#KONTO 2471 Leverantörsskulder till intresseföretag
+#KONTO 2472 Leverantörsskulder till gemensamt styrda företag
+#KONTO 2473 Leverantörsskulder till övriga företag som det finns ett äg
+#KONTO 2480 Checkräkningskredit, kortfristig
+#KONTO 2490 Övriga kortfristiga skulder till kreditinstitut, kunder och
+#KONTO 2491 Avräkning spelarrangörer
+#KONTO 2492 Växelskulder
+#KONTO 2499 Andra övriga kortfristiga skulder
+#KONTO 2510 Skatteskulder
+#KONTO 2512 Beräknad inkomstskatt
+#KONTO 2513 Beräknad fastighetsskatt/fastighetsavgift
+#KONTO 2514 Beräknad särskild löneskatt på pensionskostnader
+#KONTO 2515 Beräknad avkastningsskatt
+#KONTO 2516 Moms
+#KONTO 2517 Beräknad utländsk skatt
+#KONTO 2518 Betald F-skatt
+#KONTO 2611 Utgående moms på försäljning inom Sverige, 25%
+#KONTO 2612 Utgående moms på egna uttag, 25%
+#KONTO 2613 Utgående moms för uthyrning, 25%
+#KONTO 2614 Utgående moms omvänd skattskyldighet 25 %
+#KONTO 2615 Utgående moms import av varor 25%
+#KONTO 2616 Utgående moms VMB 25%
+#KONTO 2618 Vilande utgående moms, 25%
+#KONTO 2619 Utgående moms på försäljning inom EU, OSS
+#KONTO 2621 Utgående moms på försäljning inom Sverige, 12%
+#KONTO 2622 Utgående moms på egna uttag, 12%
+#KONTO 2623 Utgående moms för uthyrning, 12%
+#KONTO 2624 Utgående moms omvänd skattskyldighet 12 %
+#KONTO 2625 Utgående moms import av varor 12%
+#KONTO 2626 Utgående moms VMB 12%
+#KONTO 2628 Vilande utgående moms, 12%
+#KONTO 2631 Utgående moms på försäljning inom Sverige, 6%
+#KONTO 2632 Utgående moms på egna uttag, 6%
+#KONTO 2633 Utgående moms för uthyrning, 6%
+#KONTO 2634 Utgående moms omvänd skattskyldighet 6 %
+#KONTO 2635 Utgående moms import av varor 6%
+#KONTO 2636 Utgående moms VMB 6%
+#KONTO 2638 Vilande utgående moms, 6%
+#KONTO 2640 Ingående moms
+#KONTO 2641 Debiterad ingående moms
+#KONTO 2642 Debiterad ingående moms i anslutning till frivillig skattsk
+#KONTO 2645 Beräknad ingående moms på förvärv från utlandet
+#KONTO 2646 Ingående moms på uthyrning
+#KONTO 2647 Ingående moms omvänd skattskyldighet varor och tjänster i S
+#KONTO 2648 Vilande ingående moms
+#KONTO 2649 Ingående moms, blandad verksamhet
+#KONTO 2650 Redovisningskonto för moms
+#KONTO 2660 Särskilda punktskatter
+#KONTO 2661 Reklamskatt
+#KONTO 2669 Övriga punktskatter
+#KONTO 2710 Personalskatt
+#KONTO 2730 Lagstadgade sociala avgifter och särskild löneskatt
+#KONTO 2731 Avräkning lagstadgade sociala avgifter
+#KONTO 2732 Avräkning särskild löneskatt
+#KONTO 2740 Avtalade sociala avgifter
+#KONTO 2750 Utmätning i lön m.m.
+#KONTO 2760 Semestermedel
+#KONTO 2761 Avräkning semesterlöner
+#KONTO 2762 Semesterlönekassa
+#KONTO 2790 Övriga löneavdrag
+#KONTO 2791 Personalens intressekonto
+#KONTO 2792 Lönsparande
+#KONTO 2793 Gruppförsäkringspremier
+#KONTO 2794 Fackföreningsavgifter
+#KONTO 2795 Mätnings- och granskningsarvoden
+#KONTO 2799 Övriga löneavdrag
+#KONTO 2810 Avräkning för factoring och belånade kontraktsfordringar
+#KONTO 2811 Avräkning för factoring
+#KONTO 2812 Avräkning för belånade kontraksfordringar
+#KONTO 2820 Kortfristiga skulder till anställda
+#KONTO 2821 Löneskulder
+#KONTO 2822 Reseräkningar
+#KONTO 2823 Tantiem, gratifikationer
+#KONTO 2829 Övriga kortfristiga skulder till anställda
+#KONTO 2830 Avräkning för annans räkning
+#KONTO 2840 Kortfristiga låneskulder
+#KONTO 2841 Kortfristig del av långfristiga skulder
+#KONTO 2849 Övriga kortfristiga låneskulder
+#KONTO 2850 Avräkning för skatter och avgifter (skattekonto)
+#KONTO 2852 Anståndsbelopp för moms, arbetsgivaravgifter och personalsk
+#KONTO 2860 Kortfristiga skulder till koncernföretag
+#KONTO 2861 Kortfristiga skulder till moderföretag
+#KONTO 2862 Kortfristiga skulder till dotterföretag
+#KONTO 2863 Kortfristiga skulder till andra koncernföretag
+#KONTO 2870 Kortfristiga skulder till intresseftg, gemen styrda ftg och
+#KONTO 2871 Kortfristiga skulder till intresseföretag
+#KONTO 2872 Kortfristiga skulder till gemensamt styrda företag
+#KONTO 2873 Kortfristiga skulder till övriga företag som det finns ett 
+#KONTO 2880 Skuld erhållna bidrag
+#KONTO 2890 Övriga kortfristiga skulder
+#KONTO 2891 Skulder under indrivning
+#KONTO 2892 Inre reparationsfond/underhållsfond
+#KONTO 2893 Skulder till närstående personer, kortfristig del
+#KONTO 2895 Derivat (kortfristiga skulder)
+#KONTO 2896 Skuld till personal - dricks
+#KONTO 2897 Mottagna depositioner, kortfristiga
+#KONTO 2898 Outtagen vinstutdelning
+#KONTO 2899 Övriga kortfristiga skulder
+#KONTO 2910 Upplupna löner
+#KONTO 2911 Löneskulder
+#KONTO 2912 Ackordsöverskott
+#KONTO 2919 Övriga upplupna löner
+#KONTO 2920 Upplupna semesterlöner
+#KONTO 2930 Upplupna pensionskostnader
+#KONTO 2931 Upplupna pensionsutbetalningar
+#KONTO 2940 Upplupna lagstadgade sociala och andra avgifter
+#KONTO 2941 Beräknade upplupna lagstadgade sociala avgifter
+#KONTO 2942 Beräknad upplupen särskild löneskatt
+#KONTO 2943 Beräknad upplupen särskild löneskatt på pensionskostnader, 
+#KONTO 2944 Beräknad upplupen avkastningsskatt på pensionskostnader
+#KONTO 2950 Upplupna avtalade sociala avgifter
+#KONTO 2951 Upplupna avtalade arbetsmarknadsförsäkringar
+#KONTO 2959 Upplupna avtalade pensionsförsäkringsavgifter, deklarations
+#KONTO 2960 Upplupna räntekostnader
+#KONTO 2970 Förutbetalda intäkter
+#KONTO 2971 Förutbetalda hyresintäkter
+#KONTO 2972 Förutbetalda medlemsavgifter
+#KONTO 2979 Övriga förutbetalda intäkter
+#KONTO 2980 Upplupna avtalskostnader
+#KONTO 2990 Övriga upplupna kostnader och förutbetalda intäkter
+#KONTO 2991 Beräknat arvode för bokslut
+#KONTO 2992 Beräknat arvode för revision
+#KONTO 2993 Ospecificerad skuld till leverantörer
+#KONTO 2998 Övriga upplupna kostnader och förutbetalda intäkter
+#KONTO 2999 OBS-konto
+#KONTO 3020 Försäljning VMB varor
+#KONTO 3028 Positiv VM omföringskonto
+#KONTO 3030 Positiv VM 25%
+#KONTO 3041 Försäljn tjänst 25% sv
+#KONTO 3042 Försäljn tjänst 12% sv
+#KONTO 3043 Försäljn tjänst 6% sv
+#KONTO 3044 Försäljn tjänst sv momsfri
+#KONTO 3045 Försäljn tjänst utanför EG momsfri
+#KONTO 3046 Försäljn tjänst till EG 25%
+#KONTO 3048 Försäljn tjänst EG momsfri
+#KONTO 3051 Försäljn varor 25% sv
+#KONTO 3052 Försäljn varor 12% sv
+#KONTO 3053 Försäljn varor 6% sv
+#KONTO 3054 Försäljn varor sv momsfri
+#KONTO 3055 Försäljn varor utanför EG momsfri
+#KONTO 3056 Försäljn varor till EG 25% momspliktig
+#KONTO 3057 Treparts försäljn varor till EG 25%
+#KONTO 3058 Försäljn varor EG momsfri
+#KONTO 3059 Momspl uttag av fast.tj 25%
+#KONTO 3062 Förs varor närst företag
+#KONTO 3100 Försäljning köpta produkter
+#KONTO 3109 Försäljning varor till annat EU-land, OSS
+#KONTO 3200 Försäljning VMB och omvänd moms
+#KONTO 3231 Försäljning inom byggsektorn, omvänd skattskyldighet moms
+#KONTO 3309 Försäljning tjänster till annat EU-land, OSS
+#KONTO 3320 Bingolotto
+#KONTO 3401 Egna uttag, momspliktiga, 25%
+#KONTO 3402 Egna uttag, momspliktiga, 12%
+#KONTO 3403 Egna uttag, momspliktiga, 6%
+#KONTO 3500 Fakturerade kostnader (gruppkonto)
+#KONTO 3510 Fakturerat emballage
+#KONTO 3511 Fakturerat emballage
+#KONTO 3518 Returnerat emballage
+#KONTO 3520 Fakturerade frakter
+#KONTO 3521 Fakturerade frakter, EU-land
+#KONTO 3522 Fakturerade frakter, export
+#KONTO 3530 Fakturerade tull- och speditionskostnader m.m.
+#KONTO 3540 Faktureringsavgifter
+#KONTO 3541 Faktureringsavgifter, export
+#KONTO 3542 Faktureringsavgifter, EU-land
+#KONTO 3543 Faktureringavgift 12%
+#KONTO 3544 Faktureringavgift 6%
+#KONTO 3550 Fakturerade resekostnader
+#KONTO 3560 Fakturerade kostnader till koncernföretag
+#KONTO 3561 Fakturerade kostnader till moderföretag
+#KONTO 3562 Fakturerade kostnader till dotterföretag
+#KONTO 3563 Fakturerade kostnader till andra koncernföretag
+#KONTO 3570 Fakturerade kostnader till intresseftg, gemen styrda ftg oc
+#KONTO 3590 Övriga fakturerade kostnader
+#KONTO 3596 Påminnelseavgift
+#KONTO 3600 Rörelsens sidointäkter (gruppkonto)
+#KONTO 3610 Försäljning av material
+#KONTO 3611 Försäljning av råmaterial
+#KONTO 3612 Försäljning av skrot
+#KONTO 3613 Försäljning av förbrukningsmaterial
+#KONTO 3619 Försäljning av övrigt material
+#KONTO 3620 Tillfällig uthyrning av personal
+#KONTO 3630 Tillfällig uthyrning av transportmedel
+#KONTO 3670 Intäkter från värdepapper
+#KONTO 3671 Försäljning av värdepapper
+#KONTO 3672 Utdelning från värdepapper
+#KONTO 3679 Övriga intäkter från värdepapper
+#KONTO 3680 Management fees
+#KONTO 3690 Övriga sidointäkter
+#KONTO 3700 Intäktskorrigeringar (gruppkonto)
+#KONTO 3710 Ofördelade intäktsreduktioner
+#KONTO 3730 Lämnade rabatter
+#KONTO 3731 Lämnade kassarabatter
+#KONTO 3732 Lämnade mängdrabatter
+#KONTO 3736 Kassarabatter export utanför EG momsfri
+#KONTO 3737 Kassarabatter export inom EG momsfri
+#KONTO 3740 Öres- och kronutjämning
+#KONTO 3750 Punktskatter
+#KONTO 3751 Intäktsförda punktskatter (kreditkonto)
+#KONTO 3752 Skuldförda punktskatter (debetkonto)
+#KONTO 3790 Övriga intäktskorrigeringar
+#KONTO 3800 Aktiverat arbete för egen räkning (gruppkonto)
+#KONTO 3840 Aktiverat arbete (material)
+#KONTO 3850 Aktiverat arbete (omkostnader)
+#KONTO 3870 Aktiverat arbete (personal)
+#KONTO 3900 Övriga rörelseintäkter (gruppkonto)
+#KONTO 3901 Medlemsavgifter
+#KONTO 3910 Hyres- och arrendeintäkter
+#KONTO 3911 Hyresintäkter
+#KONTO 3912 Arrendeintäkter
+#KONTO 3913 Frivilligt momspliktiga hyresintäkter
+#KONTO 3914 Övriga momspliktiga hyresintäkter
+#KONTO 3920 Provisionsintäkter, licensintäkter och royalties
+#KONTO 3921 Provisionsintäkter
+#KONTO 3922 Licensintäkter och royalties
+#KONTO 3925 Franchiseintäkter
+#KONTO 3940 Orealiserade negativa/positiva värdeförändringar på säkring
+#KONTO 3950 Återvunna, tidigare avskrivna kundfordringar
+#KONTO 3960 Valutakursvinster på fordringar och skulder av rörelsekarak
+#KONTO 3970 Vinst vid avyttring av immateriella och materiella anläggni
+#KONTO 3971 Vinst vid avyttring av immateriella anläggningstillgångar
+#KONTO 3972 Vinst vid avyttring av byggnader och mark
+#KONTO 3973 Vinst vid avyttring av maskiner och inventarier
+#KONTO 3980 Erhållna offentliga bidrag
+#KONTO 3981 Erhållna EU-bidrag
+#KONTO 3985 Erhållna statliga bidrag
+#KONTO 3987 Erhållna kommunala bidrag
+#KONTO 3988 Erhållna offentliga bidrag för personal
+#KONTO 3989 Övriga erhållna offentliga bidrag
+#KONTO 3990 Övriga ersättningar, bidrag och intäkter
+#KONTO 3991 Konfliktersättning
+#KONTO 3992 Erhållna skadestånd
+#KONTO 3993 Erhållna donationer och gåvor
+#KONTO 3994 Försäkringsersättningar
+#KONTO 3995 Erhållet ackord på skulder av rörelsekaraktär
+#KONTO 3996 Erhållna reklambidrag
+#KONTO 3997 Sjuklöneersättning
+#KONTO 3998 Återbäring av överskott från försäkringsföretag
+#KONTO 3999 Övriga rörelseintäkter
+#KONTO 4000 Inköp av varor från Sverige
+#KONTO 4010 Inköp av varor och material
+#KONTO 4020 Inköp VMB varor
+#KONTO 4028 Negativ VM omföringskonto
+#KONTO 4030 Negativ VM
+#KONTO 4041 Inköpta tjänster i Sverige, omvänd skattskyldighet, moms 25
+#KONTO 4042 Inköpta tjänster i Sverige, omvänd skattskyldighet, moms 12
+#KONTO 4043 Inköpta tjänster i Sverige, omvänd skattskyldighet, moms 6%
+#KONTO 4055 Trepartsförv varor fr EG
+#KONTO 4056 Inköp varor 25% EG
+#KONTO 4057 Inköp varor 12% EG
+#KONTO 4058 Inköp varor EG 6%
+#KONTO 4059 Inköp varor EG momsfri
+#KONTO 4100 Kostn uthyrn lokal sk.pl
+#KONTO 4400 Momspliktiga inköp i Sverige
+#KONTO 4415 Inköpta varor i Sverige, omvänd skattskyldighet, 25 % moms
+#KONTO 4416 Inköpta varor i Sverige, omvänd skattskyldighet, 12 % moms
+#KONTO 4417 Inköpta varor i Sverige, omvänd skattskyldighet, 6 % moms
+#KONTO 4500 Övriga momspliktiga inköp
+#KONTO 4531 Inköp av tjänster från ett land utanför EU, 25 % moms
+#KONTO 4532 Inköp av tjänster från ett land utanför EU, 12 % moms
+#KONTO 4533 Inköp av tjänster från ett land utanför EU, 6 % moms
+#KONTO 4535 Inköp av tjänster från annat EU-land, 25 %
+#KONTO 4536 Inköp av tjänster från annat EU-land, 12 %
+#KONTO 4537 Inköp av tjänster från annat EU-land, 6 %
+#KONTO 4538 Inköp av tjänster från annat EU-land, momsfri
+#KONTO 4545 Import av varor, 25 % moms
+#KONTO 4546 Import av varor, 12 % moms
+#KONTO 4547 Import av varor, 6 % moms
+#KONTO 4549 Motkonto beskattningsunderlag import
+#KONTO 4600 Legoarbeten och underentreprenader (gruppkonto)
+#KONTO 4700 Reduktion av inköpspriser (gruppkonto)
+#KONTO 4730 Erhållna rabatter
+#KONTO 4731 Erhållna kassarabatter
+#KONTO 4732 Erhållna mängdrabatter (inkl. bonus)
+#KONTO 4733 Erhållet aktivitetsstöd
+#KONTO 4790 Övriga reduktioner av inköpspriser
+#KONTO 4900 Förändring av lager (gruppkonto)
+#KONTO 4910 Förändring av lager av råvaror
+#KONTO 4920 Förändring av lager av tillsatsmaterial och förnödenheter
+#KONTO 4940 Förändring av produkter i arbete
+#KONTO 4944 Förändring av produkter i arbete, material och utlägg
+#KONTO 4945 Förändring av produkter i arbete, omkostnader
+#KONTO 4947 Förändring av produkter i arbete, personalkostnader
+#KONTO 4950 Förändring av lager av färdiga varor
+#KONTO 4960 Förändring av lager av handelsvaror
+#KONTO 4970 Förändring av pågående arbeten, nedlagda kostnader
+#KONTO 4974 Förändring av pågående arbeten, material och utlägg
+#KONTO 4975 Förändring av pågående arbeten, omkostnader
+#KONTO 4977 Förändring av pågående arbeten, personalkostnader
+#KONTO 4980 Förändring av lager av värdepapper
+#KONTO 4981 Sålda värdepappers anskaffningsvärde
+#KONTO 4987 Nedskrivning av värdepapper
+#KONTO 4988 Återföring av nedskrivning av värdepapper
+#KONTO 5000 Lokalkostnader (gruppkonto)
+#KONTO 5010 Lokalhyra
+#KONTO 5011 Hyra för kontorslokaler
+#KONTO 5012 Hyra för garage
+#KONTO 5013 Hyra för lagerlokaler
+#KONTO 5020 El för belysning
+#KONTO 5030 Värme
+#KONTO 5040 Vatten och avlopp
+#KONTO 5050 Lokaltillbehör
+#KONTO 5060 Städning och renhållning
+#KONTO 5061 Städning
+#KONTO 5062 Sophämtning
+#KONTO 5063 Hyra för sopcontainer
+#KONTO 5064 Snöröjning
+#KONTO 5065 Trädgårdsskötsel
+#KONTO 5070 Reparation och underhåll av lokaler
+#KONTO 5090 Övriga lokalkostnader
+#KONTO 5098 Övriga lokalkostnader, avdragsgilla
+#KONTO 5099 Övriga lokalkostnader, ej avdragsgilla
+#KONTO 5100 Fastighetskostnader (gruppkonto)
+#KONTO 5110 Tomträttsavgäld/arrende
+#KONTO 5120 El för belysning
+#KONTO 5130 Värme
+#KONTO 5131 Uppvärmning
+#KONTO 5132 Sotning
+#KONTO 5140 Vatten och avlopp
+#KONTO 5160 Städning och renhållning
+#KONTO 5161 Städning
+#KONTO 5162 Sophämtning
+#KONTO 5163 Hyra för sopcontainer
+#KONTO 5164 Snöröjning
+#KONTO 5165 Trädgårdsskötsel
+#KONTO 5170 Reparation och underhåll av fastighet
+#KONTO 5190 Övriga fastighetskostnader
+#KONTO 5191 Fastighetsskatt/fastighetsavgift
+#KONTO 5192 Fastighetsförsäkringspremier
+#KONTO 5193 Fastighetsskötsel och förvaltning
+#KONTO 5198 Övriga fastighetskostnader, avdragsgilla
+#KONTO 5199 Övriga fastighetskostnader, ej avdragsgilla
+#KONTO 5200 Hyra av anläggningstillgångar (gruppkonto)
+#KONTO 5210 Hyra av maskiner och andra tekniska anläggningar
+#KONTO 5211 Korttidshyra av maskiner och andra tekniska anläggningar
+#KONTO 5212 Leasing av maskiner och andra tekniska anläggningar
+#KONTO 5220 Hyra av inventarier och verktyg
+#KONTO 5221 Korttidshyra av inventarier och verktyg
+#KONTO 5222 Leasing av inventarier och verktyg
+#KONTO 5250 Hyra av datorer
+#KONTO 5251 Korttidshyra av datorer
+#KONTO 5252 Leasing av datorer
+#KONTO 5290 Övriga hyreskostnader för anläggningstillgångar
+#KONTO 5300 Energikostnader (gruppkonto)
+#KONTO 5310 El för drift
+#KONTO 5320 Gas
+#KONTO 5330 Eldningsolja
+#KONTO 5340 Stenkol och koks
+#KONTO 5350 Torv, träkol, ved och annat träbränsle
+#KONTO 5360 Bensin, fotogen och motorbrännolja
+#KONTO 5370 Fjärrvärme, kyla och ånga
+#KONTO 5380 Vatten
+#KONTO 5390 Övriga energikostnader
+#KONTO 5400 Förbrukningsinventarier och förbrukningsmaterial (gruppkont
+#KONTO 5410 Förbrukningsinventarier
+#KONTO 5411 Förbrukningsinventarier med en livslängd på mer än ett år
+#KONTO 5412 Förbrukningsinventarier med en livslängd på ett år eller mi
+#KONTO 5420 Programvaror
+#KONTO 5430 Transportinventarier
+#KONTO 5440 Förbrukningsemballage
+#KONTO 5460 Förbrukningsmaterial
+#KONTO 5480 Arbetskläder och skyddsmaterial
+#KONTO 5490 Övriga förbrukningsinventarier och förbrukningsmaterial
+#KONTO 5491 Övriga förbrukningsinventarier med en livslängd på mer än e
+#KONTO 5492 Övriga förbrukningsinventarier med en livslängd på ett år e
+#KONTO 5493 Övrigt förbrukningsmaterial
+#KONTO 5500 Reparation och underhåll (gruppkonto)
+#KONTO 5510 Reparation och underhåll av maskiner och andra tekniska anl
+#KONTO 5520 Reparation och underhåll av inventarier, verktyg och datore
+#KONTO 5530 Reparation och underhåll av installationer
+#KONTO 5550 Reparation och underhåll av förbrukningsinventarier
+#KONTO 5580 Underhåll och tvätt av arbetskläder
+#KONTO 5590 Övriga kostnader för reparation och underhåll
+#KONTO 5600 Kostnader för transportmedel (gruppkonto)
+#KONTO 5610 Personbilskostnader
+#KONTO 5611 Drivmedel för personbilar
+#KONTO 5612 Försäkring och skatt för personbilar
+#KONTO 5613 Reparation och underhåll av personbilar
+#KONTO 5615 Leasing av personbilar
+#KONTO 5616 Trängselskatt, avdragsgill
+#KONTO 5619 Övriga personbilskostnader
+#KONTO 5620 Lastbilskostnader
+#KONTO 5630 Truckkostnader
+#KONTO 5640 Kostnader för arbetsmaskiner
+#KONTO 5650 Traktorkostnader
+#KONTO 5660 Motorcykel-, moped- och skoterkostnader
+#KONTO 5670 Båt-, flygplans- och helikopterkostnader
+#KONTO 5690 Övriga kostnader för transportmedel
+#KONTO 5700 Frakter och transporter (gruppkonto)
+#KONTO 5710 Frakter, transporter och försäkringar vid varudistribution
+#KONTO 5720 Tull- och speditionskostnader m.m.
+#KONTO 5730 Arbetstransporter
+#KONTO 5790 Övriga kostnader för frakter och transporter
+#KONTO 5800 Resekostnader (gruppkonto)
+#KONTO 5810 Biljetter
+#KONTO 5820 Hyrbilskostnader
+#KONTO 5830 Kost och logi
+#KONTO 5831 Kost och logi i Sverige
+#KONTO 5832 Kost och logi i utlandet
+#KONTO 5890 Övriga resekostnader
+#KONTO 5900 Reklam och PR (gruppkonto)
+#KONTO 5910 Annonsering
+#KONTO 5920 Utomhus- och trafikreklam
+#KONTO 5930 Reklamtrycksaker och direktreklam
+#KONTO 5940 Utställningar och mässor
+#KONTO 5950 Butiksreklam och återförsäljarreklam
+#KONTO 5960 Varuprover, reklamgåvor, presentreklam och tävlingar
+#KONTO 5970 Film-, radio-, TV- och Internetreklam
+#KONTO 5980 PR, institutionell reklam och sponsring
+#KONTO 5990 Övriga kostnader för reklam och PR
+#KONTO 6000 Övriga försäljningskostnader (gruppkonto)
+#KONTO 6010 Kataloger, prislistor m.m.
+#KONTO 6020 Egna facktidskrifter
+#KONTO 6030 Speciella orderkostnader
+#KONTO 6040 Kontokortsavgifter
+#KONTO 6044 Avgift kortbetalning Webshop
+#KONTO 6050 Försäljningsprovisioner
+#KONTO 6055 Franchisekostnader o.dyl.
+#KONTO 6060 Kreditförsäljningskostnader
+#KONTO 6061 Kreditupplysning
+#KONTO 6062 Inkasso och KFM-avgifter
+#KONTO 6063 Kreditförsäkringspremier
+#KONTO 6064 Factoringavgifter
+#KONTO 6069 Övriga kreditförsäljningskostnader
+#KONTO 6070 Representation
+#KONTO 6071 Representation, avdragsgill
+#KONTO 6072 Representation, ej avdragsgill
+#KONTO 6080 Bankgarantier
+#KONTO 6090 Övriga försäljningskostnader
+#KONTO 6100 Kontorsmateriel och trycksaker (gruppkonto)
+#KONTO 6110 Kontorsmateriel
+#KONTO 6150 Trycksaker
+#KONTO 6200 Tele och post (gruppkonto)
+#KONTO 6210 Telekommunikation
+#KONTO 6211 Fast telefoni
+#KONTO 6212 Mobiltelefon
+#KONTO 6213 Mobilsökning
+#KONTO 6214 Fax
+#KONTO 6215 Telex
+#KONTO 6230 Datakommunikation
+#KONTO 6250 Postbefordran
+#KONTO 6300 Företagsförsäkringar och övriga riskkostnader (gruppkonto)
+#KONTO 6310 Företagsförsäkringar
+#KONTO 6320 Självrisker vid skada
+#KONTO 6330 Förluster i pågående arbeten
+#KONTO 6340 Lämnade skadestånd
+#KONTO 6341 Lämnade skadestånd, avdragsgilla
+#KONTO 6342 Lämnade skadestånd, ej avdragsgilla
+#KONTO 6350 Förluster på kundfordringar
+#KONTO 6351 Konstaterade förluster på kundfordringar
+#KONTO 6352 Befarade förluster på kundfordringar
+#KONTO 6358 Befarade förluster på kundfordringar, OSS
+#KONTO 6359 Konstaterade förluster på kundfordringar, OSS
+#KONTO 6360 Garantikostnader
+#KONTO 6361 Förändring av garantiavsättning
+#KONTO 6362 Faktiska garantikostnader
+#KONTO 6370 Kostnader för bevakning och larm
+#KONTO 6380 Förluster på övriga kortfristiga fordringar
+#KONTO 6390 Övriga riskkostnader
+#KONTO 6400 Förvaltningskostnader (gruppkonto)
+#KONTO 6410 Styrelsearvoden som inte är lön
+#KONTO 6420 Ersättningar till revisor
+#KONTO 6421 Revision
+#KONTO 6422 Revisionsverksamhet utöver revision
+#KONTO 6423 Skatterådgivning  revisor
+#KONTO 6424 Övriga tjänster  revisor
+#KONTO 6430 Management fees
+#KONTO 6440 Årsredovisning och delårsrapporter
+#KONTO 6450 Bolagsstämma/års- eller föreningsstämma
+#KONTO 6490 Övriga förvaltningskostnader
+#KONTO 6500 Övriga externa tjänster (gruppkonto)
+#KONTO 6510 Mätningskostnader
+#KONTO 6520 Ritnings- och kopieringskostnader
+#KONTO 6530 Redovisningstjänster
+#KONTO 6540 IT-tjänster
+#KONTO 6550 Konsultarvoden
+#KONTO 6551 Arkitekttjänster
+#KONTO 6552 Teknisk provning och analys
+#KONTO 6553 Tekniska konsulttjänster
+#KONTO 6554 Finansiell- och övrig ekonomisk rådgivning
+#KONTO 6555 Skatterådgivning
+#KONTO 6556 Köpta tjänster avseende forskning och utveckling
+#KONTO 6559 Övrig konsultverksamhet
+#KONTO 6560 Serviceavgifter till branschorganisationer
+#KONTO 6570 Bankkostnader
+#KONTO 6580 Advokat- och rättegångskostnader
+#KONTO 6590 Övriga externa tjänster
+#KONTO 6800 Inhyrd personal (gruppkonto)
+#KONTO 6810 Inhyrd produktionspersonal
+#KONTO 6820 Inhyrd lagerpersonal
+#KONTO 6830 Inhyrd transportpersonal
+#KONTO 6840 Inhyrd kontors- och ekonomipersonal
+#KONTO 6850 Inhyrd IT-personal
+#KONTO 6860 Inhyrd marknads- och försäljningspersonal
+#KONTO 6870 Inhyrd restaurang- och butikspersonal
+#KONTO 6880 Inhyrda företagsledare
+#KONTO 6890 Övrig inhyrd personal
+#KONTO 6900 Övriga externa kostnader (gruppkonto)
+#KONTO 6910 Licensavgifter och royalties
+#KONTO 6920 Kostnader för egna patent
+#KONTO 6930 Kostnader för varumärken m.m.
+#KONTO 6940 Kontroll-, provnings- och stämpelavgifter
+#KONTO 6950 Tillsynsavgifter myndigheter
+#KONTO 6970 Tidningar, tidskrifter och facklitteratur
+#KONTO 6980 Föreningsavgifter
+#KONTO 6981 Föreningsavgifter, avdragsgilla
+#KONTO 6982 Föreningsavgifter, ej avdragsgilla
+#KONTO 6990 Övriga externa kostnader
+#KONTO 6991 Övriga externa kostnader, avdragsgilla
+#KONTO 6992 Övriga externa kostnader, ej avdragsgilla
+#KONTO 6993 Lämnade bidrag och gåvor
+#KONTO 6996 Betald utländsk inkomstskatt
+#KONTO 6997 Obetald utländsk inkomstskatt
+#KONTO 6998 Utländsk moms
+#KONTO 6999 Ingående moms, blandad verksamhet
+#KONTO 7000 Löner till kollektivanställda (gruppkonto)
+#KONTO 7010 Löner till kollektivanställda
+#KONTO 7012 Vinstandelar till kollektivanställda
+#KONTO 7013 Lön växa-stöd kollektivanställda 10,21 %
+#KONTO 7014 Löner till kollektivanställda 16,36 %
+#KONTO 7015 Löner till kollektivanställda 6,15 %
+#KONTO 7016 Vinstandelar till kollektivanställda 6,15 %
+#KONTO 7017 Avgångsvederlag till kollektivanställda
+#KONTO 7018 Bruttolöneavdrag, kollektivanställda
+#KONTO 7019 Upplupna löner och vinstandelar till kollektivanställda
+#KONTO 7030 Löner till kollektivanställda (utlandsanställda)
+#KONTO 7031 Löner till kollektivanställda (utlandsanställda)
+#KONTO 7032 Vinstandelar till kollektivanställda (utlandsanställda)
+#KONTO 7033 Löner till kollektivanställda under 26 år (utlandsanställda
+#KONTO 7034 Löner kollektivaansställda 16,36 %
+#KONTO 7035 Löner till kollektivanställda 6,15 %
+#KONTO 7036 Vinstandelar till kollektivanställda 6,15 % (utlandsanställ
+#KONTO 7037 Avgångsvederlag till kollektivanställda (utlandsanställda)
+#KONTO 7038 Bruttolöneavdrag, kollektivanställda (utlandsanställda)
+#KONTO 7039 Upplupna löner och vinstandelar till kollektivanställda (ut
+#KONTO 7080 Löner till kollektivanställda för ej arbetad tid
+#KONTO 7081 Sjuklöner till kollektivanställda
+#KONTO 7082 Semesterlöner till kollektivanställda
+#KONTO 7083 Föräldraersättning till kollektivanställda
+#KONTO 7089 Övriga löner till kollektivanställda för ej arbetad tid
+#KONTO 7090 Förändring av semesterlöneskuld
+#KONTO 7200 Löner till tjänstemän och företagsledare (gruppkonto)
+#KONTO 7210 Löner till tjänstemän
+#KONTO 7212 Vinstandelar till tjänstemän
+#KONTO 7213 Lön växa-stöd tjänstemän 10,21 %
+#KONTO 7214 Löner till tjänstemän 16,36 %
+#KONTO 7215 Löner till tjänstemän 6,15 %
+#KONTO 7216 Vinstandelar till tjänstemän 6,15 %
+#KONTO 7217 Avgångsvederlag till tjänstemän
+#KONTO 7218 Bruttolöneavdrag, tjänstemän
+#KONTO 7219 Upplupna löner och vinstandelar till tjänstemän
+#KONTO 7220 Löner till företagsledare
+#KONTO 7222 Tantiem till företagsledare
+#KONTO 7223 Löner till företagsledare 25,46 %
+#KONTO 7224 Löner till företagsledare 16,36 %
+#KONTO 7225 Löner till företagsledare 6,15 %
+#KONTO 7227 Avgångsvederlag till företagsledare
+#KONTO 7228 Bruttolöneavdrag, företagsledare
+#KONTO 7229 Upplupna löner och tantiem till företagsledare
+#KONTO 7230 Löner till tjänstemän och ftgsledare (utlandsanställda)
+#KONTO 7232 Vinstandelar till tjänstemän och ftgsledare (utlandsanställ
+#KONTO 7233 Löner till tjänstemän och ftgsledare under 26 år (utlandsan
+#KONTO 7234 Löner till tjänstemän och ftgsledare (utlandsanställda) (ny
+#KONTO 7235 Löner till tjänstemän och ftgsledare (utlandsanställda) (av
+#KONTO 7236 Vinstandelar till tjänstemän och ftgsledare (utlandsanställ
+#KONTO 7237 Avgångsvederlag till tjänstemän och ftgsledare (utlandsanst
+#KONTO 7238 Bruttolöneavdrag, tjänstemän och ftgsledare (utlandsanställ
+#KONTO 7239 Upplupna löner och vinstandelar till tjänstemän och ftgsled
+#KONTO 7240 Styrelsearvoden
+#KONTO 7280 Löner till tjänstemän och företagsledare för ej arbetad tid
+#KONTO 7281 Sjuklöner till tjänstemän
+#KONTO 7282 Sjuklöner till företagsledare
+#KONTO 7283 Föräldraersättning till tjänstemän
+#KONTO 7284 Föräldraersättning till företagsledare
+#KONTO 7285 Semesterlöner till tjänstemän
+#KONTO 7286 Semesterlöner till företagsledare
+#KONTO 7288 Övriga löner till tjänstemän för ej arbetad tid
+#KONTO 7289 Övriga löner till företagsledare för ej arbetad tid
+#KONTO 7290 Förändring av semesterlöneskuld
+#KONTO 7291 Förändring av semesterlöneskuld till tjänstemän
+#KONTO 7292 Förändring av semesterlöneskuld till företagsledare
+#KONTO 7300 Kostnadsersättningar och förmåner (gruppkonto)
+#KONTO 7310 Kontanta extraersättningar
+#KONTO 7311 Ersättningar för sammanträden m.m.
+#KONTO 7312 Ersättningar för förslagsverksamhet och uppfinningar
+#KONTO 7313 Ersättningar för/bidrag till bostadskostnader
+#KONTO 7314 Ersättningar för/bidrag till måltidskostnader
+#KONTO 7315 Ersättningar för/bidrag till resor till och från arbetsplat
+#KONTO 7316 Ersättningar för/bidrag till arbetskläder
+#KONTO 7317 Ersättningar för/bidrag till arbetsmaterial och arbetsverkt
+#KONTO 7318 Felräkningspengar
+#KONTO 7319 Övriga kontanta extraersättningar
+#KONTO 7320 Traktamenten vid tjänsteresa
+#KONTO 7321 Skattefria traktamenten, Sverige
+#KONTO 7322 Skattepliktiga traktamenten, Sverige
+#KONTO 7323 Skattefria traktamenten, utlandet
+#KONTO 7324 Skattepliktiga traktamenten, utlandet
+#KONTO 7330 Bilersättningar
+#KONTO 7331 Skattefria bilersättningar
+#KONTO 7332 Skattepliktiga bilersättningar
+#KONTO 7333 Ersättning för trängselskatt, skattefri
+#KONTO 7350 Ersättningar för föreskrivna arbetskläder
+#KONTO 7370 Representationsersättningar
+#KONTO 7380 Kostnader för förmåner till anställda
+#KONTO 7381 Kostnader för fri bostad
+#KONTO 7382 Kostnader för fria eller subventionerade måltider
+#KONTO 7383 Kostnader för fria resor till och från arbetsplatsen
+#KONTO 7384 Kostnader för fria eller subventionerade arbetskläder
+#KONTO 7385 Kostnader för fri bil
+#KONTO 7386 Subventionerad ränta
+#KONTO 7387 Kostnader för lånedatorer
+#KONTO 7388 Anställdas ersättning för erhållna förmåner
+#KONTO 7389 Övriga kostnader för förmåner
+#KONTO 7390 Övriga kostnadsersättningar och förmåner
+#KONTO 7391 Kostnad för trängselskatteförmån
+#KONTO 7392 Kostnad för förmån av hushållsnära tjänster
+#KONTO 7399 Motkontering förmåner
+#KONTO 7400 Pensionskostnader (gruppkonto)
+#KONTO 7410 Pensionsförsäkringspremier
+#KONTO 7411 Premier för kollektiva pensionsförsäkringar
+#KONTO 7412 Premier för individuella pensionsförsäkringar
+#KONTO 7418 Återbäring från försäkringsföretag
+#KONTO 7420 Förändring av pensionsskuld
+#KONTO 7430 Avdrag för räntedel i pensionskostnad
+#KONTO 7440 Förändring av pensionsstiftelsekapital
+#KONTO 7441 Överföring av medel till pensionsstiftelse
+#KONTO 7448 Gottgörelse från pensionsstiftelse
+#KONTO 7460 Pensionsutbetalningar
+#KONTO 7461 Pensionsutbetalningar till f.d. kollektivanställda
+#KONTO 7462 Pensionsutbetalningar till f.d. tjänstemän
+#KONTO 7463 Pensionsutbetalningar till f.d. företagsledare
+#KONTO 7470 Förvaltnings- och kreditförsäkringsavgifter
+#KONTO 7490 Övriga pensionskostnader
+#KONTO 7500 Sociala och andra avgifter enligt lag och avtal (gruppkonto
+#KONTO 7510 Arbetsgivaravgifter 31,42 %
+#KONTO 7511 Arbetsgivaravgifter för löner och ersättningar
+#KONTO 7512 Arbetsgivaravgifter för förmånsvärden
+#KONTO 7513 Arbetsgivaravgift avdrag forskning
+#KONTO 7514 Arbetsgivaravgift första anställd
+#KONTO 7515 Arbetsgivaravgifter på skattepliktiga kostnadsersättningar
+#KONTO 7516 Arbetsgivaravgifter på arvoden
+#KONTO 7518 Arbetsgivaravgifter på bruttolöneavdrag m.m.
+#KONTO 7519 Arbetsgivaravgifter för semester- och löneskulder
+#KONTO 7520 Avgifter 16,36 %
+#KONTO 7521 Avgifter för löner och ersättningar
+#KONTO 7522 Avgifter för förmånsvärden
+#KONTO 7525 Avgifter på skattepliktiga kostnadsersättningar
+#KONTO 7526 Avgifter på arvoden
+#KONTO 7528 Avgifter på bruttolöneavdrag m.m.
+#KONTO 7529 Avgifter för semester- och löneskulder
+#KONTO 7530 Särskild löneskatt
+#KONTO 7531 Särskild löneskatt för vissa försäkringsersättningar m.m.
+#KONTO 7532 Särskild löneskatt pensionskostnader, deklarationspost
+#KONTO 7533 Särskild löneskatt för pensionskostnader
+#KONTO 7534 Särskild löneskatt förvärvsinkomster 6,15 %
+#KONTO 7550 Avkastningsskatt på pensionsmedel
+#KONTO 7551 Avkastningsskatt 15% försäkringsföretag m.fl. samt avsatt t
+#KONTO 7552 Avkastningsskatt 15% utländska pensionsförsäkringar
+#KONTO 7553 Avkastningsskatt 30 % utländska försäkringsföretag m.fl.
+#KONTO 7554 Avkastningsskatt 30% utländska kapitalförsäkringar
+#KONTO 7560 Arbetsgivaravgifter 25,46 %
+#KONTO 7570 Premier för arbetsmarknadsförsäkringar
+#KONTO 7571 Arbetsmarknadsförsäkringar
+#KONTO 7572 Arbetsmarknadsförsäkringar pensionsförsäkringspremier, dekl
+#KONTO 7573 Arbetsmarknadsförsäkringar, betalda premier och avgifter
+#KONTO 7580 Gruppförsäkringspremier
+#KONTO 7581 Grupplivförsäkringspremier
+#KONTO 7582 Gruppsjukförsäkringspremier
+#KONTO 7583 Gruppolycksfallsförsäkringspremier
+#KONTO 7589 Övriga gruppförsäkringspremier
+#KONTO 7590 Övriga sociala och andra avgifter enligt lag och avtal
+#KONTO 7600 Övriga personalkostnader (gruppkonto)
+#KONTO 7610 Utbildning
+#KONTO 7620 Sjuk- och hälsovård
+#KONTO 7621 Sjuk- och hälsovård, avdragsgill
+#KONTO 7622 Sjuk- och hälsovård, ej avdragsgill
+#KONTO 7623 Sjukvårdsförsäkring, ej avdragsgill
+#KONTO 7630 Personalrepresentation
+#KONTO 7631 Personalrepresentation, avdragsgill
+#KONTO 7632 Personalrepresentation, ej avdragsgill
+#KONTO 7650 Sjuklöneförsäkring
+#KONTO 7670 Förändring av personalstiftelsekapital
+#KONTO 7671 Avsättning till personalstiftelse
+#KONTO 7678 Gottgörelse från personalstiftelse
+#KONTO 7690 Övriga personalkostnader
+#KONTO 7691 Personalrekrytering
+#KONTO 7692 Begravningshjälp
+#KONTO 7693 Fritidsverksamhet
+#KONTO 7699 Övriga personalkostnader
+#KONTO 7710 Nedskrivningar av immateriella anläggningstillgångar
+#KONTO 7720 Nedskrivningar av byggnader och mark
+#KONTO 7730 Nedskrivningar av maskiner och inventarier
+#KONTO 7740 Nedskrivningar av vissa omsättningstillgångar
+#KONTO 7760 Återföring av nedskrivningar av immateriella anläggningstil
+#KONTO 7770 Återföring av nedskrivningar av byggnader och mark
+#KONTO 7780 Återföring av nedskrivningar av maskiner och inventarier
+#KONTO 7790 Återföring av nedskrivningar av vissa omsättningstillgångar
+#KONTO 7810 Avskrivningar på immateriella anläggningstillgångar
+#KONTO 7811 Avskrivningar på balanserade utgifter
+#KONTO 7812 Avskrivningar på koncessioner m.m.
+#KONTO 7813 Avskrivningar på patent
+#KONTO 7814 Avskrivningar på licenser
+#KONTO 7815 Avskrivningar på varumärken
+#KONTO 7816 Avskrivningar på hyresrätter
+#KONTO 7817 Avskrivningar på goodwill
+#KONTO 7819 Avskrivningar på övriga immateriella anläggningstillgångar
+#KONTO 7820 Avskrivningar på byggnader och markanläggningar
+#KONTO 7821 Avskrivningar på byggnader
+#KONTO 7824 Avskrivningar på markanläggningar
+#KONTO 7829 Avskrivningar på övriga byggnader
+#KONTO 7830 Avskrivningar på maskiner och inventarier
+#KONTO 7831 Avskrivningar på maskiner och andra tekniska anläggningar
+#KONTO 7832 Avskrivningar på inventarier och verktyg
+#KONTO 7833 Avskrivningar på installationer
+#KONTO 7834 Avskrivningar på bilar och andra transportmedel
+#KONTO 7835 Avskrivningar på datorer
+#KONTO 7836 Avskrivningar på leasade tillgångar
+#KONTO 7839 Avskrivningar på övriga maskiner och inventarier
+#KONTO 7840 Avskrivningar på förbättringsutgifter på annans fastighet
+#KONTO 7940 Orealiserade positiva/negativa värdeförändringar på säkring
+#KONTO 7960 Valutakursförluster på fordringar och skulder av rörelsekar
+#KONTO 7970 Förlust vid avyttring av immateriella och materiella anlägg
+#KONTO 7971 Förlust vid avyttring av immateriella anläggningstillgångar
+#KONTO 7972 Förlust vid avyttring av byggnader och mark
+#KONTO 7973 Förlust vid avyttring av maskiner och inventarier
+#KONTO 7990 Övriga rörelsekostnader
+#KONTO 8010 Utdelning på andelar i koncernföretag
+#KONTO 8012 Utdelning på andelar i dotterföretag
+#KONTO 8016 Emissionsinsats, koncernföretag
+#KONTO 8020 Resultat vid försäljning av andelar i koncernföretag
+#KONTO 8022 Resultat vid försäljning av andelar i dotterföretag
+#KONTO 8030 Resultatandelar från handelsbolag (dotterföretag)
+#KONTO 8070 Nedskrivningar av andelar i och långfristiga fordringar hos
+#KONTO 8072 Nedskrivningar av andelar i dotterföretag
+#KONTO 8076 Nedskrivningar av långfristiga fordringar hos moderföretag
+#KONTO 8077 Nedskrivningar av långfristiga fordringar hos dotterföretag
+#KONTO 8080 Återföringar av nedskrivningar av andelar i och långfristig
+#KONTO 8082 Återföringar av nedskrivningar av andelar i dotterföretag
+#KONTO 8086 Återföringar av nedskrivningar av långfristiga fordringar h
+#KONTO 8087 Återföringar av nedskrivningar av långfristiga fordringar h
+#KONTO 8110 Utdelning på andelar i intresseftg, gemen styrda ftg och öv
+#KONTO 8111 Utdelningar på andelar i intresseföretag
+#KONTO 8112 Utdelningar på andelar i gemensamt styrda företag
+#KONTO 8113 Utdelningar på andelar i övriga företag som det finns ett ä
+#KONTO 8116 Emissionsinsats, intresseföretag
+#KONTO 8117 Emissionsinsats, gemensamt styrda företag
+#KONTO 8118 Emissionsinsats, övriga företag som det finns ett ägarintre
+#KONTO 8120 Resultat vid försäljn av andelar i intresseftg, gemen styrd
+#KONTO 8121 Resultat vid försäljning av andelar i intresseföretag
+#KONTO 8122 Resultat vid försäljning av andelar i gemensamt styrda före
+#KONTO 8123 Resultat vid försäljning av andelar i övriga företag som de
+#KONTO 8130 Resultatandel från hb (intresseftg, gemen styrda ftg och öv
+#KONTO 8131 Resultatandelar från handelsbolag (intresseföretag)
+#KONTO 8132 Resultatandelar från handelsbolag (gemensamt styrda företag
+#KONTO 8133 Resultatandelar från handelsbolag (övriga företag som det f
+#KONTO 8170 Nedskriv av andel i o långfrist fordr hos intrftg, gemen st
+#KONTO 8171 Nedskrivningar av andelar i intresseföretag
+#KONTO 8172 Nedskrivningar av långfristiga fordringar hos intresseföret
+#KONTO 8173 Nedskrivningar av andelar i gemensamt styrda företag
+#KONTO 8174 Nedskrivningar av långfristiga fordringar hos gemensamt sty
+#KONTO 8176 Nedskrivningar av andelar i övriga företag som det finns et
+#KONTO 8177 Nedskrivningar av långfristiga fordringar hos övriga företa
+#KONTO 8180 Återföringar av nedskrivningar av andelar i och långfristig
+#KONTO 8181 Återföringar av nedskrivningar av andelar i intresseföretag
+#KONTO 8182 Återföringar av nedskrivningar av långfristiga fordringar h
+#KONTO 8183 Återföringar av nedskrivningar av andelar i gemensamt styrd
+#KONTO 8184 Återföringar av nedskrivningar av långfristiga fordringar h
+#KONTO 8186 Återföringar av nedskrivningar av andelar i övriga företag 
+#KONTO 8187 Andelar i intresseföretag, gemensamt styrda företag och övr
+#KONTO 8210 Utdelningar på andelar i andra företag
+#KONTO 8212 Utdelningar, övriga företag
+#KONTO 8216 Insatsemissioner, övriga företag
+#KONTO 8220 Resultat vid försäljning av värdepapper i och långfristiga 
+#KONTO 8221 Resultat vid försäljning av andelar i andra företag
+#KONTO 8222 Resultat vid försäljning av långfristiga fordringar hos and
+#KONTO 8223 Resultat vid försäljning av derivat (långfristiga värdepapp
+#KONTO 8230 Valutakursdifferenser på långfristiga fordringar
+#KONTO 8231 Valutakursvinster på långfristiga fordringar
+#KONTO 8236 Valutakursförluster på långfristiga fordringar
+#KONTO 8240 Resultatandelar från handelsbolag (andra företag)
+#KONTO 8250 Ränteintäkter från långfristiga fordringar hos och värdepap
+#KONTO 8251 Ränteintäkter från långfristiga fordringar
+#KONTO 8252 Ränteintäkter från övriga värdepapper
+#KONTO 8254 Skattefria ränteintäkter, långfristiga tillgångar
+#KONTO 8255 Avkastningsskatt kapitalplacering
+#KONTO 8260 Ränteintäkter från långfristiga fordringar hos koncernföret
+#KONTO 8261 Ränteintäkter från långfristiga fordringar hos moderföretag
+#KONTO 8262 Ränteintäkter från långfristiga fordringar hos dotterföreta
+#KONTO 8263 Ränteintäkter från långfristiga fordringar hos andra koncer
+#KONTO 8270 Nedskrivningar av innehav av andelar i och långfristiga for
+#KONTO 8271 Nedskrivningar av andelar i andra företag
+#KONTO 8272 Nedskrivningar av långfristiga fordringar hos andra företag
+#KONTO 8273 Nedskrivningar av övriga värdepapper hos andra företag
+#KONTO 8280 Återföringar av nedskrivningar av andelar i och långfristig
+#KONTO 8281 Återföringar av nedskrivningar av andelar i andra företag
+#KONTO 8282 Återföringar av nedskrivningar av långfristiga fordringar h
+#KONTO 8283 Återföringar av nedskrivningar av övriga värdepapper i andr
+#KONTO 8290 Värdering till verkligt värde, anläggningstillgångar
+#KONTO 8291 Orealiserade värdeförändringar på anläggningstillgångar
+#KONTO 8295 Orealiserade värdeförändringar på derivatinstrument
+#KONTO 8310 Ränteintäkter från omsättningstillgångar
+#KONTO 8311 Ränteintäkter från bank
+#KONTO 8312 Ränteintäkter från kortfristiga placeringar
+#KONTO 8313 Ränteintäkter från kortfristiga fordringar
+#KONTO 8314 Skattefria ränteintäkter
+#KONTO 8317 Ränteintäkter för dold räntekompensation
+#KONTO 8319 Övriga ränteintäkter från omsättningstillgångar
+#KONTO 8320 Värdering till verkligt värde, omsättningstillgångar
+#KONTO 8321 Orealiserade värdeförändringar på omsättningstillgångar
+#KONTO 8325 Orealiserade värdeförändringar på derivatinstrument (oms.-t
+#KONTO 8330 Valutakursdifferenser på kortfristiga fordringar och placer
+#KONTO 8331 Valutakursvinster på kortfristiga fordringar och placeringa
+#KONTO 8336 Valutakursförluster på kortfristiga fordringar och placerin
+#KONTO 8340 Utdelningar på kortfristiga placeringar
+#KONTO 8350 Resultat vid försäljning av kortfristiga placeringar
+#KONTO 8360 Övriga ränteintäkter från koncernföretag
+#KONTO 8361 Övriga ränteintäkter från moderföretag
+#KONTO 8362 Övriga ränteintäkter från dotterföretag
+#KONTO 8363 Övriga ränteintäkter från andra koncernföretag
+#KONTO 8370 Nedskrivningar av kortfristiga placeringar
+#KONTO 8380 Återföringar av nedskrivningar av kortfristiga placeringar
+#KONTO 8390 Övriga finansiella intäkter
+#KONTO 8400 Räntekostnader (gruppkonto)
+#KONTO 8410 Räntekostnader för långfristiga skulder
+#KONTO 8411 Räntekostnader för obligations-, förlags- och konvertibla l
+#KONTO 8412 Räntedel i årets pensionskostnad
+#KONTO 8413 Räntekostnader för checkräkningskredit
+#KONTO 8415 Räntekostnader för andra skulder till kreditinstitut
+#KONTO 8417 Räntekostnader för dold räntekompensation m.m.
+#KONTO 8418 Avdragspost för räntesubventioner
+#KONTO 8419 Övriga räntekostnader för långfristiga skulder
+#KONTO 8420 Räntekostnader för kortfristiga skulder
+#KONTO 8421 Räntekostnader till kreditinstitut
+#KONTO 8422 Dröjsmålsräntor för leverantörsskulder
+#KONTO 8423 Räntekostnader för skatter och avgifter
+#KONTO 8424 Räntekostnader byggnadskreditiv
+#KONTO 8429 Övriga räntekostnader för kortfristiga skulder
+#KONTO 8430 Valutakursdifferenser på skulder
+#KONTO 8431 Valutakursvinster på skulder
+#KONTO 8436 Valutakursförluster på skulder
+#KONTO 8440 Erhållna räntebidrag
+#KONTO 8450 Orealiserade värdeförändringar på skulder
+#KONTO 8451 Orealiserade värdeförändringar på skulder
+#KONTO 8455 Orealiserade värdeförändringar på säkringsinstrument
+#KONTO 8460 Räntekostnader till koncernföretag
+#KONTO 8461 Räntekostnader till moderföretag
+#KONTO 8462 Räntekostnader till dotterföretag
+#KONTO 8463 Räntekostnader till andra koncernföretag
+#KONTO 8480 Aktiverade ränteutgifter
+#KONTO 8490 Övriga skuldrelaterade poster
+#KONTO 8491 Erhållet ackord på skulder till kreditinstitut m.m.
+#KONTO 8810 Förändring av periodiseringsfond
+#KONTO 8811 Avsättning till periodiseringsfond
+#KONTO 8819 Återföring från periodiseringsfond
+#KONTO 8820 Mottagna koncernbidrag
+#KONTO 8830 Lämnade koncernbidrag
+#KONTO 8840 Lämnade gottgörelser
+#KONTO 8850 Förändring av överavskrivningar
+#KONTO 8851 Förändring av överavskrivningar, immateriella anläggningsti
+#KONTO 8852 Förändring av överavskrivningar, byggnader och markanläggni
+#KONTO 8853 Förändring av överavskrivningar, maskiner och inventarier
+#KONTO 8860 Förändring av ersättningsfond
+#KONTO 8861 Avsättning till ersättningsfond för inventarier
+#KONTO 8862 Avsättning till ersättningsfond för byggnader och markanläg
+#KONTO 8864 Avsättning till ersättningsfond för djurlager i jordbruk oc
+#KONTO 8865 Ianspråktagande av ersättningsfond för avskrivningar
+#KONTO 8866 Ianspråktagande av ersättningsfond för annat än avskrivning
+#KONTO 8869 Återföring från ersättningsfond
+#KONTO 8880 Förändring av obeskattade intäkter
+#KONTO 8881 Avsättning till upphovsmannakonto
+#KONTO 8882 Återföring från upphovsmannakonto
+#KONTO 8885 Avsättning till skogskonto
+#KONTO 8886 Återföring från skogskonto
+#KONTO 8890 Övriga bokslutsdispositioner
+#KONTO 8892 Nedskrivningar av konsolideringskaraktär av anläggningstill
+#KONTO 8896 Förändring av lagerreserv
+#KONTO 8899 Övriga bokslutsdispositioner
+#KONTO 8910 Skatt som belastar årets resultat
+#KONTO 8920 Skatt på grund av ändrad beskattning
+#KONTO 8930 Restituerad skatt
+#KONTO 8940 Uppskjuten skatt
+#KONTO 8980 Övriga skatter
+#KONTO 8990 Resultat
+#KONTO 8999 Årets resultat
+#DIM 1 Resultatenhet
+
+#IB 0 1060 309000.00
+#IB 0 1069 -309000.00
+#IB 0 1220 141000.00
+#IB 0 1229 -141000.00
+#IB 0 1460 274539.00
+#IB 0 1630 7815.00
+#IB 0 1640 21363.00
+#IB 0 1650 6772.00
+#IB 0 1930 55268.26
+#IB 0 2010 -335804.26
+#IB 0 2013 119924.38
+#IB 0 2019 -90042.38
+#IB 0 2650 -77585.00
+
+#UB 0 1060 309000.00
+#UB 0 1069 -309000.00
+#UB 0 1220 141000.00
+#UB 0 1229 -141000.00
+#UB 0 1460 274539.00
+#UB 0 1630 7815.00
+#UB 0 1640 21363.00
+#UB 0 1650 10848.00
+#UB 0 1799 411598.16
+#UB 0 1910 -353370.44
+#UB 0 1930 44478.10
+#UB 0 2010 -335804.26
+#UB 0 2013 -227812.39
+#UB 0 2019 -90042.38
+#UB 0 2641 33343.06
+#UB 0 2650 -87084.00
+
+#RES 0 3051 -20110.12
+#RES 0 3052 -253493.15
+#RES 0 3740 -0.54
+#RES 0 4010 392116.80
+#RES 0 5010 110986.90
+#RES 0 5020 3123.92
+#RES 0 5220 11833.77
+#RES 0 5410 15638.40
+#RES 0 5460 701.28
+#RES 0 5611 1809.85
+#RES 0 6212 5518.04
+#RES 0 6390 638.00
+#RES 0 6590 2307.00
+#RES 0 6991 309.00
+#RES 0 7570 1000.00
+
+#VER A 1 20220103 Gteborg 20221122
+{
+#TRANS 1930 {} -496.00
+#TRANS 1799 {} 496.00
+}
+
+#VER A 2 20220104 B12311327766 20221122
+{
+#TRANS 1930 {} 899.54
+#TRANS 1910 {} -899.54
+}
+
+#VER A 3 20220104 B01031365514 20221122
+{
+#TRANS 1930 {} 702.26
+#TRANS 1910 {} -702.26
+}
+
+#VER A 4 20220104 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 5 20220103 DINA 20221122
+{
+#TRANS 1930 {} -794.00
+#TRANS 1799 {} 794.00
+}
+
+#VER A 6 20220105 B01041376613 20221122
+{
+#TRANS 1930 {} 1118.75
+#TRANS 1910 {} -1118.75
+}
+
+#VER A 7 20220104 SVEA 20221122
+{
+#TRANS 1930 {} -309.00
+#TRANS 1799 {} 309.00
+}
+
+#VER A 8 20220104 COFFEEMA 20221122
+{
+#TRANS 1930 {} -1660.00
+#TRANS 1799 {} 1660.00
+}
+
+#VER A 9 20220104 WASA 20221122
+{
+#TRANS 1930 {} -943.00
+#TRANS 1799 {} 943.00
+}
+
+#VER A 10 20220107 B01051396463 20221122
+{
+#TRANS 1930 {} 1123.79
+#TRANS 1910 {} -1123.79
+}
+
+#VER A 11 20220107 53626487 20221122
+{
+#TRANS 1930 {} 1694.38
+#TRANS 1910 {} -1694.38
+}
+
+#VER A 12 20220110 B01061416779 20221122
+{
+#TRANS 1930 {} 1273.75
+#TRANS 1910 {} -1273.75
+}
+
+#VER A 13 20220110 B01071438434 20221122
+{
+#TRANS 1930 {} 1217.94
+#TRANS 1910 {} -1217.94
+}
+
+#VER A 14 20220110 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 15 20220110 1236721690 20221122
+{
+#TRANS 1930 {} 42.00
+#TRANS 1910 {} -42.00
+}
+
+#VER A 16 20220105 DNB 20221122
+{
+#TRANS 1930 {} -2667.00
+#TRANS 1799 {} 2667.00
+}
+
+#VER A 17 20220110 1236721690 20221122
+{
+#TRANS 1930 {} 52.00
+#TRANS 1910 {} -52.00
+}
+
+#VER A 18 20220111 B01091477475 20221122
+{
+#TRANS 1930 {} 828.49
+#TRANS 1910 {} -828.49
+}
+
+#VER A 19 20220111 B01081455658 20221122
+{
+#TRANS 1930 {} 1078.90
+#TRANS 1910 {} -1078.90
+}
+
+#VER A 20 20220111 B01101491324 20221122
+{
+#TRANS 1930 {} 748.49
+#TRANS 1910 {} -748.49
+}
+
+#VER A 21 20220111 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 22 20220112 B01111505692 20221122
+{
+#TRANS 1930 {} 1123.71
+#TRANS 1910 {} -1123.71
+}
+
+#VER A 23 20220113 B01121526464 20221122
+{
+#TRANS 1930 {} 1119.88
+#TRANS 1910 {} -1119.88
+}
+
+#VER A 24 20220114 B01131550087 20221122
+{
+#TRANS 1930 {} 756.89
+#TRANS 1910 {} -756.89
+}
+
+#VER A 25 20220117 B01141572884 20221122
+{
+#TRANS 1930 {} 638.86
+#TRANS 1910 {} -638.86
+}
+
+#VER A 26 20220118 B01161619118 20221122
+{
+#TRANS 1930 {} 805.02
+#TRANS 1910 {} -805.02
+}
+
+#VER A 27 20220118 B01151594716 20221122
+{
+#TRANS 1930 {} 945.31
+#TRANS 1910 {} -945.31
+}
+
+#VER A 28 20220119 B01181648227 20221122
+{
+#TRANS 1930 {} 1203.56
+#TRANS 1910 {} -1203.56
+}
+
+#VER A 29 20220120 B01191670452 20221122
+{
+#TRANS 1930 {} 679.86
+#TRANS 1910 {} -679.86
+}
+
+#VER A 30 20220120 20220120 20221122
+{
+#TRANS 1930 {} -915.00
+#TRANS 1799 {} 915.00
+}
+
+#VER A 31 20220121 B01201692615 20221122
+{
+#TRANS 1930 {} 601.52
+#TRANS 1910 {} -601.52
+}
+
+#VER A 32 20220121 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 33 20220121 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 34 20220121 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 35 20220124 B01211717835 20221122
+{
+#TRANS 1930 {} 829.09
+#TRANS 1910 {} -829.09
+}
+
+#VER A 36 20220121 MAXI 20221122
+{
+#TRANS 1930 {} -60.35
+#TRANS 1799 {} 60.35
+}
+
+#VER A 37 20220121 CO 20221122
+{
+#TRANS 1930 {} -549.00
+#TRANS 1799 {} 549.00
+}
+
+#VER A 38 20220121 CAFE 20221122
+{
+#TRANS 1930 {} -250.00
+#TRANS 1799 {} 250.00
+}
+
+#VER A 39 20220124 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 40 20220124 1236721690 20221122
+{
+#TRANS 1930 {} 51.00
+#TRANS 1910 {} -51.00
+}
+
+#VER A 41 20220125 B01221741386 20221122
+{
+#TRANS 1930 {} 902.05
+#TRANS 1910 {} -902.05
+}
+
+#VER A 42 20220125 B01231764431 20221122
+{
+#TRANS 1930 {} 1146.61
+#TRANS 1910 {} -1146.61
+}
+
+#VER A 43 20220125 B01241779149 20221122
+{
+#TRANS 1930 {} 904.71
+#TRANS 1910 {} -904.71
+}
+
+#VER A 44 20220126 B01251794741 20221122
+{
+#TRANS 1930 {} 630.76
+#TRANS 1910 {} -630.76
+}
+
+#VER A 45 20220125 ZTL*MEDICAL 20221122
+{
+#TRANS 1930 {} -50.00
+#TRANS 1799 {} 50.00
+}
+
+#VER A 46 20220125 Aros 20221122
+{
+#TRANS 1930 {} -498.00
+#TRANS 1799 {} 498.00
+}
+
+#VER A 47 20220127 B01261815802 20221122
+{
+#TRANS 1930 {} 835.86
+#TRANS 1910 {} -835.86
+}
+
+#VER A 48 20220127 1236721690 20221122
+{
+#TRANS 1930 {} 92.00
+#TRANS 1910 {} -92.00
+}
+
+#VER A 49 20220126 WILLYS 20221122
+{
+#TRANS 1930 {} -96.90
+#TRANS 1799 {} 96.90
+}
+
+#VER A 50 20220128 B01271838611 20221122
+{
+#TRANS 1930 {} 776.73
+#TRANS 1910 {} -776.73
+}
+
+#VER A 51 20220127 SVEA 20221122
+{
+#TRANS 1930 {} -948.00
+#TRANS 1799 {} 948.00
+}
+
+#VER A 52 20220128 Tele2 20221122
+{
+#TRANS 1930 {} -365.00
+#TRANS 1799 {} 365.00
+}
+
+#VER A 53 20220201 B01281862622 20221122
+{
+#TRANS 1930 {} 959.05
+#TRANS 1910 {} -959.05
+}
+
+#VER A 54 20220130 815625931236128 20221122
+{
+#TRANS 1930 {} -4000.00
+#TRANS 1799 {} 4000.00
+}
+
+#VER A 55 20220130 Transportstyrels 20221122
+{
+#TRANS 1930 {} -18.00
+#TRANS 1799 {} 18.00
+}
+
+#VER A 56 20220130 Transportstyrels 20221122
+{
+#TRANS 1930 {} -169.00
+#TRANS 1799 {} 169.00
+}
+
+#VER A 57 20220201 B01291886179 20221122
+{
+#TRANS 1930 {} 1238.74
+#TRANS 1910 {} -1238.74
+}
+
+#VER A 58 20220201 B01301910556 20221122
+{
+#TRANS 1930 {} 1361.64
+#TRANS 1910 {} -1361.64
+}
+
+#VER A 59 20220201 1236721690 20221122
+{
+#TRANS 1930 {} 42.00
+#TRANS 1910 {} -42.00
+}
+
+#VER A 60 20220202 B02011940038 20221122
+{
+#TRANS 1930 {} 344.12
+#TRANS 1910 {} -344.12
+}
+
+#VER A 61 20220201 815625931236128 20221122
+{
+#TRANS 1930 {} 16000.00
+#TRANS 1910 {} -16000.00
+}
+
+#VER A 62 20220201 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 1799 {} 10130.00
+}
+
+#VER A 63 20220201 DNB 20221122
+{
+#TRANS 1930 {} -2431.00
+#TRANS 2641 {} 486.25
+#TRANS 5220 {} 1944.75
+}
+
+#VER A 64 20220201 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 1799 {} 7620.00
+}
+
+#VER A 65 20220201 DINA 20221122
+{
+#TRANS 1930 {} -789.00
+#TRANS 1799 {} 789.00
+}
+
+#VER A 66 20220202 SVEA 20221122
+{
+#TRANS 1930 {} -180.00
+#TRANS 1799 {} 180.00
+}
+
+#VER A 67 20220203 Gteborg 20221122
+{
+#TRANS 1930 {} -1285.00
+#TRANS 1799 {} 1285.00
+}
+
+#VER A 68 20220204 B02031984963 20221122
+{
+#TRANS 1930 {} 609.56
+#TRANS 1910 {} -609.56
+}
+
+#VER A 69 20220203 810597342896359 20221122
+{
+#TRANS 1930 {} 2700.00
+#TRANS 1910 {} -2700.00
+}
+
+#VER A 70 20220203 Svea 20221122
+{
+#TRANS 1930 {} -5746.00
+#TRANS 1799 {} 5746.00
+}
+
+#VER A 71 20220204 53626487 20221122
+{
+#TRANS 1930 {} 1067.50
+#TRANS 1910 {} -1067.50
+}
+
+#VER A 72 20220204 Gteborg 20221122
+{
+#TRANS 1930 {} -8739.00
+#TRANS 1799 {} 8739.00
+}
+
+#VER A 73 20220207 B02042009070 20221122
+{
+#TRANS 1930 {} 525.10
+#TRANS 1910 {} -525.10
+}
+
+#VER A 74 20220204 815625931236128 20221122
+{
+#TRANS 1930 {} -3595.00
+#TRANS 1799 {} 3595.00
+}
+
+#VER A 75 20220204 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 76 20220207 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 77 20220207 1236721690 20221122
+{
+#TRANS 1930 {} 34.00
+#TRANS 1910 {} -34.00
+}
+
+#VER A 78 20220207 1236721690 20221122
+{
+#TRANS 1930 {} 81.00
+#TRANS 1910 {} -81.00
+}
+
+#VER A 79 20220207 1236721690 20221122
+{
+#TRANS 1930 {} 69.00
+#TRANS 1910 {} -69.00
+}
+
+#VER A 80 20220207 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 81 20220207 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 82 20220208 B02052033629 20221122
+{
+#TRANS 1930 {} 586.85
+#TRANS 1910 {} -586.85
+}
+
+#VER A 83 20220208 B02072072344 20221122
+{
+#TRANS 1930 {} 535.09
+#TRANS 1910 {} -535.09
+}
+
+#VER A 84 20220209 B02082088950 20221122
+{
+#TRANS 1930 {} 548.57
+#TRANS 1910 {} -548.57
+}
+
+#VER A 85 20220210 B02092110117 20221122
+{
+#TRANS 1930 {} 906.68
+#TRANS 1910 {} -906.68
+}
+
+#VER A 86 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 87 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 32.00
+#TRANS 1910 {} -32.00
+}
+
+#VER A 88 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 89 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 90 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 91 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 92 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 49.00
+#TRANS 1910 {} -49.00
+}
+
+#VER A 93 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 94 20220210 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 95 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 96 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 97 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 98 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 69.00
+#TRANS 1910 {} -69.00
+}
+
+#VER A 99 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 100 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 101 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 102 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 29.00
+#TRANS 1910 {} -29.00
+}
+
+#VER A 103 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 46.00
+#TRANS 1910 {} -46.00
+}
+
+#VER A 104 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 37.00
+#TRANS 1910 {} -37.00
+}
+
+#VER A 105 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 106 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 107 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 108 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 12.00
+#TRANS 1910 {} -12.00
+}
+
+#VER A 109 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 45.00
+#TRANS 1910 {} -45.00
+}
+
+#VER A 110 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 94.00
+#TRANS 1910 {} -94.00
+}
+
+#VER A 111 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 112 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 51.00
+#TRANS 1910 {} -51.00
+}
+
+#VER A 113 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 114 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 29.00
+#TRANS 1910 {} -29.00
+}
+
+#VER A 115 20220211 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 116 20220210 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 117 20220214 B02112158299 20221122
+{
+#TRANS 1930 {} 181.53
+#TRANS 1910 {} -181.53
+}
+
+#VER A 118 20220214 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 119 20220214 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 120 20220213 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1319.88
+#TRANS 2641 {} 141.42 20220213 SNABBGROSS
+#TRANS 4010 {} 1178.46
+}
+
+#VER A 121 20220215 B02132206224 20221122
+{
+#TRANS 1930 {} 780.51
+#TRANS 1910 {} -780.51
+}
+
+#VER A 122 20220215 B02122182781 20221122
+{
+#TRANS 1930 {} 808.48
+#TRANS 1910 {} -808.48
+}
+
+#VER A 123 20220215 B02142221818 20221122
+{
+#TRANS 1930 {} 643.46
+#TRANS 1910 {} -643.46
+}
+
+#VER A 124 20220216 B02152237898 20221122
+{
+#TRANS 1930 {} 409.39
+#TRANS 1910 {} -409.39
+}
+
+#VER A 125 20220216 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 126 20220215 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -250.34
+#TRANS 2641 {} 26.82 20220215 SNABBGROSS
+#TRANS 4010 {} 223.52
+}
+
+#VER A 127 20220217 B02162260076 20221122
+{
+#TRANS 1930 {} 1219.91
+#TRANS 1910 {} -1219.91
+}
+
+#VER A 128 20220217 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 129 20220217 1236721690 20221122
+{
+#TRANS 1930 {} 37.00
+#TRANS 1910 {} -37.00
+}
+
+#VER A 130 20220218 B02172284476 20221122
+{
+#TRANS 1930 {} 1058.53
+#TRANS 1910 {} -1058.53
+}
+
+#VER A 131 20220218 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 132 20220218 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 133 20220217 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -285.24
+#TRANS 2013 {} -870.00 20220217 SNABBGROSS
+#TRANS 2641 {} 123.78 20220217 SNABBGROSS
+#TRANS 4010 {} 1031.46
+}
+
+#VER A 134 20220217 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -1700.00
+#TRANS 1799 {} 1700.00
+}
+
+#VER A 135 20220221 B02182307608 20221122
+{
+#TRANS 1930 {} 606.35
+#TRANS 1910 {} -606.35
+}
+
+#VER A 136 20220221 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 137 20220221 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 138 20220220 ATM 20221122
+{
+#TRANS 1930 {} -1500.00
+#TRANS 1799 {} 1500.00
+}
+
+#VER A 139 20220221 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 140 20220222 B02192330845 20221122
+{
+#TRANS 1930 {} 1241.67
+#TRANS 1910 {} -1241.67
+}
+
+#VER A 141 20220222 B02212372116 20221122
+{
+#TRANS 1930 {} 994.74
+#TRANS 1910 {} -994.74
+}
+
+#VER A 142 20220222 B02202355984 20221122
+{
+#TRANS 1930 {} 744.88
+#TRANS 1910 {} -744.88
+}
+
+#VER A 143 20220223 B02222388464 20221122
+{
+#TRANS 1930 {} 899.34
+#TRANS 1910 {} -899.34
+}
+
+#VER A 144 20220223 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 145 20220223 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 146 20220223 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 147 20220222 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -238.25
+#TRANS 2641 {} 25.53 20220222 SNABBGROSS
+#TRANS 4010 {} 212.72
+}
+
+#VER A 148 20220224 B02232408873 20221122
+{
+#TRANS 1930 {} 850.46
+#TRANS 1910 {} -850.46
+}
+
+#VER A 149 20220225 B02242432909 20221122
+{
+#TRANS 1930 {} 1195.94
+#TRANS 1910 {} -1195.94
+}
+
+#VER A 150 20220225 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 151 20220225 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 152 20220228 B02252457175 20221122
+{
+#TRANS 1930 {} 991.42
+#TRANS 1910 {} -991.42
+}
+
+#VER A 153 20220228 1236721690 20221122
+{
+#TRANS 1930 {} 46.00
+#TRANS 1910 {} -46.00
+}
+
+#VER A 154 20220228 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 155 20220228 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 156 20220228 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 157 20220301 B02272504811 20221122
+{
+#TRANS 1930 {} 1024.93
+#TRANS 1910 {} -1024.93
+}
+
+#VER A 158 20220301 B02262481338 20221122
+{
+#TRANS 1930 {} 1260.83
+#TRANS 1910 {} -1260.83
+}
+
+#VER A 159 20220301 B02282521433 20221122
+{
+#TRANS 1930 {} 698.29
+#TRANS 1910 {} -698.29
+}
+
+#VER A 160 20220228 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 161 20220228 Transportstyrels 20221122
+{
+#TRANS 1930 {} -1358.00
+#TRANS 1799 {} 1358.00
+}
+
+#VER A 162 20220228 Transportstyrels 20221122
+{
+#TRANS 1930 {} -22.00
+#TRANS 1799 {} 22.00
+}
+
+#VER A 163 20220228 Transportstyrels 20221122
+{
+#TRANS 1930 {} -450.00
+#TRANS 1799 {} 450.00
+}
+
+#VER A 164 20220302 B03012538109 20221122
+{
+#TRANS 1930 {} 1076.95
+#TRANS 1910 {} -1076.95
+}
+
+#VER A 165 20220302 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 166 20220302 1236721690 20221122
+{
+#TRANS 1930 {} 13.00
+#TRANS 1910 {} -13.00
+}
+
+#VER A 167 20220301 SVEA 20221122
+{
+#TRANS 1930 {} -309.00
+#TRANS 1799 {} 309.00
+}
+
+#VER A 168 20220301 hyra 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 1799 {} 10130.00
+}
+
+#VER A 169 20220301 DINA 20221122
+{
+#TRANS 1930 {} -873.00
+#TRANS 1799 {} 873.00
+}
+
+#VER A 170 20220303 B03022560112 20221122
+{
+#TRANS 1930 {} 416.20
+#TRANS 1910 {} -416.20
+}
+
+#VER A 171 20220304 B03032579298 20221122
+{
+#TRANS 1930 {} 978.11
+#TRANS 1910 {} -978.11
+}
+
+#VER A 172 20220304 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 173 20220304 53626487 20221122
+{
+#TRANS 1930 {} 827.50
+#TRANS 1910 {} -827.50
+}
+
+#VER A 174 20220308 B03062654236 20221122
+{
+#TRANS 1930 {} 1096.14
+#TRANS 1910 {} -1096.14
+}
+
+#VER A 175 20220308 B03052628440 20221122
+{
+#TRANS 1930 {} 1530.51
+#TRANS 1910 {} -1530.51
+}
+
+#VER A 176 20220308 B03072669698 20221122
+{
+#TRANS 1930 {} 855.68
+#TRANS 1910 {} -855.68
+}
+
+#VER A 177 20220307 Gteborg 20221122
+{
+#TRANS 1930 {} -3905.00
+#TRANS 1799 {} 3905.00
+}
+
+#VER A 178 20220309 B03082687301 20221122
+{
+#TRANS 1930 {} 716.99
+#TRANS 1910 {} -716.99
+}
+
+#VER A 179 20220309 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 180 20220310 B03092709624 20221122
+{
+#TRANS 1930 {} 529.73
+#TRANS 1910 {} -529.73
+}
+
+#VER A 181 20220311 B03102733845 20221122
+{
+#TRANS 1930 {} 661.66
+#TRANS 1910 {} -661.66
+}
+
+#VER A 182 20220314 B03112758579 20221122
+{
+#TRANS 1930 {} 602.77
+#TRANS 1910 {} -602.77
+}
+
+#VER A 183 20220314 1236721690 20221122
+{
+#TRANS 1930 {} 35.00
+#TRANS 1910 {} -35.00
+}
+
+#VER A 184 20220314 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 185 20220314 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 186 20220315 B03122783219 20221122
+{
+#TRANS 1930 {} 947.35
+#TRANS 1910 {} -947.35
+}
+
+#VER A 187 20220315 B03142823485 20221122
+{
+#TRANS 1930 {} 1053.76
+#TRANS 1910 {} -1053.76
+}
+
+#VER A 188 20220315 B03132808053 20221122
+{
+#TRANS 1930 {} 1111.54
+#TRANS 1910 {} -1111.54
+}
+
+#VER A 189 20220314 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -9500.00
+#TRANS 1799 {} 9500.00
+}
+
+#VER A 190 20220316 B03152841451 20221122
+{
+#TRANS 1930 {} 374.98
+#TRANS 1910 {} -374.98
+}
+
+#VER A 191 20220317 B03162864092 20221122
+{
+#TRANS 1930 {} 1410.57
+#TRANS 1910 {} -1410.57
+}
+
+#VER A 192 20220316 1236721690 20221122
+{
+#TRANS 1930 {} 48.00
+#TRANS 1910 {} -48.00
+}
+
+#VER A 193 20220318 B03172888357 20221122
+{
+#TRANS 1930 {} 425.57
+#TRANS 1910 {} -425.57
+}
+
+#VER A 194 20220321 B03182912792 20221122
+{
+#TRANS 1930 {} 955.50
+#TRANS 1910 {} -955.50
+}
+
+#VER A 195 20220321 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 196 20220321 1236721690 20221122
+{
+#TRANS 1930 {} 45.00
+#TRANS 1910 {} -45.00
+}
+
+#VER A 197 20220321 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 198 20220321 20220321 20221122
+{
+#TRANS 1930 {} -97.50
+#TRANS 1799 {} 97.50
+}
+
+#VER A 199 20220322 B03192936659 20221122
+{
+#TRANS 1930 {} 1418.51
+#TRANS 1910 {} -1418.51
+}
+
+#VER A 200 20220322 B03202962725 20221122
+{
+#TRANS 1930 {} 1589.05
+#TRANS 1910 {} -1589.05
+}
+
+#VER A 201 20220322 B03212979299 20221122
+{
+#TRANS 1930 {} 2277.86
+#TRANS 1910 {} -2277.86
+}
+
+#VER A 202 20220323 B03222996274 20221122
+{
+#TRANS 1930 {} 807.48
+#TRANS 1910 {} -807.48
+}
+
+#VER A 203 20220322 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -547.18
+#TRANS 1799 {} 547.18
+}
+
+#VER A 204 20220322 AROS 20221122
+{
+#TRANS 1930 {} -3160.00
+#TRANS 1799 {} 3160.00
+}
+
+#VER A 205 20220324 B03233018861 20221122
+{
+#TRANS 1930 {} 2513.20
+#TRANS 1910 {} -2513.20
+}
+
+#VER A 206 20220323 FORA 20221122
+{
+#TRANS 1930 {} -1000.00
+#TRANS 7570 {} 1000.00
+}
+
+#VER A 207 20220325 B03243043224 20221122
+{
+#TRANS 1930 {} 877.80
+#TRANS 1910 {} -877.80
+}
+
+#VER A 208 20220324 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 209 20220328 B03253068650 20221122
+{
+#TRANS 1930 {} 1359.38
+#TRANS 1910 {} -1359.38
+}
+
+#VER A 210 20220326 ATM 20221122
+{
+#TRANS 1930 {} -1500.00
+#TRANS 1799 {} 1500.00
+}
+
+#VER A 211 20220326 ATM 20221122
+{
+#TRANS 1930 {} -1500.00
+#TRANS 1799 {} 1500.00
+}
+
+#VER A 212 20220329 B03273120124 20221122
+{
+#TRANS 1930 {} 1376.71
+#TRANS 1910 {} -1376.71
+}
+
+#VER A 213 20220329 B03283136390 20221122
+{
+#TRANS 1930 {} 1481.62
+#TRANS 1910 {} -1481.62
+}
+
+#VER A 214 20220329 B03263093760 20221122
+{
+#TRANS 1930 {} 5465.79
+#TRANS 1910 {} -5465.79
+}
+
+#VER A 215 20220329 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 216 20220330 B03293153072 20221122
+{
+#TRANS 1930 {} 895.33
+#TRANS 1910 {} -895.33
+}
+
+#VER A 217 20220330 1236721690 20221122
+{
+#TRANS 1930 {} 42.00
+#TRANS 1910 {} -42.00
+}
+
+#VER A 218 20220329 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 219 20220329 VISMA 20221122
+{
+#TRANS 1930 {} -1219.00
+#TRANS 1799 {} 1219.00
+}
+
+#VER A 220 20220401 B03303176066 20221122
+{
+#TRANS 1930 {} 802.53
+#TRANS 1910 {} -802.53
+}
+
+#VER A 221 20220330 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00
+}
+
+#VER A 222 20220330 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 223 20220330 Securitas 20221122
+{
+#TRANS 1930 {} -3620.00
+#TRANS 1799 {} 3620.00
+}
+
+#VER A 224 20220401 B03313200207 20221122
+{
+#TRANS 1930 {} 2241.03
+#TRANS 1910 {} -2241.03
+}
+
+#VER A 225 20220401 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 226 20220401 1236721690 20221122
+{
+#TRANS 1930 {} 16.00
+#TRANS 1910 {} -16.00
+}
+
+#VER A 227 20220404 B04013225340 20221122
+{
+#TRANS 1930 {} 2010.71
+#TRANS 1910 {} -2010.71
+}
+
+#VER A 228 20220401 DINA 20221122
+{
+#TRANS 1930 {} -845.00
+#TRANS 1799 {} 845.00
+}
+
+#VER A 229 20220404 1236721690 20221122
+{
+#TRANS 1930 {} 500.00
+#TRANS 1910 {} -500.00
+}
+
+#VER A 230 20220405 B04043292719 20221122
+{
+#TRANS 1930 {} 894.29
+#TRANS 1910 {} -894.29
+}
+
+#VER A 231 20220405 B04033276423 20221122
+{
+#TRANS 1930 {} 1668.11
+#TRANS 1910 {} -1668.11
+}
+
+#VER A 232 20220405 B04023250218 20221122
+{
+#TRANS 1930 {} 1671.70
+#TRANS 1910 {} -1671.70
+}
+
+#VER A 233 20220405 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 234 20220404 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -4741.05
+#TRANS 2641 {} 507.97
+#TRANS 4010 {} 4233.08
+}
+
+#VER A 235 20220404 INGO 20221122
+{
+#TRANS 1930 {} -0.96
+#TRANS 1799 {} 0.96
+}
+
+#VER A 236 20220404 INGO 20221122
+{
+#TRANS 1930 {} -0.72
+#TRANS 1799 {} 0.72
+}
+
+#VER A 237 20220404 INGO 20221122
+{
+#TRANS 1930 {} -21.52
+#TRANS 1799 {} 21.52
+}
+
+#VER A 238 20220406 B04053310354 20221122
+{
+#TRANS 1930 {} 466.25
+#TRANS 1910 {} -466.25
+}
+
+#VER A 239 20220406 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 240 20220406 53626487 20221122
+{
+#TRANS 1930 {} 946.25
+#TRANS 1910 {} -946.25
+}
+
+#VER A 241 20220406 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 242 20220407 B04063333543 20221122
+{
+#TRANS 1930 {} 777.33
+#TRANS 1910 {} -777.33
+}
+
+#VER A 243 20220407 Gteborg 20221122
+{
+#TRANS 1930 {} -2981.00
+#TRANS 1799 {} 2981.00
+}
+
+#VER A 244 20220408 B04073356920 20221122
+{
+#TRANS 1930 {} 823.79
+#TRANS 1910 {} -823.79
+}
+
+#VER A 245 20220407 SVEA 20221122
+{
+#TRANS 1930 {} -309.00
+#TRANS 1799 {} 309.00
+}
+
+#VER A 246 20220411 B04083383910 20221122
+{
+#TRANS 1930 {} 1432.38
+#TRANS 1910 {} -1432.38
+}
+
+#VER A 247 20220408 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -654.26
+#TRANS 2641 {} 70.10
+#TRANS 4010 {} 584.16
+}
+
+#VER A 248 20220411 1236721690 20221122
+{
+#TRANS 1930 {} 585.00
+#TRANS 1910 {} -585.00
+}
+
+#VER A 249 20220409 SAMS 20221122
+{
+#TRANS 1930 {} -638.00
+#TRANS 1799 {} 638.00
+}
+
+#VER A 250 20220412 B04093408912 20221122
+{
+#TRANS 1930 {} 1033.47
+#TRANS 1910 {} -1033.47
+}
+
+#VER A 251 20220412 B04113452147 20221122
+{
+#TRANS 1930 {} 2231.37
+#TRANS 1910 {} -2231.37
+}
+
+#VER A 252 20220413 B04123469629 20221122
+{
+#TRANS 1930 {} 443.34
+#TRANS 1910 {} -443.34
+}
+
+#VER A 253 20220414 B04133493052 20221122
+{
+#TRANS 1930 {} 837.09
+#TRANS 1910 {} -837.09
+}
+
+#VER A 254 20220413 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -3839.68
+#TRANS 2641 {} 411.39
+#TRANS 4010 {} 3428.29
+}
+
+#VER A 255 20220413 INGO 20221122
+{
+#TRANS 1930 {} -201.81
+#TRANS 1799 {} 201.81
+}
+
+#VER A 256 20220419 B04143518223 20221122
+{
+#TRANS 1930 {} 678.76
+#TRANS 1910 {} -678.76
+}
+
+#VER A 257 20220419 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 258 20220419 1236721690 20221122
+{
+#TRANS 1930 {} 60.00
+#TRANS 1910 {} -60.00
+}
+
+#VER A 259 20220419 1236721690 20221122
+{
+#TRANS 1930 {} 141.00
+#TRANS 1910 {} -141.00
+}
+
+#VER A 260 20220420 B04173575868 20221122
+{
+#TRANS 1930 {} 666.62
+#TRANS 1910 {} -666.62
+}
+
+#VER A 261 20220420 B04153542753 20221122
+{
+#TRANS 1930 {} 777.36
+#TRANS 1910 {} -777.36
+}
+
+#VER A 262 20220420 B04193606092 20221122
+{
+#TRANS 1930 {} 1155.18
+#TRANS 1910 {} -1155.18
+}
+
+#VER A 263 20220420 B04163562691 20221122
+{
+#TRANS 1930 {} 1310.10
+#TRANS 1910 {} -1310.10
+}
+
+#VER A 264 20220420 B04183590421 20221122
+{
+#TRANS 1930 {} 2755.07
+#TRANS 1910 {} -2755.07
+}
+
+#VER A 265 20220420 1236721690 20221122
+{
+#TRANS 1930 {} 34.00
+#TRANS 1910 {} -34.00
+}
+
+#VER A 266 20220421 B04203618495 20221122
+{
+#TRANS 1930 {} 1147.43
+#TRANS 1910 {} -1147.43
+}
+
+#VER A 267 20220422 B04213644665 20221122
+{
+#TRANS 1930 {} 932.47
+#TRANS 1910 {} -932.47
+}
+
+#VER A 268 20220422 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 269 20220421 miljfrvaltning 20221122
+{
+#TRANS 1930 {} -4164.00
+#TRANS 1799 {} 4164.00
+}
+
+#VER A 270 20220425 B04223670373 20221122
+{
+#TRANS 1930 {} 725.95
+#TRANS 1910 {} -725.95
+}
+
+#VER A 271 20220422 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -4390.72
+#TRANS 2641 {} 470.72
+#TRANS 4010 {} 3920.00
+}
+
+#VER A 272 20220425 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 273 20220426 B04233695247 20221122
+{
+#TRANS 1930 {} 897.22
+#TRANS 1910 {} -897.22
+}
+
+#VER A 274 20220426 B04243722052 20221122
+{
+#TRANS 1930 {} 955.73
+#TRANS 1910 {} -955.73
+}
+
+#VER A 275 20220427 B04263757660 20221122
+{
+#TRANS 1930 {} 1895.35
+#TRANS 1910 {} -1895.35
+}
+
+#VER A 276 20220428 B04273781073 20221122
+{
+#TRANS 1930 {} 1088.02
+#TRANS 1910 {} -1088.02
+}
+
+#VER A 277 20220428 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 278 20220428 1236721690 20221122
+{
+#TRANS 1930 {} 39.00
+#TRANS 1910 {} -39.00
+}
+
+#VER A 279 20220427 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 280 20220427 Gteborg 20221122
+{
+#TRANS 1930 {} -4877.00
+#TRANS 1799 {} 4877.00
+}
+
+#VER A 281 20220428 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 282 20220429 B04283805056 20221122
+{
+#TRANS 1930 {} 1034.26
+#TRANS 1910 {} -1034.26
+}
+
+#VER A 283 20220429 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 284 20220502 B04293832080 20221122
+{
+#TRANS 1930 {} 766.55
+#TRANS 1910 {} -766.55
+}
+
+#VER A 285 20220502 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 286 20220502 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 287 20220430 ATM 20221122
+{
+#TRANS 1930 {} -3500.00
+#TRANS 1799 {} 3500.00
+}
+
+#VER A 288 20220430 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -737.32
+#TRANS 2641 {} 79.00
+#TRANS 4010 {} 658.32
+}
+
+#VER A 289 20220503 B05013885168 20221122
+{
+#TRANS 1930 {} 1145.38
+#TRANS 1910 {} -1145.38
+}
+
+#VER A 290 20220503 B04303857828 20221122
+{
+#TRANS 1930 {} 1311.39
+#TRANS 1910 {} -1311.39
+}
+
+#VER A 291 20220503 B05023902043 20221122
+{
+#TRANS 1930 {} 1017.63
+#TRANS 1910 {} -1017.63
+}
+
+#VER A 292 20220502 DINA 20221122
+{
+#TRANS 1930 {} -873.00
+#TRANS 1799 {} 873.00
+}
+
+#VER A 293 20220504 B05033920904 20221122
+{
+#TRANS 1930 {} 39.68
+#TRANS 1910 {} -39.68
+}
+
+#VER A 294 20220504 1236721690 20221122
+{
+#TRANS 1930 {} 43.00
+#TRANS 1910 {} -43.00
+}
+
+#VER A 295 20220504 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 296 20220505 B05043943875 20221122
+{
+#TRANS 1930 {} 1121.74
+#TRANS 1910 {} -1121.74
+}
+
+#VER A 297 20220505 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 298 20220503 hyran 20221122
+{
+#TRANS 1930 {} 7000.00
+#TRANS 1910 {} -7000.00
+}
+
+#VER A 299 20220504 815625931236128 20221122
+{
+#TRANS 1930 {} -500.00
+#TRANS 1799 {} 500.00
+}
+
+#VER A 300 20220503 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00
+}
+
+#VER A 301 20220505 53626487 20221122
+{
+#TRANS 1930 {} 980.63
+#TRANS 1910 {} -980.63
+}
+
+#VER A 302 20220506 B05053970045 20221122
+{
+#TRANS 1930 {} 935.32
+#TRANS 1910 {} -935.32
+}
+
+#VER A 303 20220509 B05063999269 20221122
+{
+#TRANS 1930 {} 883.73
+#TRANS 1910 {} -883.73
+}
+
+#VER A 304 20220506 Gteborg 20221122
+{
+#TRANS 1930 {} -3505.00
+#TRANS 1799 {} 3505.00
+}
+
+#VER A 305 20220509 1236721690 20221122
+{
+#TRANS 1930 {} 29.00
+#TRANS 1910 {} -29.00
+}
+
+#VER A 306 20220509 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 307 20220509 1236721690 20221122
+{
+#TRANS 1930 {} 60.00
+#TRANS 1910 {} -60.00
+}
+
+#VER A 308 20220509 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 309 20220510 B05074040843 20221122
+{
+#TRANS 1930 {} 718.95
+#TRANS 1910 {} -718.95
+}
+
+#VER A 310 20220510 B05094078062 20221122
+{
+#TRANS 1930 {} 1197.77
+#TRANS 1910 {} -1197.77
+}
+
+#VER A 311 20220510 B05084060842 20221122
+{
+#TRANS 1930 {} 1472.78
+#TRANS 1910 {} -1472.78
+}
+
+#VER A 312 20220510 1236721690 20221122
+{
+#TRANS 1930 {} 78.00
+#TRANS 1910 {} -78.00
+}
+
+#VER A 313 20220510 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 314 20220511 B05104101395 20221122
+{
+#TRANS 1930 {} 1083.70
+#TRANS 1910 {} -1083.70
+}
+
+#VER A 315 20220511 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 316 20220511 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 317 20220510 ICA 20221122
+{
+#TRANS 1930 {} -2940.00
+#TRANS 1799 {} 2940.00
+}
+
+#VER A 318 20220512 B05114127698 20221122
+{
+#TRANS 1930 {} 1506.19
+#TRANS 1910 {} -1506.19
+}
+
+#VER A 319 20220511 CDM 20221122
+{
+#TRANS 1930 {} 10000.00
+#TRANS 1910 {} -10000.00
+}
+
+#VER A 320 20220511 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -5000.00
+#TRANS 1799 {} 5000.00
+}
+
+#VER A 321 20220513 B05124156501 20221122
+{
+#TRANS 1930 {} 1201.08
+#TRANS 1910 {} -1201.08
+}
+
+#VER A 322 20220513 1236721690 20221122
+{
+#TRANS 1930 {} 17.00
+#TRANS 1910 {} -17.00
+}
+
+#VER A 323 20220513 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 324 20220512 Socotra 20221122
+{
+#TRANS 1930 {} -12.00
+#TRANS 1799 {} 12.00
+}
+
+#VER A 325 20220516 B05134183962 20221122
+{
+#TRANS 1930 {} 1640.24
+#TRANS 1910 {} -1640.24
+}
+
+#VER A 326 20220516 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 327 20220516 1236721690 20221122
+{
+#TRANS 1930 {} 52.00
+#TRANS 1910 {} -52.00
+}
+
+#VER A 328 20220517 B05144211080 20221122
+{
+#TRANS 1930 {} 1286.07
+#TRANS 1910 {} -1286.07
+}
+
+#VER A 329 20220517 B05164247861 20221122
+{
+#TRANS 1930 {} 1933.66
+#TRANS 1910 {} -1933.66
+}
+
+#VER A 330 20220517 B05154231707 20221122
+{
+#TRANS 1930 {} 1979.51
+#TRANS 1910 {} -1979.51
+}
+
+#VER A 331 20220518 B05174270173 20221122
+{
+#TRANS 1930 {} 1355.24
+#TRANS 1910 {} -1355.24
+}
+
+#VER A 332 20220518 1236721690 20221122
+{
+#TRANS 1930 {} 72.00
+#TRANS 1910 {} -72.00
+}
+
+#VER A 333 20220518 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 334 20220516 Gteborg 20221122
+{
+#TRANS 1930 {} -1799.00
+#TRANS 1799 {} 1799.00
+}
+
+#VER A 335 20220519 B05184293704 20221122
+{
+#TRANS 1930 {} 1460.65
+#TRANS 1910 {} -1460.65
+}
+
+#VER A 336 20220518 1236721690 20221122
+{
+#TRANS 1930 {} 57.00
+#TRANS 1910 {} -57.00
+}
+
+#VER A 337 20220520 B05194320772 20221122
+{
+#TRANS 1930 {} 1095.51
+#TRANS 1910 {} -1095.51
+}
+
+#VER A 338 20220523 B05204346769 20221122
+{
+#TRANS 1930 {} 1256.20
+#TRANS 1910 {} -1256.20
+}
+
+#VER A 339 20220520 1236721690 20221122
+{
+#TRANS 1930 {} 13.00
+#TRANS 1910 {} -13.00
+}
+
+#VER A 340 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 341 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 58.00
+#TRANS 1910 {} -58.00
+}
+
+#VER A 342 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 97.00
+#TRANS 1910 {} -97.00
+}
+
+#VER A 343 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 96.00
+#TRANS 1910 {} -96.00
+}
+
+#VER A 344 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 345 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 346 20220523 1236721690 20221122
+{
+#TRANS 1930 {} 12.00
+#TRANS 1910 {} -12.00
+}
+
+#VER A 347 20220524 B05214376720 20221122
+{
+#TRANS 1930 {} 1914.09
+#TRANS 1910 {} -1914.09
+}
+
+#VER A 348 20220524 B05224400321 20221122
+{
+#TRANS 1930 {} 1961.19
+#TRANS 1910 {} -1961.19
+}
+
+#VER A 349 20220524 B05234416410 20221122
+{
+#TRANS 1930 {} 2606.87
+#TRANS 1910 {} -2606.87
+}
+
+#VER A 350 20220524 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 351 20220524 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 352 20220524 1236721690 20221122
+{
+#TRANS 1930 {} 163.00
+#TRANS 1910 {} -163.00
+}
+
+#VER A 353 20220524 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 354 20220525 B05244438131 20221122
+{
+#TRANS 1930 {} 1385.98
+#TRANS 1910 {} -1385.98
+}
+
+#VER A 355 20220525 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 356 20220527 B05254461172 20221122
+{
+#TRANS 1930 {} 1440.17
+#TRANS 1910 {} -1440.17
+}
+
+#VER A 357 20220525 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 358 20220525 815625931236128 20221122
+{
+#TRANS 1930 {} -2700.00
+#TRANS 1799 {} 2700.00
+}
+
+#VER A 359 20220527 1236721690 20221122
+{
+#TRANS 1930 {} 65.00
+#TRANS 1910 {} -65.00
+}
+
+#VER A 360 20220530 B05274509638 20221122
+{
+#TRANS 1930 {} 1738.62
+#TRANS 1910 {} -1738.62
+}
+
+#VER A 361 20220530 B05264488346 20221122
+{
+#TRANS 1930 {} 2942.80
+#TRANS 1910 {} -2942.80
+}
+
+#VER A 362 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 45.00
+#TRANS 1910 {} -45.00
+}
+
+#VER A 363 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 364 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 63.00
+#TRANS 1910 {} -63.00
+}
+
+#VER A 365 20220528 ALLGAS 20221122
+{
+#TRANS 1930 {} -400.00
+#TRANS 2013 {} 400.00
+}
+
+#VER A 366 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 367 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 368 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 113.00
+#TRANS 1910 {} -113.00
+}
+
+#VER A 369 20220529 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 370 20220601 B05284530751 20221122
+{
+#TRANS 1930 {} 2512.57
+#TRANS 1910 {} -2512.57
+}
+
+#VER A 371 20220601 B05294553688 20221122
+{
+#TRANS 1930 {} 1798.63
+#TRANS 1910 {} -1798.63
+}
+
+#VER A 372 20220601 B05304570497 20221122
+{
+#TRANS 1930 {} 3084.66
+#TRANS 1910 {} -3084.66
+}
+
+#VER A 373 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 133.00
+#TRANS 1910 {} -133.00
+}
+
+#VER A 374 20220530 1236721690 20221122
+{
+#TRANS 1930 {} 54.00
+#TRANS 1910 {} -54.00
+}
+
+#VER A 375 20220530 SVEA 20221122
+{
+#TRANS 1930 {} -124.00
+#TRANS 1799 {} 124.00
+}
+
+#VER A 376 20220530 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 377 20220530 Schenker 20221122
+{
+#TRANS 1930 {} -756.00
+#TRANS 1799 {} 756.00
+}
+
+#VER A 378 20220530 Transportstyrels 20221122
+{
+#TRANS 1930 {} -83.00
+#TRANS 1799 {} 83.00
+}
+
+#VER A 379 20220530 Gteborg 20221122
+{
+#TRANS 1930 {} -3080.00
+#TRANS 1799 {} 3080.00
+}
+
+#VER A 380 20220530 Transportstyrels 20221122
+{
+#TRANS 1930 {} -621.00
+#TRANS 1799 {} 621.00
+}
+
+#VER A 381 20220601 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 382 20220601 1236721690 20221122
+{
+#TRANS 1930 {} 55.00
+#TRANS 1910 {} -55.00
+}
+
+#VER A 383 20220601 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 384 20220601 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 385 20220530 RESURS 20221122
+{
+#TRANS 1930 {} -220.00
+#TRANS 1799 {} 220.00
+}
+
+#VER A 386 20220530 WASA 20221122
+{
+#TRANS 1930 {} -1475.00
+#TRANS 1799 {} 1475.00
+}
+
+#VER A 387 20220530 WASA 20221122
+{
+#TRANS 1930 {} -2200.00
+#TRANS 1799 {} 2200.00
+}
+
+#VER A 388 20220530 DNB 20221122
+{
+#TRANS 1930 {} -2455.00
+#TRANS 2641 {} 491.04
+#TRANS 5220 {} 1963.96
+}
+
+#VER A 389 20220530 WSAB 20221122
+{
+#TRANS 1930 {} -2025.00
+#TRANS 1799 {} 2025.00
+}
+
+#VER A 390 20220602 B06014618820 20221122
+{
+#TRANS 1930 {} 3034.96
+#TRANS 1910 {} -3034.96
+}
+
+#VER A 391 20220602 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 392 20220601 CENTRUMBUTIKEN 20221122
+{
+#TRANS 1930 {} -4675.00
+#TRANS 1799 {} 4675.00
+}
+
+#VER A 393 20220601 DINA 20221122
+{
+#TRANS 1930 {} -845.00
+#TRANS 1799 {} 845.00
+}
+
+#VER A 394 20220602 Gteborg 20221122
+{
+#TRANS 1930 {} -3389.00
+#TRANS 1799 {} 3389.00
+}
+
+#VER A 395 20220603 B06024647685 20221122
+{
+#TRANS 1930 {} 1408.40
+#TRANS 1910 {} -1408.40
+}
+
+#VER A 396 20220603 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 397 20220603 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 398 20220602 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 5010 {} 7620.00
+}
+
+#VER A 399 20220602 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00
+}
+
+#VER A 400 20220607 B06034681630 20221122
+{
+#TRANS 1930 {} 1574.84
+#TRANS 1910 {} -1574.84
+}
+
+#VER A 401 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 38.00
+#TRANS 1910 {} -38.00
+}
+
+#VER A 402 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 403 20220603 JERKSTRANDS 20221122
+{
+#TRANS 1930 {} -179.00
+#TRANS 1799 {} 179.00
+}
+
+#VER A 404 20220607 53626487 20221122
+{
+#TRANS 1930 {} 650.64
+#TRANS 1910 {} -650.64
+}
+
+#VER A 405 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 406 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 48.00
+#TRANS 1910 {} -48.00
+}
+
+#VER A 407 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 408 20220605 MAXI 20221122
+{
+#TRANS 1930 {} -105.00
+#TRANS 2641 {} 21.00
+#TRANS 4010 {} 84.00
+}
+
+#VER A 409 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 65.00
+#TRANS 1910 {} -65.00
+}
+
+#VER A 410 20220606 815625931236128 20221122
+{
+#TRANS 1930 {} -400.00
+#TRANS 1799 {} 400.00
+}
+
+#VER A 411 20220606 SMD 20221122
+{
+#TRANS 1930 {} -3513.00
+#TRANS 2641 {} 702.69
+#TRANS 4010 {} 2810.75
+#TRANS 3740 {} -0.44
+}
+
+#VER A 412 20220607 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 413 20220608 B06054738760 20221122
+{
+#TRANS 1930 {} 2158.25
+#TRANS 1910 {} -2158.25
+}
+
+#VER A 414 20220608 B06044712841 20221122
+{
+#TRANS 1930 {} 2845.69
+#TRANS 1910 {} -2845.69
+}
+
+#VER A 415 20220608 B06074775620 20221122
+{
+#TRANS 1930 {} 1427.86
+#TRANS 1910 {} -1427.86
+}
+
+#VER A 416 20220608 B06064756168 20221122
+{
+#TRANS 1930 {} 2145.95
+#TRANS 1910 {} -2145.95
+}
+
+#VER A 417 20220607 1236721690 20221122
+{
+#TRANS 1930 {} 85.00
+#TRANS 1910 {} -85.00
+}
+
+#VER A 418 20220609 B06084799180 20221122
+{
+#TRANS 1930 {} 1498.22
+#TRANS 1910 {} -1498.22
+}
+
+#VER A 419 20220609 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 420 20220610 B06094828735 20221122
+{
+#TRANS 1930 {} 1446.98
+#TRANS 1910 {} -1446.98
+}
+
+#VER A 421 20220609 1236721690 20221122
+{
+#TRANS 1930 {} 48.00
+#TRANS 1910 {} -48.00
+}
+
+#VER A 422 20220609 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -393.05
+#TRANS 2641 {} 251.83
+#TRANS 4010 {} 1641.22
+#TRANS 1910 {} -1500.00
+}
+
+#VER A 423 20220613 B06104862566 20221122
+{
+#TRANS 1930 {} 1936.46
+#TRANS 1910 {} -1936.46
+}
+
+#VER A 424 20220613 1236721690 20221122
+{
+#TRANS 1930 {} 58.00
+#TRANS 1910 {} -58.00
+}
+
+#VER A 425 20220613 1236721690 20221122
+{
+#TRANS 1930 {} 12.00
+#TRANS 1910 {} -12.00
+}
+
+#VER A 426 20220613 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 427 20220610 WILLYS 20221122
+{
+#TRANS 1930 {} -348.57
+#TRANS 2641 {} 37.35
+#TRANS 4010 {} 311.22
+}
+
+#VER A 428 20220614 B06134936484 20221122
+{
+#TRANS 1930 {} 2023.17
+#TRANS 1910 {} -2023.17
+}
+
+#VER A 429 20220614 B06114894076 20221122
+{
+#TRANS 1930 {} 2073.24
+#TRANS 1910 {} -2073.24
+}
+
+#VER A 430 20220614 B06124919143 20221122
+{
+#TRANS 1930 {} 2173.18
+#TRANS 1910 {} -2173.18
+}
+
+#VER A 431 20220614 1236721690 20221122
+{
+#TRANS 1930 {} 21.00
+#TRANS 1910 {} -21.00
+}
+
+#VER A 432 20220613 Telia 20221122
+{
+#TRANS 1930 {} -1285.00
+#TRANS 2641 {} 256.93
+#TRANS 6212 {} 1028.07
+}
+
+#VER A 433 20220613 Varsego/Klientme 20221122
+{
+#TRANS 1930 {} -7833.00
+#TRANS 1799 {} 7833.00
+}
+
+#VER A 434 20220615 B06144963187 20221122
+{
+#TRANS 1930 {} 1421.95
+#TRANS 1910 {} -1421.95
+}
+
+#VER A 435 20220615 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 436 20220614 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1896.18
+#TRANS 2641 {} 203.16
+#TRANS 4010 {} 1693.02
+}
+
+#VER A 437 20220616 B06154992442 20221122
+{
+#TRANS 1930 {} 1565.68
+#TRANS 1910 {} -1565.68
+}
+
+#VER A 438 20220616 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 439 20220616 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 440 20220616 1236721690 20221122
+{
+#TRANS 1930 {} 38.00
+#TRANS 1910 {} -38.00
+}
+
+#VER A 441 20220615 GOTEBORGS 20221122
+{
+#TRANS 1930 {} -284.90
+#TRANS 1799 {} 284.90
+}
+
+#VER A 442 20220615 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -5000.00
+#TRANS 1799 {} 5000.00
+}
+
+#VER A 443 20220617 B06165023180 20221122
+{
+#TRANS 1930 {} 1939.07
+#TRANS 1910 {} -1939.07
+}
+
+#VER A 444 20220617 1236721690 20221122
+{
+#TRANS 1930 {} 53.00
+#TRANS 1910 {} -53.00
+}
+
+#VER A 445 20220620 B06175055028 20221122
+{
+#TRANS 1930 {} 2447.27
+#TRANS 1910 {} -2447.27
+}
+
+#VER A 446 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 447 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 448 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 31.00
+#TRANS 1910 {} -31.00
+}
+
+#VER A 449 20220617 HAMMARKULLENS 20221122
+{
+#TRANS 1930 {} -815.00
+#TRANS 1799 {} 815.00
+}
+
+#VER A 450 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 451 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 47.00
+#TRANS 1910 {} -47.00
+}
+
+#VER A 452 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 82.00
+#TRANS 1910 {} -82.00
+}
+
+#VER A 453 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 454 20220620 1236721690 20221122
+{
+#TRANS 1930 {} 140.00
+#TRANS 1910 {} -140.00
+}
+
+#VER A 455 20220620 20220620 20221122
+{
+#TRANS 1930 {} -109.50
+#TRANS 1799 {} 109.50
+}
+
+#VER A 456 20220621 B06205128507 20221122
+{
+#TRANS 1930 {} 1581.69
+#TRANS 1910 {} -1581.69
+}
+
+#VER A 457 20220621 B06195109776 20221122
+{
+#TRANS 1930 {} 1998.70
+#TRANS 1910 {} -1998.70
+}
+
+#VER A 458 20220621 B06185081632 20221122
+{
+#TRANS 1930 {} 2827.22
+#TRANS 1910 {} -2827.22
+}
+
+#VER A 459 20220621 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 460 20220621 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 461 20220621 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 462 20220622 B06215155867 20221122
+{
+#TRANS 1930 {} 2080.46
+#TRANS 1910 {} -2080.46
+}
+
+#VER A 463 20220621 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 464 20220623 B06225184553 20221122
+{
+#TRANS 1930 {} 1758.10
+#TRANS 1910 {} -1758.10
+}
+
+#VER A 465 20220627 B06235215982 20221122
+{
+#TRANS 1930 {} 1409.52
+#TRANS 1910 {} -1409.52
+}
+
+#VER A 466 20220627 1236721690 20221122
+{
+#TRANS 1930 {} 91.00
+#TRANS 1910 {} -91.00
+}
+
+#VER A 467 20220627 1236721690 20221122
+{
+#TRANS 1930 {} 90.00
+#TRANS 1910 {} -90.00
+}
+
+#VER A 468 20220627 1236721690 20221122
+{
+#TRANS 1930 {} 9.00
+#TRANS 1910 {} -9.00
+}
+
+#VER A 469 20220628 B06245247776 20221122
+{
+#TRANS 1930 {} 1865.47
+#TRANS 1910 {} -1865.47
+}
+
+#VER A 470 20220628 B06265289886 20221122
+{
+#TRANS 1930 {} 2307.63
+#TRANS 1910 {} -2307.63
+}
+
+#VER A 471 20220628 B06275305457 20221122
+{
+#TRANS 1930 {} 2790.01
+#TRANS 1910 {} -2790.01
+}
+
+#VER A 472 20220628 B06255270832 20221122
+{
+#TRANS 1930 {} 3481.87
+#TRANS 1910 {} -3481.87
+}
+
+#VER A 473 20220628 1236721690 20221122
+{
+#TRANS 1930 {} 73.00
+#TRANS 1910 {} -73.00
+}
+
+#VER A 474 20220629 B06285330971 20221122
+{
+#TRANS 1930 {} 2139.54
+#TRANS 1910 {} -2139.54
+}
+
+#VER A 475 20220628 OOB 20221122
+{
+#TRANS 1930 {} -117.00
+#TRANS 2641 {} 23.40
+#TRANS 4010 {} 93.60
+}
+
+#VER A 476 20220628 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -3469.37
+#TRANS 2641 {} 371.72
+#TRANS 4010 {} 3097.65
+}
+
+#VER A 477 20220627 SVEA 20221122
+{
+#TRANS 1930 {} -124.00
+#TRANS 1799 {} 124.00
+}
+
+#VER A 478 20220627 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 479 20220627 Convini 20221122
+{
+#TRANS 1930 {} -1940.00
+#TRANS 1799 {} 1940.00
+}
+
+#VER A 480 20220627 Gteborgs 20221122
+{
+#TRANS 1930 {} -2750.00
+#TRANS 1799 {} 2750.00
+}
+
+#VER A 481 20220627 TG 20221122
+{
+#TRANS 1930 {} -3334.00
+#TRANS 1799 {} 3334.00
+}
+
+#VER A 482 20220630 B06295360708 20221122
+{
+#TRANS 1930 {} 1832.92
+#TRANS 1910 {} -1832.92
+}
+
+#VER A 483 20220630 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 484 20220701 B06305390627 20221122
+{
+#TRANS 1930 {} 2036.10
+#TRANS 1910 {} -2036.10
+}
+
+#VER A 485 20220701 1236721690 20221122
+{
+#TRANS 1930 {} 72.00
+#TRANS 1910 {} -72.00
+}
+
+#VER A 486 20220701 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 487 20220630 Transportstyrels 20221122
+{
+#TRANS 1930 {} -1433.00
+#TRANS 1799 {} 1433.00
+}
+
+#VER A 488 20220630 Transportstyrels 20221122
+{
+#TRANS 1930 {} -83.00
+#TRANS 1799 {} 83.00
+}
+
+#VER A 489 20220630 Transportstyrels 20221122
+{
+#TRANS 1930 {} -437.00
+#TRANS 1799 {} 437.00
+}
+
+#VER A 490 20220630 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 491 20220630 Gteborg 20221122
+{
+#TRANS 1930 {} -3503.00
+#TRANS 1799 {} 3503.00
+}
+
+#VER A 492 20220701 Securitas 20221122
+{
+#TRANS 1930 {} -3620.00
+#TRANS 1799 {} 3620.00
+}
+
+#VER A 493 20220704 B07015422234 20221122
+{
+#TRANS 1930 {} 2193.59
+#TRANS 1910 {} -2193.59
+}
+
+#VER A 494 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 34.00
+#TRANS 1910 {} -34.00
+}
+
+#VER A 495 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 12.00
+#TRANS 1910 {} -12.00
+}
+
+#VER A 496 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 16.00
+#TRANS 1910 {} -16.00
+}
+
+#VER A 497 20220701 DINA 20221122
+{
+#TRANS 1930 {} -873.00
+#TRANS 1799 {} 873.00
+}
+
+#VER A 498 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 72.00
+#TRANS 1910 {} -72.00
+}
+
+#VER A 499 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 41.00
+#TRANS 1910 {} -41.00
+}
+
+#VER A 500 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 13.00
+#TRANS 1910 {} -13.00
+}
+
+#VER A 501 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 502 20220702 Apoteket 20221122
+{
+#TRANS 1930 {} -239.00
+#TRANS 1799 {} 239.00
+}
+
+#VER A 503 20220702 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1018.77
+#TRANS 2641 {} 109.15
+#TRANS 4010 {} 909.62
+}
+
+#VER A 504 20220702 DNB 20221122
+{
+#TRANS 1930 {} -2440.00
+#TRANS 5220 {} 1952.28
+#TRANS 2641 {} 488.07
+#TRANS 3740 {} -0.35
+}
+
+#VER A 505 20220702 Telia 20221122
+{
+#TRANS 1930 {} -1257.00
+#TRANS 2641 {} 251.46
+#TRANS 6212 {} 1005.54
+}
+
+#VER A 506 20220704 1236721690 20221122
+{
+#TRANS 1930 {} 181.00
+#TRANS 1910 {} -181.00
+}
+
+#VER A 507 20220703 815625931236128 20221122
+{
+#TRANS 1930 {} 10000.00
+#TRANS 1910 {} -10000.00
+}
+
+#VER A 508 20220703 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1102.44
+#TRANS 2641 {} 118.12
+#TRANS 4010 {} 984.32
+}
+
+#VER A 509 20220703 FSL 20221122
+{
+#TRANS 1930 {} -991.00
+#TRANS 2641 {} 106.18
+#TRANS 4010 {} 884.82
+}
+
+#VER A 510 20220704 Gteborg 20221122
+{
+#TRANS 1930 {} -3217.00
+#TRANS 1799 {} 3217.00
+}
+
+#VER A 511 20220704 L-NSFRS-KRINGAR 20221122
+{
+#TRANS 1930 {} -934.00
+#TRANS 1799 {} 934.00
+}
+
+#VER A 512 20220704 Gteborg 20221122
+{
+#TRANS 1930 {} -1980.00
+#TRANS 1799 {} 1980.00
+}
+
+#VER A 513 20220703 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00
+}
+
+#VER A 514 20220703 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 5010 {} 7620.00
+}
+
+#VER A 515 20220705 B07035478155 20221122
+{
+#TRANS 1930 {} 1729.85
+#TRANS 1910 {} -1729.85
+}
+
+#VER A 516 20220705 B07045496887 20221122
+{
+#TRANS 1930 {} 1918.17
+#TRANS 1910 {} -1918.17
+}
+
+#VER A 517 20220705 B07025453016 20221122
+{
+#TRANS 1930 {} 2806.24
+#TRANS 1910 {} -2806.24
+}
+
+#VER A 518 20220704 WILLYS 20221122
+{
+#TRANS 1930 {} -358.80
+#TRANS 2641 {} 51.33
+#TRANS 4010 {} 307.47
+}
+
+#VER A 519 20220704 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -695.52
+#TRANS 2641 {} 96.44
+#TRANS 4010 {} 599.08
+}
+
+#VER A 520 20220706 B07055521352 20221122
+{
+#TRANS 1930 {} 1731.10
+#TRANS 1910 {} -1731.10
+}
+
+#VER A 521 20220706 53626487 20221122
+{
+#TRANS 1930 {} 583.76
+#TRANS 1910 {} -583.76
+}
+
+#VER A 522 20220707 B07065549597 20221122
+{
+#TRANS 1930 {} 1938.09
+#TRANS 1910 {} -1938.09
+}
+
+#VER A 523 20220707 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 524 20220706 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -557.71
+#TRANS 2641 {} 80.11
+#TRANS 4010 {} 477.60
+}
+
+#VER A 525 20220707 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 526 20220708 B07075580322 20221122
+{
+#TRANS 1930 {} 2474.39
+#TRANS 1910 {} -2474.39
+}
+
+#VER A 527 20220707 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -406.48
+#TRANS 1799 {} 406.48
+}
+
+#VER A 528 20220711 B07085609864 20221122
+{
+#TRANS 1930 {} 1782.53
+#TRANS 1910 {} -1782.53
+}
+
+#VER A 529 20220711 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 530 20220708 MALTE 20221122
+{
+#TRANS 1930 {} -821.00
+#TRANS 2641 {} 87.96
+#TRANS 4010 {} 733.04
+}
+
+#VER A 531 20220708 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2882.02
+#TRANS 2641 {} 308.79
+#TRANS 4010 {} 2573.23
+}
+
+#VER A 532 20220711 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 533 20220710 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1390.19
+#TRANS 2641 {} 148.95
+#TRANS 4010 {} 1241.24
+}
+
+#VER A 534 20220712 B07115683053 20221122
+{
+#TRANS 1930 {} 2481.50
+#TRANS 1910 {} -2481.50
+}
+
+#VER A 535 20220712 B07095640675 20221122
+{
+#TRANS 1930 {} 2516.59
+#TRANS 1910 {} -2516.59
+}
+
+#VER A 536 20220712 B07105666515 20221122
+{
+#TRANS 1930 {} 2669.98
+#TRANS 1910 {} -2669.98
+}
+
+#VER A 537 20220711 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -3820.00
+#TRANS 1799 {} 3820.00
+}
+
+#VER A 538 20220711 WASA 20221122
+{
+#TRANS 1930 {} -6.00
+#TRANS 1799 {} 6.00
+}
+
+#VER A 539 20220711 WASA 20221122
+{
+#TRANS 1930 {} -10.00
+#TRANS 1799 {} 10.00
+}
+
+#VER A 540 20220713 B07125706840 20221122
+{
+#TRANS 1930 {} 1884.65
+#TRANS 1910 {} -1884.65
+}
+
+#VER A 541 20220713 1236721690 20221122
+{
+#TRANS 1930 {} 72.00
+#TRANS 1910 {} -72.00
+}
+
+#VER A 542 20220712 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2477.25
+#TRANS 2641 {} 265.42
+#TRANS 4010 {} 2211.83
+}
+
+#VER A 543 20220712 V-GVERKET 20221122
+{
+#TRANS 1930 {} -2980.00
+#TRANS 1799 {} 2980.00
+}
+
+#VER A 544 20220714 B07135733271 20221122
+{
+#TRANS 1930 {} 1834.53
+#TRANS 1910 {} -1834.53
+}
+
+#VER A 545 20220713 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 546 20220714 1236721690 20221122
+{
+#TRANS 1930 {} 72.00
+#TRANS 1910 {} -72.00
+}
+
+#VER A 547 20220714 1236721690 20221122
+{
+#TRANS 1930 {} 79.00
+#TRANS 1910 {} -79.00
+}
+
+#VER A 548 20220714 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 549 20220714 1236721690 20221122
+{
+#TRANS 1930 {} 51.00
+#TRANS 1910 {} -51.00
+}
+
+#VER A 550 20220713 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -985.84
+#TRANS 2641 {} 105.63
+#TRANS 4010 {} 880.21
+}
+
+#VER A 551 20220713 INGO 20221122
+{
+#TRANS 1930 {} -529.63
+#TRANS 1799 {} 529.63
+}
+
+#VER A 552 20220713 SMD 20221122
+{
+#TRANS 1930 {} -4807.00
+#TRANS 2641 {} 961.45
+#TRANS 4010 {} 3845.55
+}
+
+#VER A 553 20220715 B07145761181 20221122
+{
+#TRANS 1930 {} 1824.95
+#TRANS 1910 {} -1824.95
+}
+
+#VER A 554 20220715 1236721690 20221122
+{
+#TRANS 1930 {} 82.00
+#TRANS 1910 {} -82.00
+}
+
+#VER A 555 20220715 1236721690 20221122
+{
+#TRANS 1930 {} 140.00
+#TRANS 1910 {} -140.00
+}
+
+#VER A 556 20220714 Liba 20221122
+{
+#TRANS 1930 {} -119.00
+#TRANS 2641 {} 12.75
+#TRANS 4010 {} 106.25
+}
+
+#VER A 557 20220718 B07155789872 20221122
+{
+#TRANS 1930 {} 1634.61
+#TRANS 1910 {} -1634.61
+}
+
+#VER A 558 20220715 1236721690 20221122
+{
+#TRANS 1930 {} 85.00
+#TRANS 1910 {} -85.00
+}
+
+#VER A 559 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 36.00
+#TRANS 1910 {} -36.00
+}
+
+#VER A 560 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 561 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 562 20220715 WILLYS 20221122
+{
+#TRANS 1930 {} -136.20
+#TRANS 2641 {} 14.59
+#TRANS 4010 {} 121.61
+}
+
+#VER A 563 20220715 WASA 20221122
+{
+#TRANS 1930 {} -1475.00
+#TRANS 1799 {} 1475.00
+}
+
+#VER A 564 20220715 WASA 20221122
+{
+#TRANS 1930 {} -2200.00
+#TRANS 1799 {} 2200.00
+}
+
+#VER A 565 20220718 53626487 20221122
+{
+#TRANS 1930 {} 3675.00
+#TRANS 1910 {} -3675.00
+}
+
+#VER A 566 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 83.00
+#TRANS 1910 {} -83.00
+}
+
+#VER A 567 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 568 20220717 815625931236128 20221122
+{
+#TRANS 1930 {} -6000.00
+#TRANS 1799 {} 6000.00
+}
+
+#VER A 569 20220719 B07165819842 20221122
+{
+#TRANS 1930 {} 2227.41
+#TRANS 1910 {} -2227.41
+}
+
+#VER A 570 20220719 B07185859555 20221122
+{
+#TRANS 1930 {} 1987.25
+#TRANS 1910 {} -1987.25
+}
+
+#VER A 571 20220719 B07175843147 20221122
+{
+#TRANS 1930 {} 2159.14
+#TRANS 1910 {} -2159.14
+}
+
+#VER A 572 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 32.00
+#TRANS 1910 {} -32.00
+}
+
+#VER A 573 20220718 1236721690 20221122
+{
+#TRANS 1930 {} 55.00
+#TRANS 1910 {} -55.00
+}
+
+#VER A 574 20220718 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1042.52
+#TRANS 2641 {} 111.70
+#TRANS 4010 {} 930.82
+}
+
+#VER A 575 20220720 B07195882752 20221122
+{
+#TRANS 1930 {} 2471.06
+#TRANS 1910 {} -2471.06
+}
+
+#VER A 576 20220720 20220720 20221122
+{
+#TRANS 1930 {} -60.00
+#TRANS 1799 {} 60.00
+}
+
+#VER A 577 20220721 B07205907837 20221122
+{
+#TRANS 1930 {} 2812.60
+#TRANS 1910 {} -2812.60
+}
+
+#VER A 578 20220720 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -570.07
+#TRANS 1799 {} 570.07
+}
+
+#VER A 579 20220722 B07215936147 20221122
+{
+#TRANS 1930 {} 2629.44
+#TRANS 1910 {} -2629.44
+}
+
+#VER A 580 20220722 1236721690 20221122
+{
+#TRANS 1930 {} 26.00
+#TRANS 1910 {} -26.00
+}
+
+#VER A 581 20220725 B07225960566 20221122
+{
+#TRANS 1930 {} 2037.17
+#TRANS 1910 {} -2037.17
+}
+
+#VER A 582 20220725 1236721690 20221122
+{
+#TRANS 1930 {} 112.00
+#TRANS 1910 {} -112.00
+}
+
+#VER A 583 20220722 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -697.42
+#TRANS 2641 {} 74.72
+#TRANS 4010 {} 622.70
+}
+
+#VER A 584 20220725 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 585 20220726 B07235987637 20221122
+{
+#TRANS 1930 {} 2130.24
+#TRANS 1910 {} -2130.24
+}
+
+#VER A 586 20220726 B07256028160 20221122
+{
+#TRANS 1930 {} 1408.80
+#TRANS 1910 {} -1408.80
+}
+
+#VER A 587 20220726 B07246010513 20221122
+{
+#TRANS 1930 {} 1735.71
+#TRANS 1910 {} -1735.71
+}
+
+#VER A 588 20220725 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 589 20220726 1236721690 20221122
+{
+#TRANS 1930 {} 130.00
+#TRANS 1910 {} -130.00
+}
+
+#VER A 590 20220725 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 591 20220725 SVEA 20221122
+{
+#TRANS 1930 {} -124.00
+#TRANS 1799 {} 124.00
+}
+
+#VER A 592 20220727 B07266049685 20221122
+{
+#TRANS 1930 {} 1433.08
+#TRANS 1910 {} -1433.08
+}
+
+#VER A 593 20220728 B07276074736 20221122
+{
+#TRANS 1930 {} 1996.93
+#TRANS 1910 {} -1996.93
+}
+
+#VER A 594 20220728 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 595 20220728 Tele2 20221122
+{
+#TRANS 1930 {} -468.00
+#TRANS 1799 {} 468.00
+}
+
+#VER A 596 20220729 B07286102844 20221122
+{
+#TRANS 1930 {} 2176.83
+#TRANS 1910 {} -2176.83
+}
+
+#VER A 597 20220728 810597342896359 20221122
+{
+#TRANS 1930 {} 20000.00
+#TRANS 1910 {} -20000.00
+}
+
+#VER A 598 20220728 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2686.33
+#TRANS 2641 {} 287.82
+#TRANS 4010 {} 2398.51
+}
+
+#VER A 599 20220728 SWEDBANK 20221122
+{
+#TRANS 1930 {} -17950.00
+#TRANS 1799 {} 17950.00
+}
+
+#VER A 600 20220728 GTEBORGS 20221122
+{
+#TRANS 1930 {} -6808.00
+#TRANS 1799 {} 6808.00
+}
+
+#VER A 601 20220801 B07296129602 20221122
+{
+#TRANS 1930 {} 2951.62
+#TRANS 1910 {} -2951.62
+}
+
+#VER A 602 20220801 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 603 20220801 1236721690 20221122
+{
+#TRANS 1930 {} 27.00
+#TRANS 1910 {} -27.00
+}
+
+#VER A 604 20220801 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 605 20220729 G@TEBORG 20221122
+{
+#TRANS 1930 {} -586.00
+#TRANS 1799 {} 586.00
+}
+
+#VER A 606 20220801 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 607 20220730 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1311.70
+#TRANS 2641 {} 140.54
+#TRANS 4010 {} 1171.16
+}
+
+#VER A 608 20220730 MALTE 20221122
+{
+#TRANS 1930 {} -479.00
+#TRANS 2641 {} 51.35
+#TRANS 4010 {} 427.65
+}
+
+#VER A 609 20220801 Transportstyrels 20221122
+{
+#TRANS 1930 {} -453.00
+#TRANS 1799 {} 453.00
+}
+
+#VER A 610 20220730 L-NSSTYRELSEN 20221122
+{
+#TRANS 1930 {} -2900.00
+#TRANS 1799 {} 2900.00
+}
+
+#VER A 611 20220730 DNB 20221122
+{
+#TRANS 1930 {} -2440.00
+#TRANS 1799 {} 2440.00
+}
+
+#VER A 612 20220730 Telia 20221122
+{
+#TRANS 1930 {} -1010.00
+#TRANS 6212 {} 1010.00
+}
+
+#VER A 613 20220802 B07316179113 20221122
+{
+#TRANS 1930 {} 2855.21
+#TRANS 1910 {} -2855.21
+}
+
+#VER A 614 20220802 B07306155063 20221122
+{
+#TRANS 1930 {} 2574.60
+#TRANS 1910 {} -2574.60
+}
+
+#VER A 615 20220802 B08016195114 20221122
+{
+#TRANS 1930 {} 3021.34
+#TRANS 1910 {} -3021.34
+}
+
+#VER A 616 20220801 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -485.64
+#TRANS 2641 {} 52.03
+#TRANS 4010 {} 433.61
+}
+
+#VER A 617 20220801 DINA 20221122
+{
+#TRANS 1930 {} -873.00
+#TRANS 1799 {} 873.00
+}
+
+#VER A 618 20220802 53626487 20221122
+{
+#TRANS 1930 {} 16.00
+#TRANS 1910 {} -16.00
+}
+
+#VER A 619 20220803 B08026219278 20221122
+{
+#TRANS 1930 {} 3030.39
+#TRANS 1910 {} -3030.39
+}
+
+#VER A 620 20220802 G@TEBORG 20221122
+{
+#TRANS 1930 {} -1710.00
+#TRANS 1799 {} 1710.00
+}
+
+#VER A 621 20220802 WASA 20221122
+{
+#TRANS 1930 {} -1475.00
+#TRANS 1799 {} 1475.00
+}
+
+#VER A 622 20220802 WASA 20221122
+{
+#TRANS 1930 {} -2210.00
+#TRANS 1799 {} 2210.00
+}
+
+#VER A 623 20220804 B08036245941 20221122
+{
+#TRANS 1930 {} 1174.30
+#TRANS 1910 {} -1174.30
+}
+
+#VER A 624 20220803 810597342896359 20221122
+{
+#TRANS 1930 {} 2500.00
+#TRANS 1910 {} -2500.00
+}
+
+#VER A 625 20220803 WILLYS 20221122
+{
+#TRANS 1930 {} -365.00
+#TRANS 1799 {} 365.00
+}
+
+#VER A 626 20220803 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -3073.97
+#TRANS 1799 {} 3073.97
+}
+
+#VER A 627 20220804 53626487 20221122
+{
+#TRANS 1930 {} 507.50
+#TRANS 1910 {} -507.50
+}
+
+#VER A 628 20220805 B08046273456 20221122
+{
+#TRANS 1930 {} 1999.75
+#TRANS 1910 {} -1999.75
+}
+
+#VER A 629 20220804 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 630 20220803 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 1799 {} 10130.00
+}
+
+#VER A 631 20220803 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 1799 {} 7620.00
+}
+
+#VER A 632 20220803 FELPARKERINGSAVG 20221122
+{
+#TRANS 1930 {} -850.00
+#TRANS 1799 {} 850.00
+}
+
+#VER A 633 20220808 B08056303204 20221122
+{
+#TRANS 1930 {} 1937.21
+#TRANS 1910 {} -1937.21
+}
+
+#VER A 634 20220808 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 635 20220805 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -574.06
+#TRANS 2641 {} 6.51
+#TRANS 4010 {} 567.55
+}
+
+#VER A 636 20220808 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 637 20220806 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -415.56
+#TRANS 2641 {} 44.52
+#TRANS 4010 {} 371.04
+}
+
+#VER A 638 20220808 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 639 20220809 B08066329784 20221122
+{
+#TRANS 1930 {} 1655.54
+#TRANS 1910 {} -1655.54
+}
+
+#VER A 640 20220809 B08076353639 20221122
+{
+#TRANS 1930 {} 1369.48
+#TRANS 1910 {} -1369.48
+}
+
+#VER A 641 20220809 B08086370607 20221122
+{
+#TRANS 1930 {} 1602.28
+#TRANS 1910 {} -1602.28
+}
+
+#VER A 642 20220808 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -597.11
+#TRANS 2641 {} 84.33 20220808 SNABBGROSS
+#TRANS 4010 {} 512.78
+}
+
+#VER A 643 20220810 B08096394863 20221122
+{
+#TRANS 1930 {} 1848.99
+#TRANS 1910 {} -1848.99
+}
+
+#VER A 644 20220809 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 645 20220809 1236721690 20221122
+{
+#TRANS 1930 {} 35.00
+#TRANS 1910 {} -35.00
+}
+
+#VER A 646 20220809 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 647 20220809 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1017.56
+#TRANS 2641 {} 109.02
+#TRANS 4010 {} 908.54
+}
+
+#VER A 648 20220809 INGO 20221122
+{
+#TRANS 1930 {} -402.60
+#TRANS 1799 {} 402.60
+}
+
+#VER A 649 20220809 Aros 20221122
+{
+#TRANS 1930 {} -2019.00
+#TRANS 6590 {} 2019.00
+}
+
+#VER A 650 20220811 B08106423746 20221122
+{
+#TRANS 1930 {} 2131.63
+#TRANS 1910 {} -2131.63
+}
+
+#VER A 651 20220811 1236721690 20221122
+{
+#TRANS 1930 {} 180.00
+#TRANS 1910 {} -180.00
+}
+
+#VER A 652 20220811 1236721690 20221122
+{
+#TRANS 1930 {} 10.00
+#TRANS 1910 {} -10.00
+}
+
+#VER A 653 20220812 B08116455245 20221122
+{
+#TRANS 1930 {} 2028.13
+#TRANS 1910 {} -2028.13
+}
+
+#VER A 654 20220811 WILLYS 20221122
+{
+#TRANS 1930 {} -227.00
+#TRANS 1799 {} 227.00
+}
+
+#VER A 655 20220811 ICA 20221122
+{
+#TRANS 1930 {} -219.50
+#TRANS 1799 {} 219.50
+}
+
+#VER A 656 20220815 B08126486625 20221122
+{
+#TRANS 1930 {} 1363.04
+#TRANS 1910 {} -1363.04
+}
+
+#VER A 657 20220812 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2152.39
+#TRANS 2641 {} 230.61
+#TRANS 4010 {} 1921.78
+}
+
+#VER A 658 20220813 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 659 20220815 1236721690 20221122
+{
+#TRANS 1930 {} 110.00
+#TRANS 1910 {} -110.00
+}
+
+#VER A 660 20220814 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1381.19
+#TRANS 2641 {} 150.88
+#TRANS 4010 {} 1230.31
+}
+
+#VER A 661 20220814 OOB 20221122
+{
+#TRANS 1930 {} -188.00
+#TRANS 2641 {} 34.07 20220814 OOB
+#TRANS 4010 {} 153.93
+}
+
+#VER A 662 20220816 B08136518627 20221122
+{
+#TRANS 1930 {} 2136.18
+#TRANS 1910 {} -2136.18
+}
+
+#VER A 663 20220816 B08146544245 20221122
+{
+#TRANS 1930 {} 2612.01
+#TRANS 1910 {} -2612.01
+}
+
+#VER A 664 20220816 B08156561658 20221122
+{
+#TRANS 1930 {} 3036.86
+#TRANS 1910 {} -3036.86
+}
+
+#VER A 665 20220815 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 666 20220815 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2123.88
+#TRANS 2641 {} 227.56
+#TRANS 4010 {} 1896.32
+}
+
+#VER A 667 20220817 B08166587113 20221122
+{
+#TRANS 1930 {} 2210.72
+#TRANS 1910 {} -2210.72
+}
+
+#VER A 668 20220817 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 669 20220816 MALTE 20221122
+{
+#TRANS 1930 {} -653.00
+#TRANS 1799 {} 653.00
+}
+
+#VER A 670 20220816 WILLYS 20221122
+{
+#TRANS 1930 {} -311.50
+#TRANS 1799 {} 311.50
+}
+
+#VER A 671 20220816 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -322.74
+#TRANS 1799 {} 322.74
+}
+
+#VER A 672 20220818 B08176618454 20221122
+{
+#TRANS 1930 {} 2553.07
+#TRANS 1910 {} -2553.07
+}
+
+#VER A 673 20220818 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 674 20220818 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 675 20220817 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -827.16
+#TRANS 1799 {} 827.16
+}
+
+#VER A 676 20220817 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -761.96
+#TRANS 1799 {} 761.96
+}
+
+#VER A 677 20220817 INGO 20221122
+{
+#TRANS 1930 {} -1145.67
+#TRANS 1799 {} 1145.67
+}
+
+#VER A 678 20220817 FSL 20221122
+{
+#TRANS 1930 {} -1935.00
+#TRANS 1799 {} 1935.00
+}
+
+#VER A 679 20220817 TURKISK 20221122
+{
+#TRANS 1930 {} -228.00
+#TRANS 1799 {} 228.00
+}
+
+#VER A 680 20220817 Liba 20221122
+{
+#TRANS 1930 {} -119.00
+#TRANS 2641 {} 12.75 20220817 Liba
+#TRANS 4010 {} 106.25
+}
+
+#VER A 681 20220819 B08186648832 20221122
+{
+#TRANS 1930 {} 2346.59
+#TRANS 1910 {} -2346.59
+}
+
+#VER A 682 20220818 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -934.40
+#TRANS 1799 {} 934.40
+}
+
+#VER A 683 20220818 Liba 20221122
+{
+#TRANS 1930 {} -119.00 20220818 Liba
+#TRANS 2641 {} 12.75 20220818 Liba
+#TRANS 4010 {} 106.25
+}
+
+#VER A 684 20220822 B08196683016 20221122
+{
+#TRANS 1930 {} 2040.19
+#TRANS 1910 {} -2040.19
+}
+
+#VER A 685 20220822 1236721690 20221122
+{
+#TRANS 1930 {} 37.00
+#TRANS 1910 {} -37.00
+}
+
+#VER A 686 20220819 815625931236128 20221122
+{
+#TRANS 1930 {} -50.00
+#TRANS 1799 {} 50.00
+}
+
+#VER A 687 20220819 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1817.55
+#TRANS 1799 {} 1817.55
+}
+
+#VER A 688 20220819 MALTE 20221122
+{
+#TRANS 1930 {} -234.00
+#TRANS 1799 {} 234.00
+}
+
+#VER A 689 20220819 FELPARKERINGSAVG 20221122
+{
+#TRANS 1930 {} -600.00
+#TRANS 1799 {} 600.00
+}
+
+#VER A 690 20220820 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -587.24
+#TRANS 1799 {} 587.24
+}
+
+#VER A 691 20220822 1236721690 20221122
+{
+#TRANS 1930 {} 73.00
+#TRANS 1910 {} -73.00
+}
+
+#VER A 692 20220822 20220822 20221122
+{
+#TRANS 1930 {} -54.00
+#TRANS 1799 {} 54.00
+}
+
+#VER A 693 20220823 B08216740377 20221122
+{
+#TRANS 1930 {} 2412.46
+#TRANS 1910 {} -2412.46
+}
+
+#VER A 694 20220823 B08206714449 20221122
+{
+#TRANS 1930 {} 2460.55
+#TRANS 1910 {} -2460.55
+}
+
+#VER A 695 20220823 B08226759254 20221122
+{
+#TRANS 1930 {} 3449.79
+#TRANS 1910 {} -3449.79
+}
+
+#VER A 696 20220823 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 697 20220822 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2216.08
+#TRANS 1799 {} 2216.08
+}
+
+#VER A 698 20220822 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -956.60
+#TRANS 1799 {} 956.60
+}
+
+#VER A 699 20220228 Kvitton 20221122
+{
+#TRANS 3740 {} -0.01
+#TRANS 2013 {} -295.00
+#TRANS 2641 {} 32.00
+#TRANS 4010 {} 263.00
+#TRANS 2013 {} -664.00
+#TRANS 2641 {} 71.18
+#TRANS 4010 {} 592.82
+#TRANS 2013 {} -809.88
+#TRANS 2641 {} 86.77
+#TRANS 4010 {} 723.12
+}
+
+#VER A 700 20220430 Kvitton 20221122
+{
+#TRANS 2013 {} -434.12
+#TRANS 2641 {} 47.88
+#TRANS 4010 {} 386.24
+#TRANS 2013 {} -900.00
+#TRANS 2641 {} 180.00
+#TRANS 5410 {} 720.00
+#TRANS 2013 {} -179.98
+#TRANS 2641 {} 19.28
+#TRANS 4010 {} 160.70
+#TRANS 2013 {} -79.40
+#TRANS 2641 {} 8.50
+#TRANS 4010 {} 70.90
+#TRANS 2013 {} -74.87
+#TRANS 2641 {} 7.98
+#TRANS 4010 {} 66.89
+#TRANS 2013 {} -645.00
+#TRANS 2641 {} 129.00
+#TRANS 4010 {} 516.00
+#TRANS 2013 {} -112.66
+#TRANS 2641 {} 12.07
+#TRANS 4010 {} 100.59
+#TRANS 2013 {} -1326.00
+#TRANS 2641 {} 257.75
+#TRANS 4010 {} 1068.25
+#TRANS 2013 {} -516.00
+#TRANS 2641 {} 103.20
+#TRANS 4010 {} 412.80
+#TRANS 2013 {} -120.00
+#TRANS 2641 {} 21.17
+#TRANS 4010 {} 98.83
+#TRANS 2013 {} -599.00
+#TRANS 2641 {} 119.80
+#TRANS 4010 {} 479.20
+#TRANS 2013 {} -873.32
+#TRANS 2641 {} 93.57
+#TRANS 4010 {} 779.75
+#TRANS 2013 {} -111.97
+#TRANS 2641 {} 11.99
+#TRANS 4010 {} 99.98
+#TRANS 2013 {} -70.00
+#TRANS 2641 {} 14.00
+#TRANS 4010 {} 56.00
+#TRANS 2013 {} -314.90
+#TRANS 2641 {} 33.72
+#TRANS 4010 {} 281.18
+#TRANS 2013 {} -168.00
+#TRANS 2641 {} 17.98
+#TRANS 4010 {} 150.02
+#TRANS 2013 {} -153.00
+#TRANS 2641 {} 16.39
+#TRANS 4010 {} 136.61
+#TRANS 2013 {} -553.00
+#TRANS 2641 {} 61.93
+#TRANS 4010 {} 491.37
+#TRANS 2013 {} -202.00
+#TRANS 2641 {} 21.67
+#TRANS 4010 {} 180.03
+#TRANS 2013 {} -580.00
+#TRANS 2641 {} 62.14
+#TRANS 4010 {} 517.86
+#TRANS 2013 {} -466.00
+#TRANS 2641 {} 49.91
+#TRANS 4010 {} 416.09
+#TRANS 2013 {} -2677.50
+#TRANS 2641 {} 535.50
+#TRANS 4010 {} 2142.00
+#TRANS 2013 {} -294.00
+#TRANS 2641 {} 55.91
+#TRANS 4010 {} 238.09
+#TRANS 2013 {} -858.43
+#TRANS 2641 {} 113.32
+#TRANS 4010 {} 745.11
+#TRANS 2013 {} -295.00
+#TRANS 2641 {} 31.63
+#TRANS 4010 {} 263.37
+#TRANS 2013 {} -38.58
+#TRANS 2641 {} 4.13
+#TRANS 4010 {} 34.45
+#TRANS 2013 {} -3685.00
+#TRANS 2641 {} 559.03
+#TRANS 4010 {} 3125.97
+#TRANS 2013 {} -853.00
+#TRANS 2641 {} 91.39
+#TRANS 4010 {} 761.61
+#TRANS 2013 {} -652.00
+#TRANS 2641 {} 69.81
+#TRANS 4010 {} 582.19
+#TRANS 2013 {} -275.00
+#TRANS 2641 {} 29.45
+#TRANS 4010 {} 245.55
+#TRANS 2013 {} -751.00
+#TRANS 2641 {} 80.48
+#TRANS 4010 {} 670.52
+#TRANS 2013 {} -209.00
+#TRANS 2641 {} 26.53
+#TRANS 4010 {} 182.47
+#TRANS 2013 {} -2264.21
+#TRANS 2641 {} 321.94
+#TRANS 4010 {} 1942.27
+#TRANS 2013 {} -68.77
+#TRANS 2641 {} 7.37
+#TRANS 4010 {} 61.40
+#TRANS 2013 {} -10130.00
+#TRANS 2013 {} 10130.00
+}
+
+#VER A 701 20220430 Kvitton 20221122
+{
+#TRANS 2013 {} -246.00
+#TRANS 2641 {} 26.31
+#TRANS 4010 {} 219.69
+#TRANS 2013 {} -139.98
+#TRANS 2641 {} 14.99
+#TRANS 4010 {} 124.99
+#TRANS 2013 {} -341.00
+#TRANS 2641 {} 36.50
+#TRANS 4010 {} 304.50
+#TRANS 2013 {} -338.00
+#TRANS 2641 {} 39.00
+#TRANS 6390 {} 299.00
+#TRANS 2641 {} 25.37
+#TRANS 4010 {} 211.63
+#TRANS 2013 {} -388.00
+#TRANS 2641 {} 49.00
+#TRANS 6390 {} 339.00
+#TRANS 2013 {} -414.00
+#TRANS 2641 {} 82.29
+#TRANS 4010 {} 331.71
+#TRANS 2013 {} -751.00
+#TRANS 2641 {} 91.16
+#TRANS 4010 {} 659.84
+#TRANS 2013 {} -200.00
+#TRANS 2641 {} 21.46
+#TRANS 4010 {} 178.54
+#TRANS 2013 {} -1080.00
+#TRANS 2641 {} 115.68
+#TRANS 4010 {} 964.32
+#TRANS 2013 {} -310.82
+#TRANS 2641 {} 33.30
+#TRANS 4010 {} 277.52
+#TRANS 2013 {} -339.70
+#TRANS 2641 {} 36.40
+#TRANS 4010 {} 303.30
+#TRANS 2013 {} -658.71
+#TRANS 2641 {} 70.58
+#TRANS 4010 {} 588.13
+#TRANS 2013 {} -779.73
+#TRANS 2641 {} 130.59
+#TRANS 4010 {} 649.14
+#TRANS 2013 {} -555.02
+#TRANS 2641 {} 59.47
+#TRANS 4010 {} 495.55
+#TRANS 2013 {} -647.88
+#TRANS 2641 {} 69.42
+#TRANS 4010 {} 578.46
+#TRANS 2013 {} -237.00
+}
+
+#VER A 702 20220531 Kvitton 20221122
+{
+#TRANS 2013 {} -2052.00
+#TRANS 2641 {} 219.87
+#TRANS 4010 {} 1832.13
+#TRANS 2013 {} -63.00
+#TRANS 2641 {} 6.77
+#TRANS 4010 {} 56.23
+#TRANS 2013 {} -6949.19
+#TRANS 2641 {} 744.56
+#TRANS 4010 {} 6204.63
+#TRANS 2013 {} -431.00
+#TRANS 2641 {} 48.49
+#TRANS 4010 {} 382.51
+#TRANS 2013 {} -4149.00
+#TRANS 2641 {} 466.57
+#TRANS 4010 {} 3682.43
+#TRANS 2013 {} -900.00
+#TRANS 2641 {} 96.45
+#TRANS 4010 {} 803.55
+#TRANS 2013 {} -1748.00
+#TRANS 2641 {} 187.28
+#TRANS 4010 {} 1560.72
+#TRANS 2013 {} -1103.00
+#TRANS 2641 {} 118.18
+#TRANS 4010 {} 984.82
+#TRANS 2013 {} -148.00
+#TRANS 2641 {} 15.84
+#TRANS 4010 {} 132.16
+#TRANS 2013 {} -1081.00
+#TRANS 2641 {} 115.78
+#TRANS 4010 {} 965.22
+#TRANS 2013 {} -1995.00
+#TRANS 2641 {} 304.29
+#TRANS 4010 {} 1690.71
+#TRANS 2013 {} -9789.00
+#TRANS 2641 {} 1957.80
+#TRANS 5410 {} 7831.20
+#TRANS 2013 {} -1334.00
+#TRANS 2641 {} 142.89
+#TRANS 4010 {} 1191.11
+#TRANS 2013 {} -486.00
+#TRANS 2641 {} 66.93
+#TRANS 4010 {} 419.07
+#TRANS 2013 {} -410.00
+#TRANS 2641 {} 44.85
+#TRANS 4010 {} 365.15
+#TRANS 2013 {} -403.00
+#TRANS 2641 {} 43.16
+#TRANS 4010 {} 359.84
+#TRANS 2013 {} -1584.00
+#TRANS 2641 {} 235.14
+#TRANS 4010 {} 1348.86
+#TRANS 2013 {} -112.00
+#TRANS 2641 {} 12.00
+#TRANS 4010 {} 100.00
+#TRANS 2013 {} -3283.00
+#TRANS 2641 {} 351.72
+#TRANS 4010 {} 2931.28
+#TRANS 2013 {} -4339.00
+#TRANS 2641 {} 867.80
+#TRANS 4010 {} 3471.20
+#TRANS 2013 {} -5386.00
+#TRANS 2641 {} 577.12
+#TRANS 4010 {} 4808.88
+#TRANS 2013 {} -841.00
+#TRANS 2641 {} 99.19
+#TRANS 4010 {} 741.81
+#TRANS 2013 {} -482.00
+#TRANS 2641 {} 51.60
+#TRANS 4010 {} 430.40
+#TRANS 2013 {} -1992.00
+#TRANS 2641 {} 222.18
+#TRANS 4010 {} 1769.82
+#TRANS 2013 {} -2446.00
+#TRANS 2641 {} 282.31
+#TRANS 4010 {} 2163.69
+#TRANS 2013 {} -1407.00
+#TRANS 2641 {} 150.71
+#TRANS 4010 {} 1256.29
+#TRANS 2013 {} -5433.00
+#TRANS 2641 {} 582.06
+#TRANS 4010 {} 4850.94
+#TRANS 2013 {} -2578.00
+#TRANS 2641 {} 322.37
+#TRANS 4010 {} 2255.63
+#TRANS 2013 {} -1711.00
+#TRANS 2641 {} 186.78
+#TRANS 4010 {} 1524.22
+#TRANS 2013 {} -246.00
+#TRANS 2641 {} 26.30
+#TRANS 4010 {} 219.70
+#TRANS 2013 {} -180.00
+#TRANS 2641 {} 30.32
+#TRANS 4010 {} 149.68
+#TRANS 2013 {} -118.00
+#TRANS 2641 {} 12.69
+#TRANS 4010 {} 105.31
+#TRANS 2013 {} -2834.00
+#TRANS 2641 {} 303.62
+#TRANS 4010 {} 2530.38
+#TRANS 2013 {} -1150.00
+#TRANS 2641 {} 159.43
+#TRANS 4010 {} 990.57
+#TRANS 2013 {} -1075.00
+#TRANS 2641 {} 115.23
+#TRANS 4010 {} 959.77
+#TRANS 2013 {} -254.00
+#TRANS 2641 {} 27.17
+#TRANS 4010 {} 226.83
+#TRANS 2013 {} -17.69
+#TRANS 2641 {} 3.54
+#TRANS 4010 {} 14.15
+#TRANS 2013 {} -1478.00
+#TRANS 2641 {} 187.81
+#TRANS 4010 {} 1290.19
+#TRANS 2013 {} -1749.00
+#TRANS 2641 {} 187.39
+#TRANS 4010 {} 1561.61
+#TRANS 2013 {} -503.00
+#TRANS 2641 {} 53.84
+#TRANS 4010 {} 449.16
+#TRANS 2013 {} -1128.00
+#TRANS 2641 {} 225.60
+#TRANS 5410 {} 902.40
+#TRANS 2013 {} -400.00
+#TRANS 2641 {} 49.30
+#TRANS 4010 {} 350.70
+#TRANS 2013 {} -2987.00
+#TRANS 2641 {} 521.91
+#TRANS 4010 {} 2465.09
+#TRANS 2013 {} -550.00
+#TRANS 2641 {} 58.93
+#TRANS 4010 {} 491.07
+#TRANS 2013 {} -486.00
+#TRANS 2641 {} 89.40
+#TRANS 4010 {} 396.60
+#TRANS 2013 {} -490.00
+#TRANS 2641 {} 52.51
+#TRANS 4010 {} 437.49
+#TRANS 2013 {} -762.00
+#TRANS 2641 {} 81.67
+#TRANS 4010 {} 680.33
+#TRANS 2013 {} -989.00
+#TRANS 2641 {} 106.00
+#TRANS 4010 {} 883.00
+#TRANS 2013 {} -1080.00
+#TRANS 2641 {} 148.61
+#TRANS 4010 {} 931.39
+#TRANS 2013 {} -1600.00
+#TRANS 2641 {} 320.00
+#TRANS 5410 {} 1280.00
+#TRANS 2013 {} -400.00
+#TRANS 2641 {} 80.00
+#TRANS 5410 {} 320.00
+#TRANS 2013 {} -7716.00
+#TRANS 2641 {} 851.67
+#TRANS 4010 {} 6864.33
+#TRANS 2013 {} -1724.00
+#TRANS 2641 {} 184.67
+#TRANS 4010 {} 1539.33
+#TRANS 2013 {} -255.00
+#TRANS 2641 {} 39.15
+#TRANS 4010 {} 215.85
+}
+
+#VER A 703 20220630 Kvitton 20221122
+{
+#TRANS 2013 {} -1026.80
+#TRANS 2641 {} 205.36
+#TRANS 4010 {} 821.44
+#TRANS 2013 {} -3000.00
+#TRANS 2641 {} 600.00
+#TRANS 4010 {} 2400.00
+#TRANS 2013 {} -1517.00
+#TRANS 4010 {} 1353.36
+#TRANS 2641 {} 163.64
+#TRANS 2013 {} -4261.00
+#TRANS 2641 {} 471.34
+#TRANS 4010 {} 3789.66
+#TRANS 2013 {} -1060.00
+#TRANS 2641 {} 113.61
+#TRANS 4010 {} 946.39
+#TRANS 2013 {} -545.00
+#TRANS 2641 {} 58.34
+#TRANS 4010 {} 486.66
+#TRANS 2013 {} -1623.00
+#TRANS 2641 {} 173.87
+#TRANS 4010 {} 1449.13
+#TRANS 2013 {} -1444.00
+#TRANS 2641 {} 154.69
+#TRANS 4010 {} 1289.31
+#TRANS 2013 {} -4080.00
+#TRANS 2641 {} 437.20
+#TRANS 4010 {} 3642.80
+#TRANS 2013 {} -456.00
+#TRANS 2641 {} 48.87
+#TRANS 4010 {} 407.13
+#TRANS 2013 {} -1341.00
+#TRANS 2641 {} 205.19
+#TRANS 4010 {} 1135.81
+#TRANS 2013 {} -1700.00
+#TRANS 2641 {} 182.15
+#TRANS 4010 {} 1517.85
+#TRANS 2013 {} -2351.00
+#TRANS 2641 {} 251.91
+#TRANS 4010 {} 2099.09
+#TRANS 2013 {} -2499.88
+#TRANS 2641 {} 267.84
+#TRANS 4010 {} 2232.04
+#TRANS 2013 {} -760.00
+#TRANS 2641 {} 81.43
+#TRANS 4010 {} 678.57
+#TRANS 2013 {} -1425.00
+#TRANS 2641 {} 152.63
+#TRANS 4010 {} 1272.37
+#TRANS 2013 {} -3901.00
+#TRANS 2641 {} 451.23
+#TRANS 4010 {} 3449.77
+#TRANS 2013 {} -182.00
+#TRANS 2641 {} 19.51
+#TRANS 4010 {} 162.49
+#TRANS 2013 {} -1850.50
+#TRANS 2641 {} 220.47
+#TRANS 4010 {} 1630.03
+#TRANS 2013 {} -1860.49
+#TRANS 2641 {} 199.34
+#TRANS 4010 {} 1661.15
+#TRANS 2013 {} -2548.93
+#TRANS 2641 {} 273.10
+#TRANS 4010 {} 2275.83
+#TRANS 2013 {} -2454.86
+#TRANS 2641 {} 263.02
+#TRANS 4010 {} 2191.84
+#TRANS 2013 {} -3185.25
+#TRANS 2641 {} 341.28
+#TRANS 4010 {} 2843.97
+#TRANS 2013 {} -4856.86
+#TRANS 2641 {} 520.38
+#TRANS 4010 {} 4336.48
+#TRANS 2013 {} -570.00
+#TRANS 2641 {} 61.07
+#TRANS 4010 {} 508.93
+#TRANS 2013 {} -1318.05
+#TRANS 2641 {} 141.22
+#TRANS 4010 {} 1176.83
+}
+
+#VER A 704 20220731 Kvitton 20221122
+{
+#TRANS 2013 {} -646.00
+#TRANS 2641 {} 69.21
+#TRANS 4010 {} 576.79
+#TRANS 2013 {} -248.00
+#TRANS 2641 {} 26.58
+#TRANS 4010 {} 221.42
+#TRANS 2013 {} -1823.00
+#TRANS 2641 {} 195.37
+#TRANS 4010 {} 1627.63
+#TRANS 2013 {} -189.00
+#TRANS 2641 {} 20.25
+#TRANS 4010 {} 168.75
+#TRANS 2013 {} -8341.70
+#TRANS 2641 {} 893.75
+#TRANS 4010 {} 7447.95
+#TRANS 2013 {} -4931.98
+#TRANS 2641 {} 528.43
+#TRANS 4010 {} 4403.55
+#TRANS 2013 {} -1980.12
+#TRANS 2641 {} 232.51
+#TRANS 4010 {} 1747.61
+#TRANS 2013 {} -2812.00
+#TRANS 2641 {} 301.25
+#TRANS 4010 {} 2510.75
+#TRANS 2013 {} -2153.07
+#TRANS 2641 {} 230.69
+#TRANS 4010 {} 1922.38
+#TRANS 2013 {} -366.25
+#TRANS 2641 {} 39.24
+#TRANS 4010 {} 327.01
+#TRANS 2013 {} -229.44
+#TRANS 2641 {} 24.58
+#TRANS 4010 {} 204.86
+#TRANS 2013 {} -587.78
+#TRANS 2641 {} 62.98
+#TRANS 4010 {} 524.80
+#TRANS 2013 {} -4316.48
+#TRANS 2641 {} 462.48
+#TRANS 4010 {} 3854.00
+#TRANS 2013 {} -1306.44
+#TRANS 2641 {} 159.51
+#TRANS 4010 {} 1146.92
+#TRANS 3740 {} 0.01
+}
+
+#VER A 705 20220331 Kvitto 20221122
+{
+#TRANS 2013 {} -112.00
+#TRANS 2641 {} 12.00
+#TRANS 4010 {} 100.00
+#TRANS 2013 {} -302.90
+#TRANS 2641 {} 60.58
+#TRANS 4010 {} 242.32
+#TRANS 2013 {} -394.71
+#TRANS 2641 {} 42.27
+#TRANS 4010 {} 352.44
+}
+
+#VER A 706 20220430 Kvitto 20221122
+{
+#TRANS 2013 {} -118.35
+#TRANS 2641 {} 12.68
+#TRANS 4010 {} 105.67
+#TRANS 2013 {} -459.10
+#TRANS 2641 {} 49.17
+#TRANS 4010 {} 409.93
+#TRANS 2013 {} -510.60
+#TRANS 2641 {} 102.12
+#TRANS 5460 {} 408.48
+#TRANS 2013 {} -157.00
+#TRANS 2641 {} 16.83
+#TRANS 4010 {} 140.17
+#TRANS 2013 {} -105.00
+#TRANS 2641 {} 21.00
+#TRANS 4010 {} 84.00
+#TRANS 2013 {} -366.00
+#TRANS 2641 {} 73.20
+#TRANS 5460 {} 292.80
+}
+
+#VER A 707 20220630 Kvitto 20221122
+{
+#TRANS 2013 {} -148.80
+#TRANS 2641 {} 15.94
+#TRANS 4010 {} 132.86
+#TRANS 2013 {} -323.30
+#TRANS 2641 {} 35.57
+#TRANS 4010 {} 287.73
+#TRANS 2013 {} -833.10
+#TRANS 2641 {} 125.18
+#TRANS 4010 {} 707.92
+}
+
+#VER A 708 20220731 Kvitto 20221122
+{
+#TRANS 2013 {} -130.00
+#TRANS 2641 {} 13.93
+#TRANS 4010 {} 116.07
+#TRANS 2013 {} -119.00
+#TRANS 2641 {} 12.75
+#TRANS 4010 {} 106.25
+#TRANS 2013 {} -207.60
+#TRANS 2641 {} 22.24
+#TRANS 4010 {} 185.36
+#TRANS 2013 {} -2175.00
+#TRANS 2641 {} 435.00
+#TRANS 5410 {} 1740.00
+}
+
+#VER A 709 20220331 Försäljning Jan-Mars 20221122
+{
+#TRANS 2621 {} -9559.90
+#TRANS 2611 {} -1333.33
+#TRANS 3052 {} -79665.83
+#TRANS 3051 {} -5333.32
+#TRANS 1910 {} 95892.38
+}
+
+#VER A 710 20220630 Försäljning APRIL-JUNI 20221122
+{
+#TRANS 2611 {} -3694.20
+#TRANS 2621 {} -17077.36
+#TRANS 3051 {} -14776.80
+#TRANS 3052 {} -142311.33
+#TRANS 1910 {} 177859.69
+}
+
+#VER A 711 20220331 Försäljning cafeteria JAN-MAR 20221122
+{
+#TRANS 2621 {} -1096.28
+#TRANS 3052 {} -9135.66
+#TRANS 1910 {} 10231.94
+}
+
+#VER A 712 20220630 cAFETERIA APRIL-JUNI 20221122
+{
+#TRANS 2621 {} -2685.64
+#TRANS 3052 {} -22380.33
+#TRANS 1910 {} 25065.97
+}
+
+#VER A 713 20220511 Safeteam 20221122
+{
+#TRANS 2013 {} -360.00
+#TRANS 2641 {} 72.00
+#TRANS 6590 {} 288.00
+}
+
+#VER A 714 20220520 Importerad verifikation. 20221122
+{
+#TRANS 2013 {} -163.27
+#TRANS 2641 {} 23.32
+#TRANS 4010 {} 139.95
+}
+
+#VER A 715 20220602 Snabbgross 20221122
+{
+#TRANS 2013 {} -1127.39
+#TRANS 2641 {} 158.59
+#TRANS 4010 {} 968.80
+}
+
+#VER A 716 20220528 Snabbgross 20221122
+{
+#TRANS 2013 {} -648.25
+#TRANS 2641 {} 77.72
+#TRANS 4010 {} 570.53
+}
+
+#VER A 717 20220630 Utlägg snabbgross 20221122
+{
+#TRANS 2013 {} -651.86
+#TRANS 2641 {} 72.39
+#TRANS 2013 {} -249.38
+#TRANS 2641 {} 49.88
+#TRANS 2013 {} -59.36
+#TRANS 2641 {} 6.36
+#TRANS 4010 {} 831.97
+}
+
+#VER A 718 20220630 Utlägg 20221122
+{
+#TRANS 2013 {} -224.00
+#TRANS 2641 {} 24.00
+#TRANS 4010 {} 200.00
+#TRANS 2013 {} -179.00
+#TRANS 2641 {} 19.18
+#TRANS 4010 {} 159.82
+#TRANS 2013 {} -420.00
+#TRANS 2641 {} 44.22
+#TRANS 2641 {} 21.32
+#TRANS 4010 {} 354.46
+}
+
+#VER A 719 20220331 Joboffice/gogross 20221122
+{
+#TRANS 2013 {} -2471.00
+#TRANS 2641 {} 494.10
+#TRANS 5010 {} 1976.90
+#TRANS 2013 {} -12561.69
+#TRANS 2641 {} 1129.57
+#TRANS 2641 {} 76.19
+#TRANS 4010 {} 11355.93
+}
+
+#VER A 720 20220331 Momsrapport 2022-01-01 - 2022-03-31 20221122
+{
+#TRANS 2611 {} 1333.33
+#TRANS 2621 {} 10656.18
+#TRANS 3740 {} 0.40
+#TRANS 2641 {} -2490.91
+#TRANS 2650 {} -9499.00
+}
+
+#VER A 721 20220630 Momsrapport 2022-04-01 - 2022-06-30 20221122
+{
+#TRANS 1650 {} 4076.00
+#TRANS 2611 {} 3694.20
+#TRANS 2621 {} 19763.00
+#TRANS 2641 {} -27533.05
+#TRANS 3740 {} -0.15
+}
+
+#VER A 722 20220823 Snabbgross 20221122
+{
+#TRANS 1930 {} -2216.08
+#TRANS 1799 {} 2216.08
+}
+
+#VER A 723 20220823 Snabbgross 20221122
+{
+#TRANS 1930 {} -956.60
+#TRANS 1799 {} 956.60
+}
+
+#VER A 724 20220824 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 725 20220823 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1558.88
+#TRANS 1799 {} 1558.88
+}
+
+#VER A 726 20220825 B08246815993 20221122
+{
+#TRANS 1930 {} 1408.35
+#TRANS 1910 {} -1408.35
+}
+
+#VER A 727 20220824 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 728 20220825 1236721690 20221122
+{
+#TRANS 1930 {} 26.00
+#TRANS 1910 {} -26.00
+}
+
+#VER A 729 20220826 B08256849703 20221122
+{
+#TRANS 1930 {} 3034.22
+#TRANS 1910 {} -3034.22
+}
+
+#VER A 730 20220826 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 731 20220825 WILLYS 20221122
+{
+#TRANS 1930 {} -1161.30
+#TRANS 1799 {} 1161.30
+}
+
+#VER A 732 20220825 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1928.43
+#TRANS 1799 {} 1928.43
+}
+
+#VER A 733 20220829 B08266882623 20221122
+{
+#TRANS 1930 {} 3794.40
+#TRANS 1910 {} -3794.40
+}
+
+#VER A 734 20220826 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 735 20220829 1236721690 20221122
+{
+#TRANS 1930 {} 32.00
+#TRANS 1910 {} -32.00
+}
+
+#VER A 736 20220829 1236721690 20221122
+{
+#TRANS 1930 {} 32.00
+#TRANS 1910 {} -32.00
+}
+
+#VER A 737 20220829 1236721690 20221122
+{
+#TRANS 1930 {} 162.00
+#TRANS 1910 {} -162.00
+}
+
+#VER A 738 20220829 1236721690 20221122
+{
+#TRANS 1930 {} 51.00
+#TRANS 1910 {} -51.00
+}
+
+#VER A 739 20220826 WILLYS 20221122
+{
+#TRANS 1930 {} -364.80
+#TRANS 1799 {} 364.80
+}
+
+#VER A 740 20220826 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2220.48
+#TRANS 1799 {} 2220.48
+}
+
+#VER A 741 20220827 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -937.74
+#TRANS 1799 {} 937.74
+}
+
+#VER A 742 20220827 Al 20221122
+{
+#TRANS 1930 {} -55.00
+#TRANS 1799 {} 55.00
+}
+
+#VER A 743 20220829 1236721690 20221122
+{
+#TRANS 1930 {} 26.00
+#TRANS 1910 {} -26.00
+}
+
+#VER A 744 20220828 815625931236128 20221122
+{
+#TRANS 1930 {} -422.00
+#TRANS 1799 {} 422.00
+}
+
+#VER A 745 20220828 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -3910.86
+#TRANS 2641 {} 419.02 20220828 SNABBGROSS
+#TRANS 4010 {} 3491.84
+}
+
+#VER A 746 20220828 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -63.66
+#TRANS 2641 {} 6.82 20220828 SNABBGROSS
+#TRANS 4010 {} 56.84
+}
+
+#VER A 747 20220828 FSL 20221122
+{
+#TRANS 1930 {} -580.00
+#TRANS 2641 {} 62.14 20220828 FSL
+#TRANS 4010 {} 517.86
+}
+
+#VER A 748 20220829 Tele2 20221122
+{
+#TRANS 1930 {} -558.00
+#TRANS 1799 {} 558.00
+}
+
+#VER A 749 20220828 SVEA 20221122
+{
+#TRANS 1930 {} -124.00
+#TRANS 1799 {} 124.00
+}
+
+#VER A 750 20220828 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 751 20220830 B08286943913 20221122
+{
+#TRANS 1930 {} 2997.25
+#TRANS 1910 {} -2997.25
+}
+
+#VER A 752 20220830 B08296961839 20221122
+{
+#TRANS 1930 {} 2702.14
+#TRANS 1910 {} -2702.14
+}
+
+#VER A 753 20220830 B08276915384 20221122
+{
+#TRANS 1930 {} 3585.14
+#TRANS 1910 {} -3585.14
+}
+
+#VER A 754 20220830 1236721690 20221122
+{
+#TRANS 1930 {} 13.00
+#TRANS 1910 {} -13.00
+}
+
+#VER A 755 20220830 1236721690 20221122
+{
+#TRANS 1930 {} 50.00
+#TRANS 1910 {} -50.00
+}
+
+#VER A 756 20220829 Liba 20221122
+{
+#TRANS 1930 {} -163.00
+#TRANS 1799 {} 163.00
+}
+
+#VER A 757 20220901 B08306987742 20221122
+{
+#TRANS 1930 {} 2009.42
+#TRANS 1910 {} -2009.42
+}
+
+#VER A 758 20220901 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 759 20220901 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 760 20220830 WILLYS 20221122
+{
+#TRANS 1930 {} -391.60
+#TRANS 2641 {} 78.32 20220830 WILLYS
+#TRANS 4010 {} 313.28
+}
+
+#VER A 761 20220830 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -885.23
+#TRANS 2641 {} 94.85 20220830 SNABBGROSS
+#TRANS 4010 {} 790.38
+}
+
+#VER A 762 20220830 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1813.86
+#TRANS 2641 {} 194.34 20220830 SNABBGROSS
+#TRANS 4010 {} 1619.52
+}
+
+#VER A 763 20220830 Transportstyrels 20221122
+{
+#TRANS 1930 {} -153.00
+#TRANS 1799 {} 153.00
+}
+
+#VER A 764 20220830 Transportstyrels 20221122
+{
+#TRANS 1930 {} -301.00
+#TRANS 1799 {} 301.00
+}
+
+#VER A 765 20220901 B08317017220 20221122
+{
+#TRANS 1930 {} 1761.48
+#TRANS 1910 {} -1761.48
+}
+
+#VER A 766 20220901 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 767 20220901 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 768 20220901 1236721690 20221122
+{
+#TRANS 1930 {} 26.00
+#TRANS 1910 {} -26.00
+}
+
+#VER A 769 20220830 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -956.01
+#TRANS 2641 {} 102.43 20220830 SNABBGROSS
+#TRANS 4010 {} 853.58
+}
+
+#VER A 770 20220902 B09017051097 20221122
+{
+#TRANS 1930 {} 1966.47
+#TRANS 1910 {} -1966.47
+}
+
+#VER A 771 20220902 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 772 20220901 810597342896359 20221122
+{
+#TRANS 1930 {} -1800.00
+#TRANS 1799 {} 1800.00
+}
+
+#VER A 773 20220901 815625931236128 20221122
+{
+#TRANS 1930 {} -1580.00
+#TRANS 1799 {} 1580.00
+}
+
+#VER A 774 20220901 815625931236128 20221122
+{
+#TRANS 1930 {} 1800.00
+#TRANS 1910 {} -1800.00
+}
+
+#VER A 775 20220901 WILLYS 20221122
+{
+#TRANS 1930 {} -88.00
+#TRANS 1799 {} 88.00
+}
+
+#VER A 776 20220901 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2052.04
+#TRANS 2641 {} 219.86 20220901 SNABBGROSS
+#TRANS 4010 {} 1832.18
+}
+
+#VER A 777 20220901 COMVIQ 20221122
+{
+#TRANS 1930 {} -422.00
+#TRANS 1799 {} 422.00
+}
+
+#VER A 778 20220901 DNB 20221122
+{
+#TRANS 1930 {} -2491.00
+#TRANS 2641 {} 498.13 20220901 DNB
+#TRANS 5220 {} 1992.87 20220901 DNB
+}
+
+#VER A 779 20220901 Telia 20221122
+{
+#TRANS 1930 {} -1001.00
+#TRANS 2641 {} 200.17 20220901 Telia
+#TRANS 6212 {} 800.83 20220901 Telia
+}
+
+#VER A 780 20220901 Gteborg 20221122
+{
+#TRANS 1930 {} -6406.00
+#TRANS 1799 {} 6406.00
+}
+
+#VER A 781 20220901 WASA 20221122
+{
+#TRANS 1930 {} -1489.00
+#TRANS 1799 {} 1489.00
+}
+
+#VER A 782 20220901 WASA 20221122
+{
+#TRANS 1930 {} -2221.00
+#TRANS 1799 {} 2221.00
+}
+
+#VER A 783 20220901 DINA 20221122
+{
+#TRANS 1930 {} -845.00
+#TRANS 1799 {} 845.00
+}
+
+#VER A 784 20220901 WSAB 20221122
+{
+#TRANS 1930 {} -2025.00
+#TRANS 1799 {} 2025.00
+}
+
+#VER A 785 20220905 B09027083374 20221122
+{
+#TRANS 1930 {} 2442.25
+#TRANS 1910 {} -2442.25
+}
+
+#VER A 786 20220905 1236721690 20221122
+{
+#TRANS 1930 {} 43.00
+#TRANS 1910 {} -43.00
+}
+
+#VER A 787 20220902 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2613.82
+#TRANS 2641 {} 309.34 20220902 SNABBGROSS
+#TRANS 4010 {} 2304.48
+}
+
+#VER A 788 20220905 1236721690 20221122
+{
+#TRANS 1930 {} 50.00
+#TRANS 1910 {} -50.00
+}
+
+#VER A 789 20220903 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -926.50
+#TRANS 2641 {} 99.27 20220903 SNABBGROSS
+#TRANS 4010 {} 827.23
+}
+
+#VER A 790 20220904 WILLYS 20221122
+{
+#TRANS 1930 {} -303.90
+#TRANS 1799 {} 303.90
+}
+
+#VER A 791 20220904 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1191.57
+#TRANS 2641 {} 127.67 20220904 SNABBGROSS
+#TRANS 4010 {} 1063.90
+}
+
+#VER A 792 20220906 B09047142772 20221122
+{
+#TRANS 1930 {} 2328.08
+#TRANS 1910 {} -2328.08
+}
+
+#VER A 793 20220906 B09057160921 20221122
+{
+#TRANS 1930 {} 2852.66
+#TRANS 1910 {} -2852.66
+}
+
+#VER A 794 20220906 B09037116229 20221122
+{
+#TRANS 1930 {} 2897.28
+#TRANS 1910 {} -2897.28
+}
+
+#VER A 795 20220906 1236721690 20221122
+{
+#TRANS 1930 {} 68.00
+#TRANS 1910 {} -68.00
+}
+
+#VER A 796 20220906 1236721690 20221122
+{
+#TRANS 1930 {} 60.00
+#TRANS 1910 {} -60.00
+}
+
+#VER A 797 20220905 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00 20220905 Tapajos
+}
+
+#VER A 798 20220906 53626487 20221122
+{
+#TRANS 1930 {} 596.88
+#TRANS 1910 {} -596.88
+}
+
+#VER A 799 20220906 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 800 20220907 B09067187145 20221122
+{
+#TRANS 1930 {} 1696.24
+#TRANS 1910 {} -1696.24
+}
+
+#VER A 801 20220906 815625931236128 20221122
+{
+#TRANS 1930 {} 7620.00
+#TRANS 1910 {} -7620.00
+}
+
+#VER A 802 20220906 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -674.36
+#TRANS 2641 {} 72.25 20220906 SNABBGROSS
+#TRANS 4010 {} 602.11
+}
+
+#VER A 803 20220906 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 5010 {} 7620.00 20220906 Tapajos
+}
+
+#VER A 804 20220908 B09077216954 20221122
+{
+#TRANS 1930 {} 2366.61
+#TRANS 1910 {} -2366.61
+}
+
+#VER A 805 20220907 815625931236128 20221122
+{
+#TRANS 1930 {} 2000.00
+#TRANS 1910 {} -2000.00
+}
+
+#VER A 806 20220907 LANDVETTER 20221122
+{
+#TRANS 1930 {} -25.00
+#TRANS 1799 {} 25.00
+}
+
+#VER A 807 20220909 B09087251565 20221122
+{
+#TRANS 1930 {} 2543.84
+#TRANS 1910 {} -2543.84
+}
+
+#VER A 808 20220909 1236721690 20221122
+{
+#TRANS 1930 {} 74.00
+#TRANS 1910 {} -74.00
+}
+
+#VER A 809 20220908 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1862.53
+#TRANS 2641 {} 208.94 20220908 SNABBGROSS
+#TRANS 4010 {} 1653.59
+}
+
+#VER A 810 20220912 B09097283568 20221122
+{
+#TRANS 1930 {} 3002.08
+#TRANS 1910 {} -3002.08
+}
+
+#VER A 811 20220912 1236721690 20221122
+{
+#TRANS 1930 {} 89.00
+#TRANS 1910 {} -89.00
+}
+
+#VER A 812 20220910 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -92.40
+#TRANS 1799 {} 92.40
+}
+
+#VER A 813 20220910 GROSSIST 20221122
+{
+#TRANS 1930 {} -920.00
+#TRANS 2641 {} 184.00 20220910 GROSSIST
+#TRANS 4010 {} 736.00
+}
+
+#VER A 814 20220910 3 20221122
+{
+#TRANS 1930 {} -322.00
+#TRANS 1799 {} 322.00
+}
+
+#VER A 815 20220911 ICA 20221122
+{
+#TRANS 1930 {} -2642.00
+#TRANS 1799 {} 2642.00
+}
+
+#VER A 816 20220913 B09107316646 20221122
+{
+#TRANS 1930 {} 2623.20
+#TRANS 1910 {} -2623.20
+}
+
+#VER A 817 20220913 B09117344771 20221122
+{
+#TRANS 1930 {} 1538.62
+#TRANS 1910 {} -1538.62
+}
+
+#VER A 818 20220913 B09127364428 20221122
+{
+#TRANS 1930 {} 2198.20
+#TRANS 1910 {} -2198.20
+}
+
+#VER A 819 20220913 1236721690 20221122
+{
+#TRANS 1930 {} 5.00
+#TRANS 1910 {} -5.00
+}
+
+#VER A 820 20220912 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1165.09
+#TRANS 2641 {} 124.83 20220912 SNABBGROSS
+#TRANS 4010 {} 1040.26
+}
+
+#VER A 821 20220912 SMD 20221122
+{
+#TRANS 1930 {} -7015.00
+#TRANS 1799 {} 7015.00
+}
+
+#VER A 822 20220912 VISMA 20221122
+{
+#TRANS 1930 {} -4391.00
+#TRANS 1799 {} 4391.00
+}
+
+#VER A 823 20220914 B09137391536 20221122
+{
+#TRANS 1930 {} 1633.54
+#TRANS 1910 {} -1633.54
+}
+
+#VER A 824 20220913 CDM 20221122
+{
+#TRANS 1930 {} 5500.00
+#TRANS 1910 {} -5500.00
+}
+
+#VER A 825 20220913 WILLYS 20221122
+{
+#TRANS 1930 {} -462.40
+#TRANS 2641 {} 66.39 20220913 WILLYS
+#TRANS 4010 {} 396.01
+}
+
+#VER A 826 20220913 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -488.97
+#TRANS 2641 {} 52.39 20220913 SNABBGROSS
+#TRANS 4010 {} 436.58
+}
+
+#VER A 827 20220913 Gteborg 20221122
+{
+#TRANS 1930 {} -5092.00
+#TRANS 1799 {} 5092.00
+}
+
+#VER A 828 20220915 B09147423046 20221122
+{
+#TRANS 1930 {} 1949.65
+#TRANS 1910 {} -1949.65
+}
+
+#VER A 829 20220915 1236721690 20221122
+{
+#TRANS 1930 {} 70.00
+#TRANS 1910 {} -70.00
+}
+
+#VER A 830 20220914 INGO 20221122
+{
+#TRANS 1930 {} -506.89
+#TRANS 2641 {} 101.38 20220914 INGO
+#TRANS 5611 {} 405.51 20220914 INGO
+}
+
+#VER A 831 20220914 Liba 20221122
+{
+#TRANS 1930 {} -119.00
+#TRANS 2641 {} 12.75 20220914 Liba
+#TRANS 4010 {} 106.25
+}
+
+#VER A 832 20220916 1236721690 20221122
+{
+#TRANS 1930 {} 31.00
+#TRANS 1910 {} -31.00
+}
+
+#VER A 833 20220919 B09157453792 20221122
+{
+#TRANS 1930 {} 2114.54
+#TRANS 1910 {} -2114.54
+}
+
+#VER A 834 20220919 B09167487968 20221122
+{
+#TRANS 1930 {} 2089.73
+#TRANS 1910 {} -2089.73
+}
+
+#VER A 835 20220916 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1116.95
+#TRANS 2641 {} 119.67 20220916 SNABBGROSS
+#TRANS 4010 {} 997.28
+}
+
+#VER A 836 20220917 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -747.40
+#TRANS 2013 {} -840.00 20220917 SNABBGROSS
+#TRANS 2641 {} 170.08 20220917 SNABBGROSS
+#TRANS 4010 {} 1417.32
+}
+
+#VER A 837 20220920 B09197565231 20221122
+{
+#TRANS 1930 {} 1811.53
+#TRANS 1910 {} -1811.53
+}
+
+#VER A 838 20220920 B09187542076 20221122
+{
+#TRANS 1930 {} 2217.29
+#TRANS 1910 {} -2217.29
+}
+
+#VER A 839 20220920 B09177516972 20221122
+{
+#TRANS 1930 {} 3275.38
+#TRANS 1910 {} -3275.38
+}
+
+#VER A 840 20220920 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 841 20220919 815625931236128 20221122
+{
+#TRANS 1930 {} -1100.00
+#TRANS 1799 {} 1100.00
+}
+
+#VER A 842 20220919 815625931236128 20221122
+{
+#TRANS 1930 {} 600.00
+#TRANS 1910 {} -600.00
+}
+
+#VER A 843 20220919 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2727.11
+#TRANS 2641 {} 292.19 20220919 SNABBGROSS
+#TRANS 4010 {} 2434.92
+}
+
+#VER A 844 20220921 B09207593620 20221122
+{
+#TRANS 1930 {} 2760.40
+#TRANS 1910 {} -2760.40
+}
+
+#VER A 845 20220921 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 846 20220920 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1162.03
+#TRANS 2641 {} 154.81 20220920 SNABBGROSS
+#TRANS 4010 {} 1007.22
+}
+
+#VER A 847 20220920 WILLYS 20221122
+{
+#TRANS 1930 {} -264.00
+#TRANS 2641 {} 28.29 20220920 WILLYS
+#TRANS 4010 {} 235.71
+}
+
+#VER A 848 20220922 B09217626640 20221122
+{
+#TRANS 1930 {} 1540.81
+#TRANS 1910 {} -1540.81
+}
+
+#VER A 849 20220921 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 850 20220922 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 851 20220922 1236721690 20221122
+{
+#TRANS 1930 {} 92.00
+#TRANS 1910 {} -92.00
+}
+
+#VER A 852 20220923 B09227659011 20221122
+{
+#TRANS 1930 {} 2638.42
+#TRANS 1910 {} -2638.42
+}
+
+#VER A 853 20220926 B09237693469 20221122
+{
+#TRANS 1930 {} 2709.74
+#TRANS 1910 {} -2709.74
+}
+
+#VER A 854 20220926 1236721690 20221122
+{
+#TRANS 1930 {} 800.00
+#TRANS 1910 {} -800.00
+}
+
+#VER A 855 20220923 INGO 20221122
+{
+#TRANS 1930 {} -626.85
+#TRANS 2641 {} 125.37 20220923 INGO
+#TRANS 5611 {} 501.48 20220923 INGO
+}
+
+#VER A 856 20220926 1236721690 20221122
+{
+#TRANS 1930 {} 23.00
+#TRANS 1910 {} -23.00
+}
+
+#VER A 857 20220927 B09267775868 20221122
+{
+#TRANS 1930 {} 2373.53
+#TRANS 1910 {} -2373.53
+}
+
+#VER A 858 20220927 B09247727693 20221122
+{
+#TRANS 1930 {} 2476.12
+#TRANS 1910 {} -2476.12
+}
+
+#VER A 859 20220927 B09257755496 20221122
+{
+#TRANS 1930 {} 2823.63
+#TRANS 1910 {} -2823.63
+}
+
+#VER A 860 20220927 1236721690 20221122
+{
+#TRANS 1930 {} 102.00
+#TRANS 1910 {} -102.00
+}
+
+#VER A 861 20220928 B09277803352 20221122
+{
+#TRANS 1930 {} 2125.83
+#TRANS 1910 {} -2125.83
+}
+
+#VER A 862 20220928 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 863 20220928 Tele2 20221122
+{
+#TRANS 1930 {} -587.00
+#TRANS 1799 {} 587.00
+}
+
+#VER A 864 20220929 B09287834572 20221122
+{
+#TRANS 1930 {} 1903.64
+#TRANS 1910 {} -1903.64
+}
+
+#VER A 865 20220930 B09297867881 20221122
+{
+#TRANS 1930 {} 2754.99
+#TRANS 1910 {} -2754.99
+}
+
+#VER A 866 20220930 Securitas 20221122
+{
+#TRANS 1930 {} -3620.00
+#TRANS 1799 {} 3620.00
+}
+
+#VER A 867 20221003 B09307903574 20221122
+{
+#TRANS 1930 {} 3642.06
+#TRANS 1910 {} -3642.06
+}
+
+#VER A 868 20221003 1236721690 20221122
+{
+#TRANS 1930 {} 66.00
+#TRANS 1910 {} -66.00
+}
+
+#VER A 869 20221003 1236721690 20221122
+{
+#TRANS 1930 {} 80.00
+#TRANS 1910 {} -80.00
+}
+
+#VER A 870 20221003 1236721690 20221122
+{
+#TRANS 1930 {} 121.00
+#TRANS 1910 {} -121.00
+}
+
+#VER A 871 20221001 WILLYS 20221122
+{
+#TRANS 1930 {} -244.30
+#TRANS 2641 {} 26.18 20221001 WILLYS
+#TRANS 4010 {} 218.12
+}
+
+#VER A 872 20221001 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2460.76
+#TRANS 2641 {} 263.65 20221001 SNABBGROSS
+#TRANS 4010 {} 2197.11
+}
+
+#VER A 873 20221003 Gteborg 20221122
+{
+#TRANS 1930 {} -3626.00
+#TRANS 1799 {} 3626.00
+}
+
+#VER A 874 20221002 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00 20221002 Tapajos
+}
+
+#VER A 875 20221002 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 5010 {} 7620.00 20221002 Tapajos
+}
+
+#VER A 876 20221004 B10017938081 20221122
+{
+#TRANS 1930 {} 3802.47
+#TRANS 1910 {} -3802.47
+}
+
+#VER A 877 20221004 B10027965794 20221122
+{
+#TRANS 1930 {} 1912.36
+#TRANS 1910 {} -1912.36
+}
+
+#VER A 878 20221004 B10037984697 20221122
+{
+#TRANS 1930 {} 2961.21
+#TRANS 1910 {} -2961.21
+}
+
+#VER A 879 20221003 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2316.50
+#TRANS 2641 {} 248.20 20221003 SNABBGROSS
+#TRANS 4010 {} 2068.30
+}
+
+#VER A 880 20221003 DINA 20221122
+{
+#TRANS 1930 {} -873.00
+#TRANS 1799 {} 873.00
+}
+
+#VER A 881 20221004 53626487 20221122
+{
+#TRANS 1930 {} 1489.00
+#TRANS 1910 {} -1489.00
+}
+
+#VER A 882 20221005 B10048010551 20221122
+{
+#TRANS 1930 {} 2002.47
+#TRANS 1910 {} -2002.47
+}
+
+#VER A 883 20221005 1236721690 20221122
+{
+#TRANS 1930 {} 130.00
+#TRANS 1910 {} -130.00
+}
+
+#VER A 884 20221006 B10058043650 20221122
+{
+#TRANS 1930 {} 2028.95
+#TRANS 1910 {} -2028.95
+}
+
+#VER A 885 20221005 1236721690 20221122
+{
+#TRANS 1930 {} 80.00
+#TRANS 1910 {} -80.00
+}
+
+#VER A 886 20221006 1236721690 20221122
+{
+#TRANS 1930 {} 115.00
+#TRANS 1910 {} -115.00
+}
+
+#VER A 887 20221006 53626487 20221122
+{
+#TRANS 1930 {} 826.88
+#TRANS 1910 {} -826.88
+}
+
+#VER A 888 20221007 B10068077675 20221122
+{
+#TRANS 1930 {} 1474.63
+#TRANS 1910 {} -1474.63
+}
+
+#VER A 889 20221006 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 890 20221007 1236721690 20221122
+{
+#TRANS 1930 {} 1076.00
+#TRANS 1910 {} -1076.00
+}
+
+#VER A 891 20221007 1236721690 20221122
+{
+#TRANS 1930 {} 25.00
+#TRANS 1910 {} -25.00
+}
+
+#VER A 892 20221006 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1597.55
+#TRANS 2641 {} 171.17 20221006 SNABBGROSS
+#TRANS 4010 {} 1426.38
+}
+
+#VER A 893 20221007 SBM 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 894 20221010 B10078112447 20221122
+{
+#TRANS 1930 {} 2164.22
+#TRANS 1910 {} -2164.22
+}
+
+#VER A 895 20221007 1236721690 20221122
+{
+#TRANS 1930 {} 65.00
+#TRANS 1910 {} -65.00
+}
+
+#VER A 896 20221010 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 897 20221007 MALTE 20221122
+{
+#TRANS 1930 {} -375.00
+#TRANS 2641 {} 40.20 20221007 MALTE
+#TRANS 4010 {} 334.80
+}
+
+#VER A 898 20221007 WILLYS 20221122
+{
+#TRANS 1930 {} -325.70
+#TRANS 1799 {} 325.70
+}
+
+#VER A 899 20221007 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1814.02
+#TRANS 2641 {} 194.36 20221007 SNABBGROSS
+#TRANS 4010 {} 1619.66
+}
+
+#VER A 900 20221008 WILLYS 20221122
+{
+#TRANS 1930 {} -777.50
+#TRANS 1799 {} 777.50
+}
+
+#VER A 901 20221008 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1734.87
+#TRANS 2641 {} 185.88 20221008 SNABBGROSS
+#TRANS 4010 {} 1548.99
+}
+
+#VER A 902 20221009 WILLYS 20221122
+{
+#TRANS 1930 {} -952.90
+#TRANS 1799 {} 952.90
+}
+
+#VER A 903 20221009 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1149.26
+#TRANS 2641 {} 133.44 20221009 SNABBGROSS
+#TRANS 4010 {} 1015.82
+}
+
+#VER A 904 20221011 B10088147040 20221122
+{
+#TRANS 1930 {} 2174.88
+#TRANS 1910 {} -2174.88
+}
+
+#VER A 905 20221011 B10098173267 20221122
+{
+#TRANS 1930 {} 2299.01
+#TRANS 1910 {} -2299.01
+}
+
+#VER A 906 20221011 B10108193560 20221122
+{
+#TRANS 1930 {} 2916.40
+#TRANS 1910 {} -2916.40
+}
+
+#VER A 907 20221010 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -2900.92
+#TRANS 2641 {} 310.81 20221010 SNABBGROSS
+#TRANS 4010 {} 2590.11
+}
+
+#VER A 908 20221012 B10118220942 20221122
+{
+#TRANS 1930 {} 1476.67
+#TRANS 1910 {} -1476.67
+}
+
+#VER A 909 20221011 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1678.30
+#TRANS 2641 {} 179.82 20221011 SNABBGROSS
+#TRANS 4010 {} 1498.48
+}
+
+#VER A 910 20221013 B10128253866 20221122
+{
+#TRANS 1930 {} 1466.61
+#TRANS 1910 {} -1466.61
+}
+
+#VER A 911 20221013 1236721690 20221122
+{
+#TRANS 1930 {} 45.00
+#TRANS 1910 {} -45.00
+}
+
+#VER A 912 20221013 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 913 20221011 Fortnox 20221122
+{
+#TRANS 1930 {} -1405.00
+#TRANS 1799 {} 1405.00
+}
+
+#VER A 914 20221012 Gteborg 20221122
+{
+#TRANS 1930 {} -4184.00
+#TRANS 1799 {} 4184.00
+}
+
+#VER A 915 20221012 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -4700.00
+#TRANS 1799 {} 4700.00
+}
+
+#VER A 916 20221014 B10138287231 20221122
+{
+#TRANS 1930 {} 1385.73
+#TRANS 1910 {} -1385.73
+}
+
+#VER A 917 20221017 B10148321198 20221122
+{
+#TRANS 1930 {} 2308.38
+#TRANS 1910 {} -2308.38
+}
+
+#VER A 918 20221017 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 919 20221017 1236721690 20221122
+{
+#TRANS 1930 {} 48.00
+#TRANS 1910 {} -48.00
+}
+
+#VER A 920 20221014 INGO 20221122
+{
+#TRANS 1930 {} -621.85
+#TRANS 2641 {} 124.37 20221014 INGO
+#TRANS 5611 {} 497.48 20221014 INGO
+}
+
+#VER A 921 20221017 1236721690 20221122
+{
+#TRANS 1930 {} 50.00
+#TRANS 1910 {} -50.00
+}
+
+#VER A 922 20221015 Liba 20221122
+{
+#TRANS 1930 {} -119.00
+#TRANS 2641 {} 12.75 20221015 Liba
+#TRANS 4010 {} 106.25
+}
+
+#VER A 923 20221015 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -683.89
+#TRANS 2641 {} 73.27 20221015 SNABBGROSS
+#TRANS 4010 {} 610.62
+}
+
+#VER A 924 20221015 FSL 20221122
+{
+#TRANS 1930 {} -1482.00
+#TRANS 2641 {} 158.79 20221015 FSL
+#TRANS 4010 {} 1323.21
+}
+
+#VER A 925 20221016 WASA 20221122
+{
+#TRANS 1930 {} -1489.00
+#TRANS 1799 {} 1489.00
+}
+
+#VER A 926 20221018 B10168384934 20221122
+{
+#TRANS 1930 {} 1894.91
+#TRANS 1910 {} -1894.91
+}
+
+#VER A 927 20221018 B10178402937 20221122
+{
+#TRANS 1930 {} 1984.47
+#TRANS 1910 {} -1984.47
+}
+
+#VER A 928 20221018 B10158356782 20221122
+{
+#TRANS 1930 {} 2828.78
+#TRANS 1910 {} -2828.78
+}
+
+#VER A 929 20221018 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 930 20221018 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 931 20221017 XXL 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 932 20221017 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -508.32
+#TRANS 2641 {} 54.46 20221017 SNABBGROSS
+#TRANS 4010 {} 453.86
+}
+
+#VER A 933 20221017 EDELS 20221122
+{
+#TRANS 1930 {} -544.00
+#TRANS 2641 {} 58.29 20221017 EDELS
+#TRANS 4010 {} 485.71
+}
+
+#VER A 934 20221019 B10188429869 20221122
+{
+#TRANS 1930 {} 2342.49
+#TRANS 1910 {} -2342.49
+}
+
+#VER A 935 20221019 1236721690 20221122
+{
+#TRANS 1930 {} 83.00
+#TRANS 1910 {} -83.00
+}
+
+#VER A 936 20221018 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -816.88
+#TRANS 2641 {} 87.52 20221018 SNABBGROSS
+#TRANS 4010 {} 729.36
+}
+
+#VER A 937 20221020 B10198463924 20221122
+{
+#TRANS 1930 {} 2411.10
+#TRANS 1910 {} -2411.10
+}
+
+#VER A 938 20221020 1236721690 20221122
+{
+#TRANS 1930 {} 8.00
+#TRANS 1910 {} -8.00
+}
+
+#VER A 939 20221020 1236721690 20221122
+{
+#TRANS 1930 {} 33.00
+#TRANS 1910 {} -33.00
+}
+
+#VER A 940 20221020 20221020 20221122
+{
+#TRANS 1930 {} -79.50
+#TRANS 1799 {} 79.50
+}
+
+#VER A 941 20221021 B10208497548 20221122
+{
+#TRANS 1930 {} 1994.87
+#TRANS 1910 {} -1994.87
+}
+
+#VER A 942 20221021 1236721690 20221122
+{
+#TRANS 1930 {} 137.00
+#TRANS 1910 {} -137.00
+}
+
+#VER A 943 20221021 1236721690 20221122
+{
+#TRANS 1930 {} 31.00
+#TRANS 1910 {} -31.00
+}
+
+#VER A 944 20221024 B10218533410 20221122
+{
+#TRANS 1930 {} 1966.26
+#TRANS 1910 {} -1966.26
+}
+
+#VER A 945 20221021 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1051.34
+#TRANS 2641 {} 112.64 20221021 SNABBGROSS
+#TRANS 4010 {} 938.70
+}
+
+#VER A 946 20221021 FSL 20221122
+{
+#TRANS 1930 {} -532.00
+#TRANS 2641 {} 57.00 20221021 FSL
+#TRANS 4010 {} 475.00
+}
+
+#VER A 947 20221024 1236721690 20221122
+{
+#TRANS 1930 {} 13.00
+#TRANS 1910 {} -13.00
+}
+
+#VER A 948 20221022 BILTEMA 20221122
+{
+#TRANS 1930 {} -99.80
+#TRANS 2641 {} 25.00 20221022 BILTEMA
+#TRANS 4010 {} 74.80
+}
+
+#VER A 949 20221023 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -562.33
+#TRANS 2641 {} 60.25 20221023 SNABBGROSS
+#TRANS 4010 {} 502.08
+}
+
+#VER A 950 20221025 B10238596138 20221122
+{
+#TRANS 1930 {} 2212.17
+#TRANS 1910 {} -2212.17
+}
+
+#VER A 951 20221025 B10248614820 20221122
+{
+#TRANS 1930 {} 2279.59
+#TRANS 1910 {} -2279.59
+}
+
+#VER A 952 20221025 B10228568268 20221122
+{
+#TRANS 1930 {} 2690.10
+#TRANS 1910 {} -2690.10
+}
+
+#VER A 953 20221025 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 954 20221025 1236721690 20221122
+{
+#TRANS 1930 {} 44.00
+#TRANS 1910 {} -44.00
+}
+
+#VER A 955 20221024 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -945.17
+#TRANS 2641 {} 101.27 20221024 SNABBGROSS
+#TRANS 4010 {} 843.90
+}
+
+#VER A 956 20221026 B10258641603 20221122
+{
+#TRANS 1930 {} 1861.52
+#TRANS 1910 {} -1861.52
+}
+
+#VER A 957 20221025 INGO 20221122
+{
+#TRANS 1930 {} -513.96
+#TRANS 1799 {} 513.96
+}
+
+#VER A 958 20221027 B10268675221 20221122
+{
+#TRANS 1930 {} 2902.81
+#TRANS 1910 {} -2902.81
+}
+
+#VER A 959 20221026 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1707.41
+#TRANS 2641 {} 182.94 20221026 SNABBGROSS
+#TRANS 4010 {} 1524.47
+}
+
+#VER A 960 20221026 SVEA 20221122
+{
+#TRANS 1930 {} -124.00
+#TRANS 1799 {} 124.00
+}
+
+#VER A 961 20221026 SVEA 20221122
+{
+#TRANS 1930 {} -249.00
+#TRANS 1799 {} 249.00
+}
+
+#VER A 962 20221026 Anders 20221122
+{
+#TRANS 1930 {} -1487.00
+#TRANS 1799 {} 1487.00
+}
+
+#VER A 963 20221026 WASA 20221122
+{
+#TRANS 1930 {} -2228.00
+#TRANS 1799 {} 2228.00
+}
+
+#VER A 964 20221026 WASA 20221122
+{
+#TRANS 1930 {} -1494.00
+#TRANS 1799 {} 1494.00
+}
+
+#VER A 965 20221026 Telia 20221122
+{
+#TRANS 1930 {} -1046.00
+#TRANS 2641 {} 209.20 20221026 Telia
+#TRANS 6212 {} 836.80 20221026 Telia
+}
+
+#VER A 966 20221026 Gteborg 20221122
+{
+#TRANS 1930 {} -3830.00
+#TRANS 1799 {} 3830.00
+}
+
+#VER A 967 20221026 DNB 20221122
+{
+#TRANS 1930 {} -2524.00
+#TRANS 2641 {} 504.87 20221026 DNB
+#TRANS 5220 {} 2019.13 20221026 DNB
+}
+
+#VER A 968 20221028 B10278707223 20221122
+{
+#TRANS 1930 {} 1771.93
+#TRANS 1910 {} -1771.93
+}
+
+#VER A 969 20221027 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -627.95
+#TRANS 2641 {} 67.28 20221027 SNABBGROSS
+#TRANS 4010 {} 560.67
+}
+
+#VER A 970 20221028 Tele2 20221122
+{
+#TRANS 1930 {} -587.00
+#TRANS 1799 {} 587.00
+}
+
+#VER A 971 20221101 B10288741028 20221122
+{
+#TRANS 1930 {} 2263.07
+#TRANS 1910 {} -2263.07
+}
+
+#VER A 972 20221028 1236721690 20221122
+{
+#TRANS 1930 {} 53.00
+#TRANS 1910 {} -53.00
+}
+
+#VER A 973 20221101 1236721690 20221122
+{
+#TRANS 1930 {} 28.00
+#TRANS 1910 {} -28.00
+}
+
+#VER A 974 20221028 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -653.50
+#TRANS 2641 {} 70.02 20221028 SNABBGROSS
+#TRANS 4010 {} 583.48
+}
+
+#VER A 975 20221101 1236721690 20221122
+{
+#TRANS 1930 {} 35.00
+#TRANS 1910 {} -35.00
+}
+
+#VER A 976 20221029 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1101.42
+#TRANS 2641 {} 118.01 20221029 SNABBGROSS
+#TRANS 4010 {} 983.41
+}
+
+#VER A 977 20221101 1236721690 20221122
+{
+#TRANS 1930 {} 82.00
+#TRANS 1910 {} -82.00
+}
+
+#VER A 978 20221030 GROSSIST 20221122
+{
+#TRANS 1930 {} -1080.00
+#TRANS 1799 {} 1080.00
+}
+
+#VER A 979 20221030 WILLYS 20221122
+{
+#TRANS 1930 {} -608.30
+#TRANS 1799 {} 608.30
+}
+
+#VER A 980 20221030 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1839.05
+#TRANS 2641 {} 197.04 20221030 SNABBGROSS
+#TRANS 4010 {} 1642.01
+}
+
+#VER A 981 20221030 Transportstyrels 20221122
+{
+#TRANS 1930 {} -27.00
+#TRANS 1799 {} 27.00
+}
+
+#VER A 982 20221030 Transportstyrels 20221122
+{
+#TRANS 1930 {} -3119.00
+#TRANS 1799 {} 3119.00
+}
+
+#VER A 983 20221030 Transportstyrels 20221122
+{
+#TRANS 1930 {} -460.00
+#TRANS 1799 {} 460.00
+}
+
+#VER A 984 20221101 B10298776429 20221122
+{
+#TRANS 1930 {} 3083.08
+#TRANS 1910 {} -3083.08
+}
+
+#VER A 985 20221101 B10318825692 20221122
+{
+#TRANS 1930 {} 2395.15
+#TRANS 1910 {} -2395.15
+}
+
+#VER A 986 20221101 B10308805461 20221122
+{
+#TRANS 1930 {} 2441.66
+#TRANS 1910 {} -2441.66
+}
+
+#VER A 987 20221030 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -458.84
+#TRANS 2641 {} 49.16 20221030 SNABBGROSS
+#TRANS 4010 {} 409.68
+}
+
+#VER A 988 20221102 B11018851575 20221122
+{
+#TRANS 1930 {} 3105.08
+#TRANS 1910 {} -3105.08
+}
+
+#VER A 989 20221102 1236721690 20221122
+{
+#TRANS 1930 {} 51.00
+#TRANS 1910 {} -51.00
+}
+
+#VER A 990 20221102 1236721690 20221122
+{
+#TRANS 1930 {} 99.00
+#TRANS 1910 {} -99.00
+}
+
+#VER A 991 20221102 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 992 20221101 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1018.36
+#TRANS 1799 {} 1018.36
+}
+
+#VER A 993 20221101 INGO 20221122
+{
+#TRANS 1930 {} -504.89
+#TRANS 1799 {} 504.89
+}
+
+#VER A 994 20221101 Gteborg 20221122
+{
+#TRANS 1930 {} -3591.00
+#TRANS 1799 {} 3591.00
+}
+
+#VER A 995 20221101 DINA 20221122
+{
+#TRANS 1930 {} -114.00
+#TRANS 1799 {} 114.00
+}
+
+#VER A 996 20221101 DINA 20221122
+{
+#TRANS 1930 {} -845.00
+#TRANS 1799 {} 845.00
+}
+
+#VER A 997 20221102 Gteborg 20221122
+{
+#TRANS 1930 {} -1400.00
+#TRANS 1799 {} 1400.00
+}
+
+#VER A 998 20221103 B11028883255 20221122
+{
+#TRANS 1930 {} 1816.97
+#TRANS 1910 {} -1816.97
+}
+
+#VER A 999 20221103 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 1000 20221103 1236721690 20221122
+{
+#TRANS 1930 {} 15.00
+#TRANS 1910 {} -15.00
+}
+
+#VER A 1001 20221103 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 1002 20221103 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 1003 20221102 Gteborg 20221122
+{
+#TRANS 1930 {} -9936.00
+#TRANS 1799 {} 9936.00
+}
+
+#VER A 1004 20221104 B11038916499 20221122
+{
+#TRANS 1930 {} 4022.48
+#TRANS 1910 {} -4022.48
+}
+
+#VER A 1005 20221104 1236721690 20221122
+{
+#TRANS 1930 {} 35.00
+#TRANS 1910 {} -35.00
+}
+
+#VER A 1006 20221104 1236721690 20221122
+{
+#TRANS 1930 {} 48.00
+#TRANS 1910 {} -48.00
+}
+
+#VER A 1007 20221103 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -3.32
+#TRANS 1799 {} 3.32
+}
+
+#VER A 1008 20221103 Tapajos 20221122
+{
+#TRANS 1930 {} -10130.00
+#TRANS 5010 {} 10130.00 20221103 Tapajos
+}
+
+#VER A 1009 20221104 53626487 20221122
+{
+#TRANS 1930 {} 690.01
+#TRANS 1910 {} -690.01
+}
+
+#VER A 1010 20221104 DINA 20221122
+{
+#TRANS 1930 {} 638.00
+#TRANS 1910 {} -638.00
+}
+
+#VER A 1011 20221107 B11048948888 20221122
+{
+#TRANS 1930 {} 1402.57
+#TRANS 1910 {} -1402.57
+}
+
+#VER A 1012 20221107 1236721690 20221122
+{
+#TRANS 1930 {} 230.00
+#TRANS 1910 {} -230.00
+}
+
+#VER A 1013 20221104 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -798.40
+#TRANS 2641 {} 103.93 20221104 SNABBGROSS
+#TRANS 4010 {} 694.47
+}
+
+#VER A 1014 20221107 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 1015 20221108 B11058984489 20221122
+{
+#TRANS 1930 {} 1805.81
+#TRANS 1910 {} -1805.81
+}
+
+#VER A 1016 20221108 B11079027877 20221122
+{
+#TRANS 1930 {} 2504.55
+#TRANS 1910 {} -2504.55
+}
+
+#VER A 1017 20221108 B11069008862 20221122
+{
+#TRANS 1930 {} 2618.75
+#TRANS 1910 {} -2618.75
+}
+
+#VER A 1018 20221107 1236721690 20221122
+{
+#TRANS 1930 {} 76.00
+#TRANS 1910 {} -76.00
+}
+
+#VER A 1019 20221107 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1020 20221107 815625931236128 20221122
+{
+#TRANS 1930 {} 1700.00
+#TRANS 1910 {} -1700.00
+}
+
+#VER A 1021 20221107 Tapajos 20221122
+{
+#TRANS 1930 {} -7620.00
+#TRANS 5010 {} 7620.00 20221107 Tapajos
+}
+
+#VER A 1022 20221109 B11089056349 20221122
+{
+#TRANS 1930 {} 1692.21
+#TRANS 1910 {} -1692.21
+}
+
+#VER A 1023 20221109 1236721690 20221122
+{
+#TRANS 1930 {} 82.00
+#TRANS 1910 {} -82.00
+}
+
+#VER A 1024 20221108 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 1025 20221108 815625931236128 20221122
+{
+#TRANS 1930 {} -20.00
+#TRANS 1799 {} 20.00
+}
+
+#VER A 1026 20221110 B11099087792 20221122
+{
+#TRANS 1930 {} 1849.94
+#TRANS 1910 {} -1849.94
+}
+
+#VER A 1027 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 50.00
+#TRANS 1910 {} -50.00
+}
+
+#VER A 1028 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1029 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 1030 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1031 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 106.00
+#TRANS 1910 {} -106.00
+}
+
+#VER A 1032 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 45.00
+#TRANS 1910 {} -45.00
+}
+
+#VER A 1033 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 24.00
+#TRANS 1910 {} -24.00
+}
+
+#VER A 1034 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 17.00
+#TRANS 1910 {} -17.00
+}
+
+#VER A 1035 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 50.00
+#TRANS 1910 {} -50.00
+}
+
+#VER A 1036 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 40.00
+#TRANS 1910 {} -40.00
+}
+
+#VER A 1037 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 104.00
+#TRANS 1910 {} -104.00
+}
+
+#VER A 1038 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 43.00
+#TRANS 1910 {} -43.00
+}
+
+#VER A 1039 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 1040 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 1041 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1042 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 14.00
+#TRANS 1910 {} -14.00
+}
+
+#VER A 1043 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 35.00
+#TRANS 1910 {} -35.00
+}
+
+#VER A 1044 20221110 1236721690 20221122
+{
+#TRANS 1930 {} 104.00
+#TRANS 1910 {} -104.00
+}
+
+#VER A 1045 20221109 815625931236128 20221122
+{
+#TRANS 1930 {} -50.00
+#TRANS 1799 {} 50.00
+}
+
+#VER A 1046 20221111 B11109119799 20221122
+{
+#TRANS 1930 {} 655.25
+#TRANS 1910 {} -655.25
+}
+
+#VER A 1047 20221111 1236721690 20221122
+{
+#TRANS 1930 {} 104.00
+#TRANS 1910 {} -104.00
+}
+
+#VER A 1048 20221110 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 1049 20221110 INGO 20221122
+{
+#TRANS 1930 {} -506.83
+#TRANS 1799 {} 506.83
+}
+
+#VER A 1050 20221110 SVEA 20221122
+{
+#TRANS 1930 {} -309.00
+#TRANS 6991 {} 309.00 20221110 SVEA
+}
+
+#VER A 1051 20221110 Landvetter grossen ab 20221122
+{
+#TRANS 1930 {} -8225.00 20221110 Landvetter grossen ab
+#TRANS 2641 {} 1645.00 20221110 Landvetter grossen ab
+#TRANS 4010 {} 6580.00 20221110 Landvetter grossen ab
+}
+
+#VER A 1052 20221114 B11119155378 20221122
+{
+#TRANS 1930 {} 2285.41
+#TRANS 1910 {} -2285.41
+}
+
+#VER A 1053 20221111 815625931236128 20221122
+{
+#TRANS 1930 {} -20.00
+#TRANS 1799 {} 20.00
+}
+
+#VER A 1054 20221114 DINA 20221122
+{
+#TRANS 1930 {} 353.00
+#TRANS 1910 {} -353.00
+}
+
+#VER A 1055 20221114 1236721690 20221122
+{
+#TRANS 1930 {} 20.00
+#TRANS 1910 {} -20.00
+}
+
+#VER A 1056 20221114 1236721690 20221122
+{
+#TRANS 1930 {} 103.00
+#TRANS 1910 {} -103.00
+}
+
+#VER A 1057 20221114 1236721690 20221122
+{
+#TRANS 1930 {} 53.00
+#TRANS 1910 {} -53.00
+}
+
+#VER A 1058 20221113 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1524.05
+#TRANS 2641 {} 163.29 20221113 SNABBGROSS
+#TRANS 4010 {} 1360.76
+}
+
+#VER A 1059 20221115 B11149236892 20221122
+{
+#TRANS 1930 {} 2124.27
+#TRANS 1910 {} -2124.27
+}
+
+#VER A 1060 20221115 B11139218175 20221122
+{
+#TRANS 1930 {} 2630.38
+#TRANS 1910 {} -2630.38
+}
+
+#VER A 1061 20221115 B11129190355 20221122
+{
+#TRANS 1930 {} 3128.75
+#TRANS 1910 {} -3128.75
+}
+
+#VER A 1062 20221114 1236721690 20221122
+{
+#TRANS 1930 {} 11.00
+#TRANS 1910 {} -11.00
+}
+
+#VER A 1063 20221115 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1064 20221114 815625931236128 20221122
+{
+#TRANS 1930 {} -15.00
+#TRANS 1799 {} 15.00
+}
+
+#VER A 1065 20221114 SKATTEVERKET 20221122
+{
+#TRANS 1930 {} -4700.00
+#TRANS 1799 {} 4700.00
+}
+
+#VER A 1066 20221116 B11159264408 20221122
+{
+#TRANS 1930 {} 1738.64
+#TRANS 1910 {} -1738.64
+}
+
+#VER A 1067 20221116 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 1068 20221116 1236721690 20221122
+{
+#TRANS 1930 {} 18.00
+#TRANS 1910 {} -18.00
+}
+
+#VER A 1069 20221116 1236721690 20221122
+{
+#TRANS 1930 {} 30.00
+#TRANS 1910 {} -30.00
+}
+
+#VER A 1070 20221116 1236721690 20221122
+{
+#TRANS 1930 {} 6.00
+#TRANS 1910 {} -6.00
+}
+
+#VER A 1071 20221116 1236721690 20221122
+{
+#TRANS 1930 {} 22.00
+#TRANS 1910 {} -22.00
+}
+
+#VER A 1072 20221115 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1147.63
+#TRANS 1799 {} 1147.63
+}
+
+#VER A 1073 20221115 SVEA 20221122
+{
+#TRANS 1930 {} -184.00
+#TRANS 1799 {} 184.00
+}
+
+#VER A 1074 20221115 Regionservice 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 1075 20221117 B11169296804 20221122
+{
+#TRANS 1930 {} 2526.05
+#TRANS 1910 {} -2526.05
+}
+
+#VER A 1076 20221116 GROSSIST 20221122
+{
+#TRANS 1930 {} -300.00
+#TRANS 1799 {} 300.00
+}
+
+#VER A 1077 20221116 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1869.96
+#TRANS 1799 {} 1869.96
+}
+
+#VER A 1078 20221118 B11179329763 20221122
+{
+#TRANS 1930 {} 1954.19
+#TRANS 1910 {} -1954.19
+}
+
+#VER A 1079 20221118 1236721690 20221122
+{
+#TRANS 1930 {} 363.00
+#TRANS 1910 {} -363.00
+}
+
+#VER A 1080 20221118 1236721690 20221122
+{
+#TRANS 1930 {} 100.00
+#TRANS 1910 {} -100.00
+}
+
+#VER A 1081 20221117 WILLYS 20221122
+{
+#TRANS 1930 {} -528.60
+#TRANS 1799 {} 528.60
+}
+
+#VER A 1082 20221116 TG 20221122
+{
+#TRANS 1930 {} -3565.00
+#TRANS 1799 {} 3565.00
+}
+
+#VER A 1083 20221121 B11189363734 20221122
+{
+#TRANS 1930 {} 2043.13
+#TRANS 1910 {} -2043.13
+}
+
+#VER A 1084 20221121 1236721690 20221122
+{
+#TRANS 1930 {} 6.00
+#TRANS 1910 {} -6.00
+}
+
+#VER A 1085 20221118 815625931236128 20221122
+{
+#TRANS 1930 {} -100.00
+#TRANS 1799 {} 100.00
+}
+
+#VER A 1086 20221118 SNABBGROSS 20221122
+{
+#TRANS 1930 {} -1480.61
+#TRANS 1799 {} 1480.61
+}
+
+#VER A 1087 20221026 Gteborg 20221122
+{
+#TRANS 1930 {} -3830.00
+#TRANS 1799 {} 3830.00
+}
+
+#VER A 1088 20220304 Snabbgross 20221123
+{
+#TRANS 1930 {} -289.96 20220304 Snabbgross
+#TRANS 2641 {} 31.07 20220304 Snabbgross
+#TRANS 4010 {} 258.89
+#TRANS 1930 {} 289.96 20220304 Snabbgross
+#TRANS 2013 {} -289.96 20220304 Snabbgross
+}
+
+#VER A 1089 20220315 Gogross 20221123
+{
+#TRANS 1930 {} -711.00 20220315 Gogross
+#TRANS 2641 {} 76.19 20220315 Gogross
+#TRANS 4010 {} 634.81
+#TRANS 1930 {} 711.00 20220315 Gogross
+#TRANS 2013 {} -711.00 20220315 Gogross
+}
+
+#VER A 1090 20220930 Kvitton 20221123
+{
+#TRANS 2013 {} -3381.13 20220930 Kvitton
+#TRANS 2641 {} 362.26 20220930 Kvitton
+#TRANS 4010 {} 3018.87
+#TRANS 2013 {} -552.00 20220930 Kvitton
+#TRANS 2641 {} 59.17 20220930 Kvitton
+#TRANS 4010 {} 492.83
+#TRANS 2013 {} -118.00 20220930 Kvitton
+#TRANS 2641 {} 12.64 20220930 Kvitton
+#TRANS 4010 {} 105.36
+#TRANS 2013 {} -174.00 20220930 Kvitton
+#TRANS 2641 {} 18.63 20220930 Kvitton
+#TRANS 4010 {} 155.37
+#TRANS 2013 {} -2819.88 20220930 Kvitton
+#TRANS 2641 {} 302.13 20220930 Kvitton
+#TRANS 4010 {} 2517.75
+#TRANS 2013 {} -1623.64 20220930 Kvitton
+#TRANS 2641 {} 173.96 20220930 Kvitton
+#TRANS 4010 {} 1449.68
+#TRANS 2013 {} -598.20 20220930 Kvitton
+#TRANS 2641 {} 81.12 20220930 Kvitton
+#TRANS 4010 {} 517.08
+#TRANS 2013 {} -3020.60 20220930 Kvitton
+#TRANS 2641 {} 323.60 20220930 Kvitton
+#TRANS 4010 {} 2697.00
+#TRANS 2013 {} -127.00 20220930 Kvitton
+#TRANS 2641 {} 13.58 20220930 Kvitton
+#TRANS 4010 {} 113.42
+}
+
+#VER A 1091 20220930 Kvitton 20221123
+{
+#TRANS 2013 {} -1641.17 20220930 Kvitton
+#TRANS 2641 {} 175.84 20220930 Kvitton
+#TRANS 4010 {} 1465.33
+#TRANS 2013 {} -1170.40 20220930 Kvitton
+#TRANS 2641 {} 125.40 20220930 Kvitton
+#TRANS 4010 {} 1045.00
+#TRANS 2013 {} -2457.03 20220930 Kvitton
+#TRANS 2641 {} 263.25 20220930 Kvitton
+#TRANS 4010 {} 2193.78
+#TRANS 2013 {} -179.00 20220930 Kvitton
+#TRANS 2641 {} 19.18 20220930 Kvitton
+#TRANS 4010 {} 159.82
+#TRANS 2013 {} -172.00 20220930 Kvitton
+#TRANS 2641 {} 18.45 20220930 Kvitton
+#TRANS 4010 {} 153.55
+#TRANS 2013 {} -1429.29 20220930 Kvitton
+#TRANS 2641 {} 170.95 20220930 Kvitton
+#TRANS 4010 {} 1258.34
+#TRANS 2013 {} -718.23 20220930 Kvitton
+#TRANS 2641 {} 76.95 20220930 Kvitton
+#TRANS 4010 {} 641.28
+#TRANS 2013 {} -1033.50 20220930 Kvitton
+#TRANS 2641 {} 110.73 20220930 Kvitton
+#TRANS 4010 {} 922.77
+#TRANS 2013 {} -2370.00 20220930 Kvitton
+#TRANS 2641 {} 474.00 20220930 Kvitton
+#TRANS 4010 {} 1896.00
+#TRANS 2013 {} -175.00 20220930 Kvitton
+#TRANS 2641 {} 18.75 20220930 Kvitton
+#TRANS 4010 {} 156.25
+#TRANS 2013 {} -1388.31 20220930 Kvitton
+#TRANS 2641 {} 148.75 20220930 Kvitton
+#TRANS 4010 {} 1239.56
+}
+
+#VER A 1092 20220930 Kvitton 20221123
+{
+#TRANS 2013 {} -496.13 20220930 Kvitton
+#TRANS 2641 {} 53.16 20220930 Kvitton
+#TRANS 4010 {} 442.97
+#TRANS 2013 {} -1059.30 20220930 Kvitton
+#TRANS 2641 {} 115.35 20220930 Kvitton
+#TRANS 4010 {} 943.95
+#TRANS 2013 {} -915.00 20220930 Kvitton
+#TRANS 2641 {} 98.02 20220930 Kvitton
+#TRANS 4010 {} 816.98
+#TRANS 2013 {} -1021.00 20220930 Kvitton
+#TRANS 2641 {} 109.43 20220930 Kvitton
+#TRANS 4010 {} 911.57
+#TRANS 2013 {} -1459.00 20220930 Kvitton
+#TRANS 2641 {} 180.75 20220930 Kvitton
+#TRANS 4010 {} 1278.25
+#TRANS 2013 {} -1192.40 20220930 Kvitton
+#TRANS 2641 {} 127.76 20220930 Kvitton
+#TRANS 4010 {} 1064.64
+#TRANS 2013 {} -114.00 20220930 Kvitton
+#TRANS 2641 {} 14.47 20220930 Kvitton
+#TRANS 4010 {} 99.53
+#TRANS 2013 {} -330.00 20220930 Kvitton
+#TRANS 2641 {} 35.40 20220930 Kvitton
+#TRANS 4010 {} 294.60
+#TRANS 2013 {} -240.00 20220930 Kvitton
+#TRANS 2641 {} 25.72 20220930 Kvitton
+#TRANS 4010 {} 214.28
+}
+
+#VER A 1093 20220228 Kvitton 20221123
+{
+#TRANS 2013 {} -3905.00 20220228 Kvitton
+#TRANS 2641 {} 781.08 20220228 Kvitton
+#TRANS 5020 {} 3123.92 20220228 Kvitton
+#TRANS 2013 {} -5509.00 20220228 Kvitton
+#TRANS 2641 {} 622.78 20220228 Kvitton
+#TRANS 4010 {} 4886.22
+#TRANS 2013 {} -1851.00 20220228 Kvitton
+#TRANS 2641 {} 198.30 20220228 Kvitton
+#TRANS 4010 {} 1652.70
+#TRANS 2013 {} -1047.96 20220228 Kvitton
+#TRANS 2641 {} 112.28 20220228 Kvitton
+#TRANS 4010 {} 935.68
+}
+
+#VER A 1094 20220331 Kvitton 20221123
+{
+#TRANS 2013 {} -973.00 20220331 Kvitton
+#TRANS 2641 {} 104.28 20220331 Kvitton
+#TRANS 4010 {} 868.72
+#TRANS 2013 {} -10543.00 20220331 Kvitton
+#TRANS 2641 {} 1129.57 20220331 Kvitton
+#TRANS 4010 {} 9413.43
+#TRANS 2013 {} -1310.00 20220331 Kvitton
+#TRANS 2641 {} 140.40 20220331 Kvitton
+#TRANS 4010 {} 1169.60
+#TRANS 2013 {} -1828.51 20220331 Kvitton
+#TRANS 2641 {} 195.91 20220331 Kvitton
+#TRANS 4010 {} 1632.60
+}
+
+#VER A 1095 20220430 Kvitton 20221123
+{
+#TRANS 2013 {} -443.00 20220430 Kvitton
+#TRANS 2641 {} 84.94 20220430 Kvitton
+#TRANS 4010 {} 358.06
+}
+
+#VER A 1096 20220630 Kvitton 20221123
+{
+#TRANS 2013 {} -1774.00 20220630 Kvitton
+#TRANS 2641 {} 190.08 20220630 Kvitton
+#TRANS 4010 {} 1583.92
+}
+
+#VER A 1097 20221031 Kvitton 20221123
+{
+#TRANS 2013 {} -1579.00 20221031 Kvitton
+#TRANS 2641 {} 169.21 20221031 Kvitton
+#TRANS 4010 {} 1409.79
+#TRANS 2013 {} -813.00 20221031 Kvitton
+#TRANS 2641 {} 87.14 20221031 Kvitton
+#TRANS 4010 {} 725.86
+#TRANS 2013 {} -1989.00 20221031 Kvitton
+#TRANS 2641 {} 213.11 20221031 Kvitton
+#TRANS 4010 {} 1775.89
+#TRANS 2013 {} -957.00 20221031 Kvitton
+#TRANS 2641 {} 115.98 20221031 Kvitton
+#TRANS 4010 {} 841.02
+#TRANS 2013 {} -998.00 20221031 Kvitton
+#TRANS 2641 {} 106.94 20221031 Kvitton
+#TRANS 4010 {} 891.06
+#TRANS 2013 {} -720.00 20221031 Kvitton
+#TRANS 2641 {} 84.72 20221031 Kvitton
+#TRANS 4010 {} 635.28
+#TRANS 2013 {} -2007.00 20221031 Kvitton
+#TRANS 2641 {} 215.08 20221031 Kvitton
+#TRANS 4010 {} 1791.92
+#TRANS 2013 {} -762.00 20221031 Kvitton
+#TRANS 2641 {} 110.78 20221031 Kvitton
+#TRANS 4010 {} 651.22
+}
+
+#VER A 1098 20221031 Kvitton 20221123
+{
+#TRANS 2013 {} -1000.00 20221031 Kvitton
+#TRANS 2641 {} 200.00 20221031 Kvitton
+#TRANS 4010 {} 800.00
+#TRANS 2013 {} -1259.66 20221031 Kvitton
+#TRANS 2641 {} 137.51 20221031 Kvitton
+#TRANS 4010 {} 1122.15
+#TRANS 2013 {} -506.73 20221031 Kvitton
+#TRANS 2641 {} 101.35 20221031 Kvitton
+#TRANS 5611 {} 405.38 20221031 Kvitton
+#TRANS 2013 {} -1417.54 20221031 Kvitton
+#TRANS 2641 {} 151.88 20221031 Kvitton
+#TRANS 4010 {} 1265.66
+#TRANS 2013 {} -480.00 20221031 Kvitton
+#TRANS 2641 {} 51.39 20221031 Kvitton
+#TRANS 4010 {} 428.61
+#TRANS 2013 {} -2451.00 20221031 Kvitton
+#TRANS 2641 {} 490.22 20221031 Kvitton
+#TRANS 5220 {} 1960.78 20221031 Kvitton
+#TRANS 2013 {} -150.00 20221031 Kvitton
+#TRANS 2641 {} 16.07 20221031 Kvitton
+#TRANS 4010 {} 133.93
+#TRANS 2013 {} -2655.00 20221031 Kvitton
+#TRANS 2641 {} 521.71 20221031 Kvitton
+#TRANS 4010 {} 2133.29
+}
+
+#VER A 1099 20221031 Kvitton 20221123
+{
+#TRANS 2013 {} -228.00 20221031 Kvitton
+#TRANS 2641 {} 24.38 20221031 Kvitton
+#TRANS 4010 {} 203.62
+#TRANS 2013 {} -3378.50 20221031 Kvitton
+#TRANS 2641 {} 373.58 20221031 Kvitton
+#TRANS 4010 {} 3004.92
+#TRANS 2013 {} -790.00 20221031 Kvitton
+#TRANS 2641 {} 84.66 20221031 Kvitton
+#TRANS 4010 {} 705.34
+#TRANS 2013 {} -998.00 20221031 Kvitton
+#TRANS 2641 {} 106.93 20221031 Kvitton
+#TRANS 4010 {} 891.07
+#TRANS 2013 {} -1774.00 20221031 Kvitton
+#TRANS 2641 {} 190.07 20221031 Kvitton
+#TRANS 4010 {} 1583.93
+#TRANS 2013 {} -75.00 20221031 Kvitton
+#TRANS 2641 {} 8.04 20221031 Kvitton
+#TRANS 4010 {} 66.96
+#TRANS 2013 {} -277.00 20221031 Kvitton
+#TRANS 2641 {} 29.65 20221031 Kvitton
+#TRANS 4010 {} 247.35
+#TRANS 2013 {} -990.00 20221031 Kvitton
+#TRANS 2641 {} 106.07 20221031 Kvitton
+#TRANS 4010 {} 883.93
+#TRANS 2013 {} -1778.00 20221031 Kvitton
+#TRANS 2641 {} 190.50 20221031 Kvitton
+#TRANS 4010 {} 1587.50
+}
+
+#VER A 1100 20221031 Kvitton 20221123
+{
+#TRANS 2013 {} -2080.00 20221031 Kvitton
+#TRANS 2641 {} 379.79 20221031 Kvitton
+#TRANS 4010 {} 1700.21
+#TRANS 2013 {} -268.30 20221031 Kvitton
+#TRANS 2641 {} 28.75 20221031 Kvitton
+#TRANS 4010 {} 239.55
+#TRANS 2013 {} -1018.36 20221031 Kvitton
+#TRANS 2641 {} 109.11 20221031 Kvitton
+#TRANS 4010 {} 909.25
+#TRANS 2013 {} -2080.00 20221031 Kvitton
+#TRANS 2641 {} 379.79 20221031 Kvitton
+#TRANS 4010 {} 1700.21
+}
+
+#VER A 1101 20221130 Kvitton 20221123
+{
+#TRANS 2013 {} -546.80 20221130 Kvitton
+#TRANS 2641 {} 58.59 20221130 Kvitton
+#TRANS 4010 {} 488.21
+#TRANS 2013 {} -225.00 20221130 Kvitton
+#TRANS 2641 {} 24.11 20221130 Kvitton
+#TRANS 4010 {} 200.89
+#TRANS 2013 {} -440.00 20221130 Kvitton
+#TRANS 2641 {} 47.14 20221130 Kvitton
+#TRANS 4010 {} 392.86
+#TRANS 2013 {} -1697.32 20221130 Kvitton
+#TRANS 2641 {} 181.86 20221130 Kvitton
+#TRANS 4010 {} 1515.46
+#TRANS 2013 {} -455.07 20221130 Kvitton
+#TRANS 2641 {} 48.76 20221130 Kvitton
+#TRANS 4010 {} 406.31
+#TRANS 2013 {} -750.00 20221130 Kvitton
+#TRANS 2641 {} 80.39 20221130 Kvitton
+#TRANS 4010 {} 669.61
+}
+
+#VER A 1102 20221130 Kvitton 20221123
+{
+#TRANS 2013 {} -355.00 20221130 Kvitton
+#TRANS 2641 {} 71.00 20221130 Kvitton
+#TRANS 4010 {} 284.00
+#TRANS 2013 {} -547.00 20221130 Kvitton
+#TRANS 2641 {} 58.64 20221130 Kvitton
+#TRANS 4010 {} 488.36
+#TRANS 2013 {} -717.00 20221130 Kvitton
+#TRANS 2641 {} 76.83 20221130 Kvitton
+#TRANS 4010 {} 640.17
+#TRANS 2013 {} -684.00 20221130 Kvitton
+#TRANS 2641 {} 73.28 20221130 Kvitton
+#TRANS 4010 {} 610.72
+#TRANS 2013 {} -564.00 20221130 Kvitton
+#TRANS 2641 {} 60.48 20221130 Kvitton
+#TRANS 4010 {} 503.52
+#TRANS 2013 {} -889.00 20221130 Kvitton
+#TRANS 2641 {} 95.22 20221130 Kvitton
+#TRANS 4010 {} 793.78
+#TRANS 2013 {} -2317.00 20221130 Kvitton
+#TRANS 2641 {} 248.26 20221130 Kvitton
+#TRANS 4010 {} 2068.74
+#TRANS 2013 {} -1267.00 20221130 Kvitton
+#TRANS 2641 {} 135.79 20221130 Kvitton
+#TRANS 4010 {} 1131.21
+}
+
+#VER A 1103 20221031 Kvitton 20221123
+{
+#TRANS 2013 {} -1046.00 20221031 Kvitton
+#TRANS 2641 {} 209.20 20221031 Kvitton
+#TRANS 6212 {} 836.80 20221031 Kvitton
+#TRANS 2013 {} -3556.00 20221031 Kvitton
+#TRANS 2641 {} 711.20 20221031 Kvitton
+#TRANS 5410 {} 2844.80 20221031 Kvitton
+}
+
+å
+Å
+ö
+Ö
+ä
+Ä
