@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}
+    Arkiv
+{% endblock %}
+{% block body %}
+    {%- macro random_fill() -%}
+        {%- set random_r = range(0, 255) | random -%}
+        {%- set random_g = range(0, 255) | random -%}
+        {%- set random_b = range(0, 255) | random -%}
+        {%- set random_o = range(98, 99) | random -%}
+        {%- set random = range(0, 5) | random -%}
+        {%- set color = ["#FFFFFFFF","#000000FF","#BC0000FF", "#08B000FF", "#001DD9FF" ] -%}
+        {%- set rgba = "rgba("+ random_r|string +","+ random_g|string+","+ random_b|string+",0."+random_o|string+ ")" -%}
+        {{ 'id='+ random|string +' style=fill:'+ color[random]+';' }}
+    {%- endmacro -%}
+
+    {%- macro generate_img(range_x = 8, range_y = 8, fill=black) -%}
+        {%- set y_line = namespace(count = 0) -%}
+        {%- set x_line = namespace(count = 8) -%}
+
+        {%- set count_of_translate = namespace(count=0) -%}
+        <svg width="218" height="218">
+            <g transform="translate(15, 20)">
+                {% for i in range (0,range_x) %}
+                    {%- set y = namespace(count = 0) -%}
+                    <g transform="translate({{ y_line.count }}, 0)">
+                        {% for x in range(0,range_y) %}
+                            {%- set y.count = y.count + 15 -%}
+                            <rect class="secret_box" width="11" height="11" x="{{ x_line.count }}" y="{{ y.count }}" rx="2" ry="2" {{ random_fill() }}></rect>
+                        {% endfor %}
+                    </g>
+                    {%- set y_line.count = y_line.count + 16 -%}
+                    {%- set x_line.count = x_line.count - 1 -%}
+                {% endfor %}
+            </g>
+        </svg>
+    {%- endmacro -%}
+
+
+    <figure class="text-center mt-5">
+        <blockquote class="blockquote">
+            <p class="h2">Game of Diamonds King </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Round <cite id="count_of_round" title="Source Title">0</cite>
+        </figcaption>
+    </figure>
+
+    <div class="container mt-5">
+        <div class="row row-cols-4 row-cols-md-4 g-4 mt-5">
+            {% for i in range(1,5) %}
+                <div class="col player">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center align-content-center border border-1 rounded-3">
+                                <h5 class="card-title ">Player {{ i }}</h5>
+                                <input readonly value="" name="secret_number" type="hidden" class="text-center secret_number input-group-text"/>
+                                <div id="display" class="text-center">
+                                    {{ generate_img(10,10) }}
+                                </div>
+                                <div class="secret_number"></div>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="border-1 alert text-center resultat_of_players">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="card text-center mt-3">
+        <div class="card-header" id="game"></div>
+        <div class="card-body text-center">
+            <h5 class="card-title" id="human_player_number"></h5>
+            <div class="card-text alert text-center" id="human_resultat">Your player point {{ human_player_point }}</div>
+
+            {% for i in range(0,101) %}
+                {% if i == 0 %}
+                    <div class="btn-group" role="group">
+                        <button  type="button" onclick="game_of_king('Random')" class="btn btn-outline-secondary number_button">Random Number</button>
+                        <button type="button" onclick="game_of_king({{ i }})" value="0" style="width: 60px" class="btn btn-outline-secondary number_button">{{ i }}</button>
+                    </div><br>
+                    <div class="btn-group" role="group">
+                {% else %}
+                    <button type="button" onclick="game_of_king({{ i }})" style="width: 60px" value="{{ i }}" class="btn btn-outline-secondary number_button">{{ i }}</button>
+                {% endif %}
+
+            {% if i / 20 == 1 or i / 20 == 2 or i / 20 == 3 or i / 20 == 4 or i / 20 == 5  and i!=0 %}
+                </div><br>
+                <div class="btn-group" role="group">
+                    {% elif i == 100 %}
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="card-footer text-muted">
+            <form method="post" id="form_of_game">
+                <input type="hidden" name="number_of_round" value="{{ number_of_round }}" id="number_of_round">
+                <input type="hidden" name="point_of_human_player" value="{{ human_player_point }}" id="number_of_round">
+                <button id="next_round_button" type="submit" name="next_round" class="btn btn-outline-secondary" disabled>Next Round</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+    </div>
+    {% include "bonus/script_game_of_king.html" %}
+{% endblock %}

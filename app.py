@@ -4,6 +4,7 @@ from Controller.UserProfile.logout import user_logout
 from Model.DB import db
 from Model.DataBase.Accounting_account import Accounting_account
 from views.archive import archive
+from views.game_of_king import game_of_king
 from views.home_page import index
 from views.csv_to_se import csv_to_se
 from views.login import login_manager
@@ -12,7 +13,6 @@ from views.se_file_reader import se_file_reader
 from views.se_tools import se_tools
 from views.settings_accounting import settings_accounting
 from views.show_transaction_file import show_transaction_file
-from views.transactions_view import transactions_view
 from views.verifications import verifications
 
 app = Flask(__name__)
@@ -50,8 +50,8 @@ app.add_url_rule('/se_file_reader', view_func=se_file_reader, methods=['GET', 'P
 app.add_url_rule('/archive', view_func=archive, methods=['GET', 'POST'])
 app.add_url_rule('/settings/accounting', view_func=settings_accounting, methods=['GET', 'POST'])
 app.add_url_rule('/se_tools', view_func=se_tools, methods=['GET', 'POST'])
-app.add_url_rule('/se_tools/transaktions_list', view_func=transactions_view, methods=['GET', 'POST'])
 app.add_url_rule('/uploads/', view_func=show_transaction_file, methods=['GET', 'POST'])
+app.add_url_rule('/game_of_king/', view_func=game_of_king, methods=['GET', 'POST'])
 
 
 # app.add_url_rule('/client_profile', view_func=client_profile, methods=['GET', 'POST'])

@@ -10,19 +10,18 @@ class Companies:
     def remove_company_period(self):
         print(f"""remove company with id: {self.name} and period: {self.period}""")
         company = CompanyDB.query.filter_by(name=self.name, bic=self.bic).first()
-        transactions = company.verifications
+        verifications = company.verifications
         company_user = company.user
         if company_user == current_user.id:
             print(f"""Company from db query: {self.company.name} with BIC {self.company.bic}""")
-            print(f"""company_user: {self.user} | current_user: {self.user.id}""")
+            for verification in verifications:
+                remove_transaction_file(verification)
+                db.session.delete(verification)
+                db.session.commit()
+                db.session.flush()
             db.session.delete(company)
-            for transaction in transactions:
-                if transaction.period == self.period and company_user == current_user.id:
-                    remove_transaction_file(transaction.file)
-                    print(f"""period: {self.period} | {transaction.period}""")
-                    print(transaction)
-                    db.session.delete(transaction)
             db.session.commit()
+            db.session.flush()
 
     def get_verifications_for_company_and_period(self):
         return self.company.verifications
@@ -33,7 +32,7 @@ class Companies:
             print(transaktion)
 
     def get_companies_list_from_db(self):
-        #print(self.companies)
+        # print(self.companies)
         return self.companies
 
     def print_loop_of_companies(self):
@@ -41,10 +40,10 @@ class Companies:
 
     def save_company_in_db_if_new(self):
         if self.companies_query.filter_by(bic=self.bic, period=self.period, name=self.name).first() is not None:
-            #print("company is not new")
+            # print("company is not new")
             self.company = self.companies_query.filter_by(bic=self.bic, name=self.name).first()
         else:
-           # print("company is new")
+            # print("company is new")
             self.user = current_user
             self.bic = self.bic
             self.name = self.name

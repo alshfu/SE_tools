@@ -18,12 +18,12 @@
 {% if search_box %}
     {% for verification in result.verifications %}
         {% if verification.transactions[1].account.account == search_box | int %}
-            {% include "verifications_list/table/rows/row_of_table_with_verification_data.html" %}
+            {% include "verifications_list/table/rows/cell_of_verification_macro.html" %}
         {% endif %}
     {% endfor %}
 {% else %}
     {% for verification in result.verifications %}
-        {% include "verifications_list/table/rows/row_of_table_with_verification_data.html" %}
+        {% include "verifications_list/table/rows/cell_of_verification_macro.html" %}
     {% endfor %}
 {% endif %}
 

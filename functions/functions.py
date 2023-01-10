@@ -54,6 +54,8 @@ def string_cleaner(ref_str='', is_float=False):
     reference = ref_str.replace('/', ' ')
     reference = reference.replace('_', ' ')
     reference = reference.replace(':', ' ')
+    reference = reference.replace('"', '')
+    reference = reference.replace("'", '')
     reference = reference.upper()
     reference = reference.strip()
     if is_float:

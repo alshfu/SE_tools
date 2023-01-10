@@ -1,47 +1,61 @@
-{%- macro vat_in_for_period(result, search_box) -%}
-    {%- set vat = namespace(count=0) -%}
+{%- macro calculate_vat_account(amount,vat) -%}
+    {{ amount|float-(amount|float/(1+vat|float)) }}
+{%- endmacro -%}
+
+
+
+{%- macro get_income_amount() -%}
+    {%- set income = namespace(count=0) -%}
     {%- for verification in result.verifications -%}
-        {%- if verification.transactions[2] is defined -%}
-            {%- if search_box -%}
-                {%- if verification.transactions[0].amount > 0 and verification.transactions[1].account.account == search_box | int -%}
-                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
-                {%- endif -%}
+        {%- if verification.transactions[0].amount > 0 -%}
+            {%- set income.count = income.count + verification.transactions[0].amount -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {{ income.count }}
+{%- endmacro -%}
+
+{%- macro get_expense_amount() -%}
+    {%- set expense = namespace(count=0) -%}
+    {%- for verification in result.verifications -%}
+        {%- if verification.transactions[0].amount < 0 -%}
+            {%- set expense.count = expense.count + verification.transactions[0].amount -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {{ expense.count }}
+{%- endmacro -%}
+
+{%- macro get_income_vat_amount() -%}
+    {%- set income_vat = namespace(count=0) -%}
+    {%- for verification in result.verifications -%}
+        {%- if verification.transactions[0].amount > 0 -%}
+            {%- if verification.transactions[1].account != None -%}
+                {%- set income_vat.count = income_vat.count + calculate_vat_account(amount=verification.transactions[0].amount,vat=verification
+                .transactions[1].account.vat)|float -%}
             {%- else -%}
-                {%- if verification.transactions[0].amount > 0 -%}
-                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
-                {%- endif -%}
+                {%- set income_vat.count = income_vat.count + calculate_vat_account(amount=verification.transactions[0].amount,vat=verification
+                .transactions[1].vat)|float -%}
             {%- endif -%}
         {%- endif -%}
     {%- endfor -%}
-    {{ vat.count }}
+    {{ income_vat.count|float * -1 }}
 {%- endmacro -%}
 
-{%- macro vat_out_for_period(result, search_box = 0) -%}
-    {%- set vat = namespace(count=0) -%}
+{%- macro get_expense_vat_amount() -%}
+    {%- set expense_vat = namespace(count=0) -%}
     {%- for verification in result.verifications -%}
-        {%- if verification.transactions[2] is defined -%}
-            {%- if search_box -%}
-                {%- if verification.transactions[0].amount < 0 and verification.transactions[1].account.account == search_box | int-%}
-                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
-                {%- endif -%}
+        {%- if verification.transactions[0].amount < 0 -%}
+            {%- if verification.transactions[1].account != None -%}
+                {%- set expense_vat.count = expense_vat.count + calculate_vat_account(amount=verification.transactions[0].amount,vat=verification
+                .transactions[1]
+                        .account.vat)|float -%}
             {%- else -%}
-                {%- if verification.transactions[0].amount < 0 -%}
-                    {%- set vat.count = vat.count + verification.transactions[2].amount -%}
-                {%- endif -%}
+                {%- set expense_vat.count = expense_vat.count +  calculate_vat_account(amount=verification.transactions[0].amount,vat=verification
+                .transactions[1]
+                .vat)|float -%}
             {%- endif -%}
         {%- endif -%}
     {%- endfor -%}
-    {{ vat.count }}
-{%- endmacro -%}
-
-{%- macro vat_rest_amount(result, search_box) -%}
-    {%- set vat = namespace(count=0) -%}
-    {%- for verification in result.verifications -%}
-        {%- if verification.transactions[2] is defined and verification.transactions[1].account.account == search_box -%}
-            {%- set vat.count = vat.count + verification.transactions[2].amount -%}
-        {%- endif -%}
-    {%- endfor -%}
-    {{ vat.count }}
+    {{ expense_vat.count|float * -1 }}
 {%- endmacro -%}
 
 <div class="card text-center">
@@ -49,36 +63,30 @@
         {{ result.period }} | <strong>{{ result.name }}</strong> | {{ result.bic }}
     </div>
     <div class="card-body text-end">
-        <h5 class="card-title"></h5>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col text-center">Ingående moms</div>
-                <div class="col text-center">Utgående moms</div>
-                <div class="col text-center">Resterande moms</div>
-            </div>
-            <div class="row">
-                <div class="col text-center">{{ amount_format(vat_in_for_period(result, search_box)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_out_for_period(result, search_box)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
-            </div>
-            <div class="row">
-                <div class="col text-center">{{ amount_format(vat_in_for_period(result)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_out_for_period(result)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
-            </div>
-            <div class="row">
-                <div class="col text-center">{{ amount_format(vat_in_for_period(result)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_out_for_period(result)) }}</div>
-                <div class="col text-center">{{ amount_format(vat_rest_amount(result)) }}</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-end">
-
-            </div>
-        </div>
+        <table class="table table-borderless">
+            <tbody>
+            <tr>
+                <th class="text-end">Inkomster:</th>
+                <td class="text-start">{{ amount_format(get_income_amount()) }} Kr</td>
+                <th class="text-end">Utgifter:</th>
+                <td class="text-start">{{ amount_format(get_expense_amount()) }} Kr</td>
+            </tr>
+            <tr>
+                <th class="text-end">Moms att betala:</th>
+                <td class="text-start">{{ amount_format(get_income_vat_amount()) }} Kr</td>
+                <th class="text-end">Moms att få:</th>
+                <td class="text-start">{{ amount_format(get_expense_vat_amount()) }} Kr</td>
+            </tr>
+            <tr>
+                <th class="text-end">Inkomster ex.moms:</th>
+                <td class="text-start">{{ amount_format(get_income_amount()|float - get_income_vat_amount()|float) }} Kr</td>
+                <th class="text-end">Utgifter ex.moms:</th>
+                <td class="text-start">{{ amount_format(get_expense_amount()|float + get_expense_vat_amount()|float) }} Kr</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="card-footer text-muted text-end">
+    <div class="card-footer text-muted text-end d-print-none">
         <form method="post">
             <input type="hidden" name="period" value="{{ result.period }}">
             <input type="hidden" name="name" value="{{ result.name }}">

@@ -1,0 +1,26 @@
+#FLAGGA 0
+#FORMAT PC8
+#SIETYP 4
+#PROGRAM "Fortnox" 3.47.14
+#GEN 20230106
+#FNR 1223314
+#FNAMN "Nomi Bygg AB"
+#ADRESS "Nomi Sajad" "H„ssleholmsv„gen 2" "28267 Vittsj”" "0720365995" 
+#RAR 0 20211201 20221231
+#ORGNR 559349-0245
+#OMFATTN 20221231
+#KPTYP EUBAS97
+
+
+/' ь'
+
+#VER A 1 20220106 "†" 20230106
+{
+#TRANS 1930 {} 100 "" "" 0
+#TRANS 1010 {} -100 "" "" 0
+}
+#VER A 2 20220106 " † ™ ” Ž „" 20230106
+{
+#TRANS 1930 {} 100 "" " † ™ ” Ž „" 0
+#TRANS 1010 {} -100 "" " † ™ ” Ž „" 0
+}

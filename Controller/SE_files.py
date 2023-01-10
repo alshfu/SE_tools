@@ -9,25 +9,28 @@ def read_se_file_to_byte_and_get_utf_string(csv_file):
     try:
         with open(csv_file, "rb") as f:
             while byte := f.read(1):
-                # å = \xc3\xa5 b'\xe5'
-                if byte == b'\xe5':
+                print(byte)
+                # å = \xc3\xa5
+                if byte == b'\x86':
                     byte = b'\xc3\xa5'
-                # Å = \xc3\x85 b'\xc5'
-                elif byte == b'\xc5':
+                # Å = \xc3\x85
+                elif byte == b'\x8f':
                     byte = b'\xc3\x85'
-                # ö = \xc3\xb6 b'\xf6'
-                elif byte == b'\xf6':
+                # ö = \xc3\xb6
+                elif byte == b'\x94':
                     byte = b'\xc3\xb6'
-                # Ö = \xc3\x96 b'\xd6'
-                elif byte == b'\xd6':
+                # Ö = \xc3\x96
+                elif byte == b'\x99':
                     byte = b'\xc3\x96'
-                # ä = \xc3\xa4 b'\xe4'
-                elif byte == b'\xe4':
+                # ä = \xc3\xa4
+                elif byte == b'\x84':
                     byte = b'\xc3\xa4'
-                # Ä = \xc3\x84 b'\xc4'
-                elif byte == b'\xc4':
+                # Ä = \xc3\x84
+                elif byte == b'\x8e':
                     byte = b'\xc3\x84'
-                #################################################
+                #############################
+                elif byte == b'\xe2':
+                    byte = b' '
                 byte_array.append(byte)
             # Do stuff with byte.
     except IOError:
@@ -38,7 +41,6 @@ def read_se_file_to_byte_and_get_utf_string(csv_file):
     for i in range(len(byte_array)):
         try:
             utf_string += byte_array[i].decode("utf-8")
-            # print(utf_string)
         except UnicodeDecodeError:
             pass
     return get_data_from_SE_fil(utf_string)
@@ -59,8 +61,8 @@ def get_data_from_SE_fil(data_string):
     company_name = '',
     period = ''
     for i in range(len(line_array)):
-        print (f"""for i {i}""")
         spliter_string = line_array[i].split(' ')
+        # print(f"""for i {i} {spliter_string}""")
         if spliter_string[0] == '#ORGNR':
             bic = spliter_string[1]
             print(f'''Bic: {bic}''')

@@ -1,5 +1,6 @@
 {%- macro create_td(align='center',
                     display='',
+                    class='',
                     readonly='',
                     data='',
                     id='',
@@ -9,29 +10,25 @@
                     placeholder = '',
                     type = 'text',
                     value= '' ) -%}
-    <td style="width: {{ width }}px; display: {{ display }}" colspan="{{ colspan }}">
+    <td style="width: {{ width }}px; display: {{ display }}" colspan="{{ colspan }}" {% if name == 'type' %} class="d-print-none" {% endif %} >
+        <div class="d-none d-print-block">
+            {% if type == 'select_vat' and value != None and value != '' %}{{ value | float * 100 }}%{% else %}{{ value }}{% endif %}</div>
         {% if type == 'select_vat' %}
             {% if data != 0 %}
-                <select class="form-select" name="{{ name }}" disabled>
-                    <option value=0.00 {% if value  == 0.0 %} selected {% endif %} >0 %</option>
+                <select class="form-select {{ class }} d-print-none" name="{{ name }}">
+                    <option value=0.00 {% if value  == 0.00 %} selected {% endif %} >0 %</option>
                     <option value=0.25 {% if value  == 0.25 %} selected {% endif %} >25 %</option>
                     <option value=0.12 {% if value  == 0.12 %} selected {% endif %} >12 %</option>
                     <option value=0.06 {% if value  == 0.06 %} selected {% endif %} >6 %</option>
                 </select>
-                <select class="form-select d-none" name="{{ name }}">
-                    <option value=0.00 {% if value  == 0.0 %} selected {% endif %} >0 %</option>
-                    <option value=0.25 {% if value  == 0.25 %} selected {% endif %} >25 %</option>
-                    <option value=0.12 {% if value  == 0.12 %} selected {% endif %} >12 %</option>
-                    <option value=0.06 {% if value  == 0.06 %} selected {% endif %} >6 %</option>
-                </select>
-            {% else %}<select name="{{ name }}" readonly class="form-select d-none">
-                <option value=0.00 selected readonl >-----</option>
+            {% else %}<select name="{{ name }}" readonly class="form-select d-none d-print-none">
+                <option value=0.00 selected readonl>-----</option>
             {% endif %}
         </select>
         {% elif type == 'text' %}
             <input type="text"
                    style="display: {{ display }}"
-                   class="form-control text-{{ align }}"
+                   class="form-control d-print-none text-{{ align }}"
                    placeholder="{{ placeholder }}"
                    name="{{ name }}"
                    value="{{ value }}"

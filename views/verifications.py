@@ -20,5 +20,8 @@ def verifications():
             print(request.form.get("search_box"))
             print(company)
             return render_template("verifications_list/main.html", result=company, search_box=request.form.get("search_box"))
+        elif "create_se_file" in request.form:
+            print(Verifications(data=request).update())
+            return Verifications(data=request).update()
     Verifications(data=request).update()
     return redirect(request.referrer)

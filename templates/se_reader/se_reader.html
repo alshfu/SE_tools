@@ -5,8 +5,9 @@
 {% block body %}
 
     {% if result %}
-        <form method="post" enctype="multipart/form-data">
-            <div class="input-group">
+        <div class="text-center h4 mt-5" style="margin-top: 50px">SE Läsare</div>
+        <form method="post" class="m-auto mt-5" enctype="multipart/form-data">
+            <div class="input-group m-auto mt-5">
                 <span class="input-group-text">Org.nr: </span>
                 <input value="{{ result[0] }}" type="text" aria-label="bic" name="bic" class="form-control">
             </div>

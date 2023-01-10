@@ -1,0 +1,301 @@
+<div class="modal fade modal-fullscreen-lg-down" id="show_chart" tabindex="-1" aria-labelledby="show_chart" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 1124px">
+        <div class="modal-content">
+            <div class="modal-header">Diagram of företagets ekonomi</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="col">
+                    <canvas id="myChart_2"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="myChart_3"></canvas>
+                </div>
+                <div class="col">
+                    <canvas id="myChart_4"></canvas>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/static/js/chart.js"></script>
+
+<script>
+    const char_data = [
+        {% for verification in result.verifications %}['{{ verification.date}}',{{ verification.transactions[0].amount }},{% if verification.transactions[1]
+        .account != None %}'{{ verification.transactions[1].account.account }}'{% else %}'2290'{% endif %},{% if verification.transactions[1].account != None
+         %}'{{ verification.transactions[1].account.description }}'{% else %}'Övrigt'{% endif %}],
+        {% endfor %}]
+
+    var create_amount_array_from_char_data = function (char_data) {
+        var amount_array = []
+        for (var i = 0; i < char_data.length; i++) {
+            amount_array.push(char_data[i][1])
+        }
+        return amount_array
+    }
+    var create_amount_changing_array_from_char_data = function (char_data) {
+        var amount_array = []
+        var amount = 0
+        for (var i = 0; i < char_data.length; i++) {
+            amount += char_data[i][1]
+            amount_array.push(amount)
+        }
+        return amount_array
+    }
+    var create_date_array_from_char_data = function (char_data) {
+        var date_array = []
+        for (var i = 0; i < char_data.length; i++) {
+            date_array.push(char_data[i][0])
+        }
+        return date_array
+    }
+
+    function containsObject(obj, list) {
+        var x;
+        for (x in list) {
+            if (list.hasOwnProperty(x[0]) && list[x][0] === obj) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    var create_array_of_month_amount_from_char_data = function (char_data) {
+        var month_amount_array = []
+        var month_amount = 0
+        var month = char_data[0][0].split('-')[1]
+        for (var i = 0; i < char_data.length; i++) {
+            if (char_data[i][0].split('-')[1] == month) {
+                month_amount += char_data[i][1]
+            } else {
+                month_amount_array.push(month_amount)
+                month_amount = 0
+                month = char_data[i][0].split('-')[1]
+            }
+        }
+        month_amount_array.push(month_amount)
+        //console.log(month_amount_array)
+        return month_amount_array
+    }
+
+    // Arithmetic mean
+    var create_array_of_mount_arithmetic_mean_from_char_data = function (char_data) {
+        var month_amount_array = []
+        var month_amount = 0
+        var month = char_data[0][0].split('-')[1]
+        var month_count = 0
+        for (var i = 0; i < char_data.length; i++) {
+            if (char_data[i][0].split('-')[1] == month) {
+                month_amount += char_data[i][1]
+                month_count += 1
+            } else {
+                month_amount_array.push(month_amount / month_count)
+                month_amount = 0
+                month_count = 0
+                month = char_data[i][0].split('-')[1]
+            }
+        }
+        month_amount_array.push(month_amount / month_count)
+        // console.log(month_amount_array)
+        return month_amount_array
+    }
+    // Amount and account list
+    var create_account_and_amount_array_from_char_data = function (char_data) {
+        var account_and_amount_array = []
+        for (var i = 0; i < char_data.length; i++) {
+            console.log("konto: ", char_data[i][2], "belopp: ", char_data[i][1], "beskrivning: ", char_data[i][3])
+            if (containsObject(char_data[i][3], account_and_amount_array) == false) {
+                account_and_amount_array.push([char_data[i][3], char_data[i][1]])
+            } else {
+                for (var j = 0; j < account_and_amount_array.length; j++) {
+                    if (account_and_amount_array[j][0] == char_data[i][3]) {
+                        account_and_amount_array[j][1] += char_data[i][1]
+                    }
+                }
+            }
+        }
+        console.log(account_and_amount_array)
+        return account_and_amount_array
+
+    }
+    // list of accounts
+    var create_account_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var account_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            account_list.push(account_and_amount_array[i][0])
+        }
+        return account_list
+    }
+    // list of amounts
+    var create_amount_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var amount_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            amount_list.push(account_and_amount_array[i][1])
+        }
+        return amount_list
+    }
+    // list of expenditures amounts
+    var create_expenditure_amount_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var amount_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            if (account_and_amount_array[i][1] < 0) {
+                amount_list.push(account_and_amount_array[i][1])
+            }
+        }
+        console.log("create_expenditure_amount_list_from_account_and_amount_array", amount_list)
+        return amount_list
+    }
+    // list of income amounts
+    var create_income_amount_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var amount_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            if (account_and_amount_array[i][1] > 0) {
+                amount_list.push(account_and_amount_array[i][1])
+            }
+        }
+        console.log("create_income_amount_list_from_account_and_amount_array",amount_list)
+        return amount_list
+    }
+    // list of expenditures accounts
+    var create_expenditure_account_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var account_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            if (account_and_amount_array[i][1] < 0) {
+                account_list.push(account_and_amount_array[i][0])
+            }
+        }
+        return account_list
+    }
+    // list of income accounts
+    var create_income_account_list_from_account_and_amount_array = function (account_and_amount_array) {
+        var account_list = []
+        for (var i = 0; i < account_and_amount_array.length; i++) {
+            if (account_and_amount_array[i][1] > 0) {
+                account_list.push(account_and_amount_array[i][0])
+            }
+        }
+        return account_list
+    }
+
+
+
+    let array_of_account_and_amount = create_account_and_amount_array_from_char_data(char_data)
+    let amounts = create_amount_list_from_account_and_amount_array(array_of_account_and_amount)
+    let accounts = create_account_list_from_account_and_amount_array(array_of_account_and_amount)
+    let expenditure_amounts = create_expenditure_amount_list_from_account_and_amount_array(array_of_account_and_amount)
+    let income_amounts = create_income_amount_list_from_account_and_amount_array(array_of_account_and_amount)
+    let expenditure_accounts = create_expenditure_account_list_from_account_and_amount_array(array_of_account_and_amount)
+    let income_accounts = create_income_account_list_from_account_and_amount_array(array_of_account_and_amount)
+
+    const ctx = document.getElementById('myChart');
+    // char_data description 0-date, 1-amount, 2-account
+    new Chart(ctx, {
+        data: {
+            labels: create_date_array_from_char_data(char_data),
+            datasets: [{
+                type: 'line',
+                label: 'Belopp',
+                data: create_amount_array_from_char_data(char_data),
+            },{
+                type: 'bar',
+                label: 'Kvar på konto',
+                data: create_amount_changing_array_from_char_data(char_data),
+            },{
+                type: 'line',
+                label: 'Linie av konto historik',
+                data: create_amount_changing_array_from_char_data(char_data),
+            }]
+        },
+        options: {
+            borderWidth: 0.5,
+            pointStyle: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx_2 = document.getElementById('myChart_2');
+
+    new Chart(ctx_2, {
+        data: {
+            datasets: [{
+                type: 'line',
+                label: 'Bar Dataset',
+                data: create_array_of_month_amount_from_char_data(char_data)
+            },{
+                type: 'bar',
+                label: 'Medelvärde',
+                data: create_array_of_mount_arithmetic_mean_from_char_data(char_data),
+            }],
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        },
+        options: {
+            borderWidth: 0.5,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx_3 = document.getElementById('myChart_3');
+
+    new Chart(ctx_3, {
+        data: {
+            datasets: [{
+                type: 'polarArea',
+                label: 'kr',
+                data: expenditure_amounts
+            }],
+            labels: expenditure_accounts
+        },
+        options: {
+            borderWidth: 0.5,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    const ctx_4 = document.getElementById('myChart_4');
+
+    new Chart(ctx_4, {
+        data: {
+            datasets: [{
+                type: 'polarArea',
+                label: 'kr',
+                data: income_amounts
+            }],
+            labels: income_accounts
+        },
+        options: {
+            borderWidth: 0.5,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+</script>

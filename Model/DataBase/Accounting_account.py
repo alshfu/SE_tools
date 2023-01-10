@@ -21,7 +21,7 @@ class Accounting_account(db.Model):
         self.user = current_user.id
         self.account = account
         self.vat = vat
-        self.description = description
+        self.description = string_cleaner(description)
 
 
 class References(db.Model):

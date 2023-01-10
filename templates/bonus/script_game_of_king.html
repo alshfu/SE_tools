@@ -1,0 +1,138 @@
+<script>
+    function add(accumulator, a) {
+        return accumulator + a;
+    }
+
+    function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    var game_of_king = function (human_player_number) {
+        get_and_disable_number_buttons();
+        get_and_enable_next_round_button();
+        if (human_player_number == "Random") {
+            human_player_number = parseInt(getRandomArbitrary(0, 100));
+        }
+        var element_form_of_game = document.getElementById("form_of_game");
+        human_player_number = parseInt(human_player_number);
+        var count_of_players = document.getElementsByClassName("player").length;
+        var players = document.getElementsByClassName("player");
+        var human_player_number_element = document.getElementById("human_player_number");
+        var game_element = document.getElementById("game");
+        var secret_numbers = [];
+        var secret_numbers_to_sort = [];
+        for (const player of players) {
+            var secret_number_value = get_secret_number(player);
+            var secret_number_input_element = player.getElementsByClassName('secret_number')[0];
+            var secret_number_element = player.getElementsByClassName('secret_number')[1];
+            secret_number_element.innerHTML = secret_number_value;
+            secret_number_input_element.value = secret_number_value;
+            secret_numbers.push(parseInt(secret_number_value));
+            secret_numbers_to_sort.push(parseInt(secret_number_value));
+        }
+        secret_numbers.push(human_player_number);
+        secret_numbers_to_sort.push(human_player_number);
+        human_player_number_element.textContent = human_player_number;
+        var string_of_game = "(";
+        string_of_game += secret_numbers.join(" + ");
+        string_of_game += ") / " + String(secret_numbers.length);
+        string_of_game += " * 0.8"
+        let sum = secret_numbers_to_sort.reduce((partialSum, a) => partialSum + a, 0) / secret_numbers_to_sort.length;
+        string_of_game += " = " + sum;
+        let number_of_winner = secret_numbers_to_sort.sort((x, y) => Math.abs(sum - x) - Math.abs(sum - y))[0];
+        let resultat_of_players_elements = document.getElementsByClassName('resultat_of_players');
+        // element, type, name, value, class_name
+        if (number_of_winner == human_player_number) {
+            document.getElementById('human_resultat').innerText = "You Win";
+            document.getElementById('human_resultat').classList.add('alert-success');
+            document.getElementById('human_resultat').classList.remove('alert-danger');
+            create_and_add_input_element_to_form(element_form_of_game, "hidden", "input_human_player_result", "win", "input_human_player_result");
+
+            for (const resultatOfPlayersElement of resultat_of_players_elements) {
+                resultatOfPlayersElement.innerText = "Lose";
+                resultatOfPlayersElement.classList.add('alert-danger');
+                create_and_add_input_element_to_form(element_form_of_game, "hidden", "input_resultat_of_players", "lose", "input_resultat_of_players");
+
+
+            }
+        } else {
+            create_and_add_input_element_to_form(element_form_of_game, "hidden", "input_human_player_result", "lose", "input_human_player_result");
+            document.getElementById('human_resultat').innerText = "You Lose";
+            document.getElementById('human_resultat').classList.add('alert-danger');
+            get_winner(resultat_of_players_elements, getKeyByValue(secret_numbers, number_of_winner));
+
+
+        }
+
+
+        game_element.textContent = string_of_game;
+    }
+
+    function get_winner(elements, index_of_winner) {
+        for (let i = 0; i < elements.length; i++) {
+            if (i == index_of_winner) {
+                elements[i].innerText = "Win";
+                elements[i].classList.add('alert-success');
+                elements[i].classList.remove('alert-danger');
+                create_and_add_input_element_to_form(document.getElementById("form_of_game"), "hidden", "input_resultat_of_players", "win", "input_resultat_of_players");
+            } else {
+                elements[i].innerText = "Lose";
+                elements[i].classList.add('alert-danger');
+                create_and_add_input_element_to_form(document.getElementById("form_of_game"), "hidden", "input_resultat_of_players", "lose", "input_resultat_of_players");
+            }
+        }
+    }
+
+    function getKeyByValue(object, value) {
+        return Object.keys(object).find(key => object[key] === value);
+    }
+
+    var get_secret_number = function (element) {
+        var secret_boxs = element.getElementsByClassName('secret_box');
+        let secret_number = 0;
+        for (const secretBox of secret_boxs) {
+            let box_value = parseInt(secretBox.id)
+            if (box_value == 0) {
+                secret_number -= parseInt(getRandomArbitrary(0, 5));
+            } else if (box_value == 1) {
+                secret_number += 1;
+            } else if (box_value == 2) {
+                secret_number += 2;
+            } else if (box_value == 3) {
+                secret_number -= 3;
+            } else if (box_value == 4) {
+                secret_number += 4;
+            } else if (box_value == 5) {
+                secret_number += parseInt(getRandomArbitrary(0, 5));
+            }
+        }
+        if (secret_number < 0) {
+            secret_number = 100 + secret_number;
+        } else if (secret_number > 100) {
+            secret_number = secret_number - 100;
+        }
+        return secret_number;
+    }
+
+    function get_and_disable_number_buttons() {
+        var number_buttons = document.getElementsByClassName('number_button');
+        var human_player_number = document.getElementById('human_player_number');
+        for (const numberButton of number_buttons) {
+            numberButton.disabled=true;
+        }
+    }
+
+    function get_and_enable_next_round_button() {
+        var next_round_button = document.getElementById('next_round_button');
+        next_round_button.disabled=false;
+    }
+
+    var create_and_add_input_element_to_form = function (element, type, name, value, class_name) {
+        var input_element = document.createElement("input");
+        input_element.type = type;
+        input_element.name = name;
+        input_element.value = value;
+        input_element.classList.add(class_name);
+        element.appendChild(input_element);
+    }
+</script>

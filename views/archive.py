@@ -10,6 +10,6 @@ def archive():
             company_name = request.args.get('name')
             period = request.args.get('period')
             company_bic = request.args.get('bic')
-            company = Companies(name=company_name, bic=company_bic, period=period).remove_company_period()
+            Companies(name=company_name, bic=company_bic, period=period).remove_company_period()
     companies = Companies()
     return render_template("archive.html", result = companies.get_companies_list_from_db())

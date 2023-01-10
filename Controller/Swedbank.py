@@ -30,26 +30,21 @@ def read_csv_from_swedbank_to_byte_and_return_utf_string(csv_file):
                 # å = \xc3\xa5 b'\xe5'
                 if byte == b'\xe5':
                     byte = b'\xc3\xa5'
-                    # byte = b'å'
                 # Å = \xc3\x85 b'\xc5'
                 elif byte == b'\xc5':
                     byte = b'\xc3\x85'
-                    # byte = b'Å'
                 # ö = \xc3\xb6 b'\xf6'
                 elif byte == b'\xf6':
                     byte = b'\xc3\xb6'
-                    # byte = b'ö'
                 # Ö = \xc3\x96 b'\xd6'
                 elif byte == b'\xd6':
                     byte = b'\xc3\x96'
-                    # byte = b'Ö'
                 # ä = \xc3\xa4 b'\xe4'
                 elif byte == b'\xe4':
                     byte = b'\xc3\xa4'
                 # Ä = \xc3\x84 b'\xc4'
                 elif byte == b'\xc4':
                     byte = b'\xc3\x84'
-                    # byte = b'Ä'
                 elif byte == b'\x96':
                     byte = b''
                 byte_array.append(byte)

@@ -1,6 +1,11 @@
 <tr>
     {% set array_of_table_head = ['Id', 'Typ', 'Date', 'Reference', 'Belopp', 'Konto', 'Moms %','Verktyg'] %}
+    {% set index_of_head = namespace(count=1) %}
     {% for head_data in array_of_table_head %}
-        <th> {{ head_data }} </th>
+        <th {% if head_data == 'Belopp' %}onclick="sort_floating_table({{ index_of_head.count }})"
+            {% else %}onclick="sortTable({{ index_of_head.count }})"{% endif %}
+            {% if head_data == 'Verktyg' or head_data == 'Typ' %}class="d-print-none"{% endif %}>
+            {{ head_data }}</th>
+        {% set index_of_head.count = index_of_head.count + 1 %}
     {% endfor %}
 </tr>
